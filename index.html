@@ -11,14 +11,14 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://i.postimg.cc; connect-src 'self'; frame-src 'none'; base-uri 'self'; form-action 'self';">
 
   <!-- SEO Meta -->
-  <meta name="description" content="Kebijakan Privasi, Syarat & Ketentuan, dan Sitemap Muhaajir Official – Fotografi & Musik.">
-  <meta name="keywords" content="Muhaajir, privasi, syarat ketentuan, sitemap, kebijakan privasi, lisensi musik">
+  <meta name="description" content="Kebijakan Privasi, Syarat & Ketentuan, dan Sitemap Muhaajir Official – Musik, Fotografi & Tools Digital. Versi 3.4 (19 April 2026)">
+  <meta name="keywords" content="Muhaajir, privasi, syarat ketentuan, sitemap, kebijakan privasi, lisensi musik, tools digital">
   <meta name="author" content="Muhaajir">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Kebijakan Privasi & Syarat Ketentuan - Muhaajir Official">
-  <meta property="og:description" content="Dokumen legal dan peta situs Muhaajir Official – Musik dan Fotografi.">
+  <meta property="og:title" content="Legal & Sitemap v3.4 | Muhaajir Official">
+  <meta property="og:description" content="Dokumen resmi Muhaajir Official – Kebijakan Privasi, Syarat & Ketentuan, Sitemap. Versi 3.4 (19 April 2026)">
   <meta property="og:image" content="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png">
   <meta property="og:url" content="https://hajirmuhaajir.github.io/footer-essentials">
 
@@ -26,7 +26,7 @@
   <link rel="icon" type="image/png" href="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png">
 
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- JSON-LD Schema -->
@@ -34,7 +34,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Legal & Sitemap - Muhaajir Official",
+    "name": "Legal & Sitemap v3.4 - Muhaajir Official",
     "url": "https://hajirmuhaajir.github.io/footer-essentials",
     "isPartOf": {
       "@type": "WebSite",
@@ -56,513 +56,348 @@
   }
   </script>
 
-  <title>Legal & Sitemap | Muhaajir Official</title>
+  <title>Legal & Sitemap v3.4 | Muhaajir Official</title>
 
   <style>
-    /* --------------------------------
-       RESET & VARIABLES
-    -------------------------------- */
-    *, *::before, *::after {
+    /*=============================CSS VARIABLES - DARK/LIGHT MODE SYSTEM==============*/
+    :root {
+      /* LIGHT MODE (Clean & Sophisticated) */
+      --bg-primary: #F8FAFC;
+      --bg-surface: #FFFFFF;
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --accent-primary: #2563EB;
+      
+      --border-default: rgba(15, 23, 42, 0.12);
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="dark"] {
+      /* DARK MODE (Professional & Deep) */
+      --bg-primary: #020617;
+      --bg-surface: #0F172A;
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --accent-primary: #3B82F6;
+      
+      --border-default: rgba(248, 250, 252, 0.1);
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6), 0 4px 6px -4px rgb(0 0 0 / 0.6);
+      --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+
+    /*=============================NEON GLOW, INNER SHADOW & AMBIENT BLUE LIGHT (DARK MODE)==============*/
+    [data-theme="dark"] .card {
+      box-shadow: 
+        0 0 24px rgba(59, 130, 246, 0.2),
+        0 8px 28px rgba(15, 23, 42, 0.6),
+        inset 0 1px 0 rgba(248, 250, 252, 0.08),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    [data-theme="dark"] .card:hover {
+      box-shadow: 
+        0 0 32px rgba(59, 130, 246, 0.35),
+        0 12px 32px rgba(15, 23, 42, 0.7),
+        inset 0 1px 0 rgba(248, 250, 252, 0.12);
+      transform: translateY(-4px);
+    }
+
+    /* Button & Interactive Elements Glow + Inner Shadow */
+    [data-theme="dark"] .btn,
+    [data-theme="dark"] .theme-toggle,
+    [data-theme="dark"] .print-pdf-btn,
+    [data-theme="dark"] .nav-tab {
+      box-shadow: 
+        0 0 12px rgba(59, 130, 246, 0.25),
+        inset 0 1px 0 rgba(248, 250, 252, 0.06);
+      transition: all 0.2s ease;
+    }
+
+    [data-theme="dark"] .btn:hover,
+    [data-theme="dark"] .theme-toggle:hover,
+    [data-theme="dark"] .print-pdf-btn:hover,
+    [data-theme="dark"] .nav-tab:hover,
+    [data-theme="dark"] .nav-tab.active {
+      box-shadow: 
+        0 0 20px rgba(59, 130, 246, 0.45),
+        inset 0 1px 0 rgba(248, 250, 252, 0.12);
+      transform: translateY(-1px);
+    }
+
+    /* Ambient blue light pada tombol aksen */
+    [data-theme="dark"] .btn-primary,
+    [data-theme="dark"] .nav-tab.active {
+      box-shadow: 
+        0 0 22px rgba(59, 130, 246, 0.5),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    }
+
+    /*=============================PRINT STYLES (PDF Friendly)==============*/
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+        line-height: 1.5;
+      }
+      .header, .footer, .nav-tabs, .theme-toggle, .print-pdf-btn, 
+      .progress-bar, .social-links, .email-chips .fa-copy,
+      .btn, .card-icon, .theme-toggle, .print-pdf-btn {
+        display: none !important;
+      }
+      .card {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      a {
+        text-decoration: underline;
+        color: black !important;
+      }
+      h1, h2, h3, .card-title {
+        color: black !important;
+      }
+      .hero h1 {
+        -webkit-text-fill-color: black !important;
+        background: none !important;
+        color: black !important;
+      }
+      .credit-format, .email-chip {
+        border: 1px solid #aaa !important;
+        background: #f5f5f5 !important;
+        color: black !important;
+      }
+      .section {
+        display: block !important;
+      }
+      .section:not(.active) {
+        display: block !important;
+      }
+      .nav-tabs {
+        display: none !important;
+      }
+      [data-theme="dark"] .card {
+        box-shadow: none !important;
+        background: white !important;
+      }
+    }
+
+    /*=============================RESET & BASE STYLES==============*/
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    :root {
-      /* Light mode */
-      --ink: #0a0f1e;
-      --ink-light: #3d4666;
-      --ink-muted: #6b7494;
-      --paper: #f7f6f2;
-      --paper-warm: #eeecea;
-      --cream: #faf9f6;
-      --gold: #c9a84c;
-      --gold-light: #e8d08a;
-      --gold-dim: rgba(201,168,76,0.15);
-      --blue-accent: #2a5cff;
-      --blue-dim: rgba(42,92,255,0.1);
-      --card-bg: #ffffff;
-      --border: rgba(10,15,30,0.1);
-      --shadow-sm: 0 2px 12px rgba(10,15,30,0.06);
-      --shadow-md: 0 8px 32px rgba(10,15,30,0.09);
-      --shadow-lg: 0 20px 60px rgba(10,15,30,0.12);
-      --radius: 20px;
-      --radius-sm: 12px;
-      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --container-padding: clamp(16px, 5vw, 28px);
-    }
-
-    body.dark {
-      /* Dark mode */
-      --ink: #eef0f8;
-      --ink-light: #b0b8d8;
-      --ink-muted: #7880a0;
-      --paper: #0d1120;
-      --paper-warm: #111827;
-      --cream: #0a0f1e;
-      --gold: #d4b060;
-      --gold-light: #e8cc8a;
-      --gold-dim: rgba(212,176,96,0.12);
-      --blue-accent: #4d7aff;
-      --blue-dim: rgba(77,122,255,0.12);
-      --card-bg: #111827;
-      --border: rgba(238,240,248,0.08);
-      --shadow-sm: 0 2px 12px rgba(0,0,0,0.3);
-      --shadow-md: 0 8px 32px rgba(0,0,0,0.4);
-      --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
-    }
-
-    /* --------------------------------
-       BASE & LAYOUT
-    -------------------------------- */
     html {
       scroll-behavior: smooth;
-      overflow-x: hidden;
-      width: 100%;
+      scroll-padding-top: 80px;
     }
 
     body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--ink);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
       line-height: 1.7;
-      transition: background var(--transition), color var(--transition);
       overflow-x: hidden;
-      width: 100%;
-      min-height: 100vh;
+      transition: var(--transition);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Scrollable container */
-    .app-viewport {
-      width: 100%;
-      max-width: 100vw;
-      overflow-x: hidden;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      background: var(--cream);
-      transition: background var(--transition);
-      position: relative;
-      min-height: 100vh;
+    /*=============================LAYOUT CONTAINER==============*/
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
-    /* Grain overlay */
-    .app-viewport::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 9999;
-      opacity: 0.6;
-    }
-
-    /* --------------------------------
-       PROGRESS BAR
-    -------------------------------- */
+    /*=============================PROGRESS BAR==============*/
     .progress-bar {
       position: fixed;
       top: 0;
       left: 0;
-      width: 0%;
+      right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--gold), var(--blue-accent));
-      z-index: 1001;
-      transition: width 0.1s linear;
-      box-shadow: 0 0 12px var(--gold);
+      background: var(--accent-primary);
+      transform-origin: left;
+      transition: transform 0.1s linear;
+      z-index: 1000;
+      box-shadow: 0 0 10px var(--accent-primary);
     }
 
-    /* --------------------------------
-       HEADER
-    -------------------------------- */
+    /*=============================HEADER==============*/
     .header {
-      background: var(--ink);
-      color: #fff;
       position: sticky;
       top: 0;
-      z-index: 100;
-      border-bottom: 1px solid rgba(201,168,76,0.3);
-      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-default);
+      z-index: 999;
+      transition: var(--transition);
     }
 
-    .header::after {
-      content: '';
-      display: block;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    [data-theme="dark"] .header {
+      background: rgba(15, 23, 42, 0.95);
     }
 
     .header-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 14px var(--container-padding);
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 16px;
-      width: 100%;
+      justify-content: space-between;
+      padding: 16px 0;
+      gap: 20px;
     }
 
-    .logo-link {
+    .logo {
       display: flex;
       align-items: center;
       gap: 12px;
       text-decoration: none;
-      color: #fff;
-      transition: opacity var(--transition);
-      flex-shrink: 1;
-      min-width: 0;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--text-primary);
     }
 
-    .logo-link:hover {
-      opacity: 0.85;
-    }
-
-    .header-logo {
-      width: 38px;
-      height: 38px;
+    .logo img {
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      object-fit: contain;
-      border: 1.5px solid rgba(201,168,76,0.5);
-      padding: 3px;
-      background: rgba(255,255,255,0.06);
-      flex-shrink: 0;
-    }
-
-    .logo-text {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.2rem;
-      letter-spacing: 0.3px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      object-fit: cover;
+      border: 2px solid var(--accent-primary);
     }
 
     .header-actions {
       display: flex;
-      align-items: center;
       gap: 12px;
-      flex-shrink: 0;
+      align-items: center;
     }
 
-    .theme-toggle {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.15);
-      color: #fff;
-      width: 40px;
-      height: 40px;
+    .theme-toggle, .print-pdf-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-default);
+      color: var(--text-secondary);
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: all var(--transition);
-      font-size: 1rem;
-      flex-shrink: 0;
+      transition: var(--transition);
+      font-size: 1.1rem;
     }
 
-    .theme-toggle:hover {
-      background: var(--gold-dim);
-      border-color: var(--gold);
-      color: var(--gold);
+    .theme-toggle:hover, .print-pdf-btn:hover {
+      background: var(--accent-primary);
+      color: white;
+      transform: rotate(180deg);
     }
 
-    .back-home {
-      background: transparent;
-      color: #fff;
-      padding: 9px 20px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: all var(--transition);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid rgba(255,255,255,0.2);
-      letter-spacing: 0.2px;
-      white-space: nowrap;
+    .print-pdf-btn:hover {
+      transform: translateY(-2px) rotate(0deg);
     }
 
-    .back-home:hover {
-      background: rgba(255,255,255,0.1);
-      border-color: var(--gold);
-      color: var(--gold-light);
-    }
-
-    /* --------------------------------
-       HERO SECTION
-    -------------------------------- */
+    /*=============================HERO SECTION==============*/
     .hero {
-      background: var(--ink);
-      color: #fff;
-      padding: clamp(40px, 8vw, 72px) var(--container-padding) clamp(48px, 10vw, 80px);
       text-align: center;
+      padding: 80px 0 60px;
       position: relative;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 80% at 20% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 60% at 80% 50%, rgba(42,92,255,0.07) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--gold-dim);
-      border: 1px solid rgba(201,168,76,0.3);
-      color: var(--gold-light);
-      padding: 6px 16px;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-      position: relative;
-      z-index: 1;
-      max-width: 100%;
-      flex-wrap: wrap;
     }
 
     .hero h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2rem, 6vw, 4rem);
-      line-height: 1.15;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
       margin-bottom: 16px;
-      position: relative;
-      z-index: 1;
-      letter-spacing: -1px;
-      word-wrap: break-word;
-      max-width: 100%;
+      background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
-    .hero h1 em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-
-    .hero-sub {
-      color: rgba(255,255,255,0.55);
-      font-size: clamp(0.9rem, 2vw, 1rem);
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 1.2rem;
       max-width: 600px;
       margin: 0 auto;
-      position: relative;
-      z-index: 1;
-      font-weight: 300;
-      padding: 0 10px;
-      width: 100%;
     }
 
-    /* --------------------------------
-       NAVIGATION TABS
-    -------------------------------- */
-    .nav-area {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 var(--container-padding);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-      transform: translateY(-28px);
-      width: 100%;
-    }
-
+    /*=============================NAV TABS==============*/
     .nav-tabs {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 60px;
-      padding: 5px;
       display: flex;
-      flex-wrap: wrap;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      padding: 4px;
+      margin: 40px 0;
+      overflow: hidden;
       box-shadow: var(--shadow-md);
-      gap: 4px;
-      transition: background var(--transition), border-color var(--transition);
-      flex: 1 1 auto;
-      min-width: min(300px, 100%);
     }
 
     .nav-tab {
-      padding: 10px 16px;
-      border-radius: 40px;
-      text-decoration: none;
-      color: var(--ink-muted);
-      font-weight: 600;
-      font-size: 0.85rem;
-      transition: all var(--transition);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      border: none;
+      flex: 1;
+      padding: 16px 24px;
       background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.95rem;
       cursor: pointer;
-      letter-spacing: 0.2px;
-      white-space: nowrap;
-      flex: 1 1 auto;
+      transition: var(--transition);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      display: flex;
+      align-items: center;
       justify-content: center;
-    }
-
-    .nav-tab i {
-      font-size: 0.85rem;
-    }
-
-    .nav-tab.active {
-      background: var(--ink);
-      color: #fff;
-      box-shadow: 0 4px 14px rgba(10,15,30,0.2);
-    }
-
-    body.dark .nav-tab.active {
-      background: var(--blue-accent);
-      box-shadow: 0 4px 14px rgba(77,122,255,0.3);
-    }
-
-    .nav-tab:hover:not(.active) {
-      color: var(--ink);
-      background: var(--paper-warm);
-    }
-
-    .reading-badge {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      color: var(--ink-muted);
-      font-size: 0.8rem;
-      padding: 8px 16px;
-      border-radius: 40px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: var(--shadow-sm);
-      font-weight: 500;
-      transition: background var(--transition), border-color var(--transition);
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .reading-badge i {
-      color: var(--gold);
-    }
-
-    /* --------------------------------
-       MAIN LAYOUT: SIDEBAR + CONTENT
-    -------------------------------- */
-    .content-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 var(--container-padding) 60px;
-      display: grid;
-      grid-template-columns: 240px 1fr;
-      gap: clamp(16px, 3vw, 32px);
-      align-items: start;
-      width: 100%;
-    }
-
-    /* Table of Contents */
-    .toc {
-      position: sticky;
-      top: 100px;
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      box-shadow: var(--shadow-sm);
-      transition: background var(--transition), border-color var(--transition);
-      max-height: calc(100vh - 120px);
-      overflow-y: auto;
-    }
-
-    .toc-title {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--ink-muted);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
       gap: 8px;
     }
 
-    .toc-list {
-      list-style: none;
+    .nav-tab.active,
+    .nav-tab:hover {
+      background: var(--accent-primary);
+      color: white;
+      box-shadow: var(--shadow-lg);
     }
 
-    .toc-list li {
-      margin-bottom: 4px;
+    /*=============================CONTENT SECTIONS==============*/
+    .section {
+      display: none;
+      animation: fadeInUp 0.4s ease-out;
     }
 
-    .toc-list a {
+    .section.active {
       display: block;
-      color: var(--ink-muted);
-      text-decoration: none;
-      font-size: 0.8rem;
-      padding: 6px 8px;
-      border-radius: 6px;
-      transition: all var(--transition);
-      font-weight: 500;
-      line-height: 1.3;
-      word-wrap: break-word;
-    }
-
-    .toc-list a:hover,
-    .toc-list a.active-toc {
-      color: var(--blue-accent);
-      background: var(--blue-dim);
-    }
-
-    .toc-section-label {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--gold);
-      font-weight: 700;
-      padding: 8px 8px 2px;
-      display: block;
-    }
-
-    /* Cards Column */
-    .cards-col {
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-      width: 100%;
-      min-width: 0;
     }
 
     .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: clamp(24px, 4vw, 44px);
-      box-shadow: var(--shadow-md);
-      transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
-      scroll-margin-top: 100px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin: 40px 0;
+      transition: var(--transition);
       position: relative;
       overflow: hidden;
-      animation: fadeUp 0.5s ease both;
-      width: 100%;
-    }
-
-    .card:nth-child(2) {
-      animation-delay: 0.08s;
-    }
-
-    .card:nth-child(3) {
-      animation-delay: 0.16s;
     }
 
     .card::before {
@@ -571,907 +406,281 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--gold), var(--blue-accent), var(--gold));
-      opacity: 0;
-      transition: opacity var(--transition);
-    }
-
-    .card:hover::before {
-      opacity: 1;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-primary), transparent);
     }
 
     .card:hover {
-      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
     }
 
     .card-header {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 16px;
       margin-bottom: 24px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-      flex-wrap: wrap;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-default);
     }
 
     .card-icon {
-      width: 52px;
-      height: 52px;
-      background: var(--ink);
+      width: 56px;
+      height: 56px;
       border-radius: 16px;
+      background: var(--accent-primary);
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.4rem;
-      color: var(--gold-light);
+      font-size: 1.25rem;
       flex-shrink: 0;
-      border: 1px solid rgba(201,168,76,0.2);
-    }
-
-    body.dark .card-icon {
-      background: rgba(255,255,255,0.05);
-    }
-
-    .card-header-text {
-      flex: 1;
-      min-width: 200px;
-    }
-
-    .section-eyebrow {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 6px;
     }
 
     .card-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      color: var(--ink);
-      line-height: 1.2;
-      letter-spacing: -0.5px;
-      transition: color var(--transition);
-      word-wrap: break-word;
-    }
-
-    .meta-row {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    .meta-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--paper-warm);
-      color: var(--ink-light);
-      padding: 6px 12px;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      border: 1px solid var(--border);
-      transition: background var(--transition), border-color var(--transition);
-      white-space: nowrap;
-    }
-
-    .meta-chip i {
-      font-size: 0.75rem;
-      color: var(--gold);
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: var(--blue-accent);
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 40px;
-      font-size: 0.7rem;
+      font-size: 1.75rem;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      white-space: nowrap;
+      line-height: 1.3;
     }
 
-    .badge.gold {
-      background: var(--gold);
-      color: var(--ink);
-    }
-
-    /* Section headings */
-    .section-heading {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.3rem;
-      color: var(--ink);
-      margin: 32px 0 14px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      transition: color var(--transition);
-      scroll-margin-top: 100px;
-      flex-wrap: wrap;
-    }
-
-    .section-heading .num {
-      width: 26px;
-      height: 26px;
-      background: var(--gold);
-      color: var(--ink);
-      border-radius: 50%;
-      font-size: 0.7rem;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-family: 'DM Sans', sans-serif;
+    .card-subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-top: 4px;
     }
 
     /* Typography */
-    p {
-      color: var(--ink-light);
-      margin-bottom: 14px;
-      font-size: 0.95rem;
-      transition: color var(--transition);
-      word-wrap: break-word;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 32px 0 16px;
+      color: var(--text-primary);
     }
 
-    p a {
-      color: var(--blue-accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      word-wrap: break-word;
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 24px 0 12px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      font-size: 1rem;
     }
 
     ul, ol {
-      color: var(--ink-light);
-      margin: 10px 0 18px 22px;
-      font-size: 0.95rem;
+      padding-left: 28px;
+      margin-bottom: 20px;
     }
 
     li {
       margin-bottom: 8px;
-      word-wrap: break-word;
+      color: var(--text-secondary);
     }
 
-    li strong {
-      color: var(--ink);
-    }
-
-    code {
-      background: var(--paper-warm);
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 0.9em;
-      word-wrap: break-word;
-    }
-
-    /* Callout boxes */
-    .callout {
-      border-radius: var(--radius-sm);
-      padding: 18px 20px;
-      margin: 20px 0;
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      width: 100%;
-    }
-
-    .callout.info {
-      background: var(--blue-dim);
-      border: 1px solid rgba(42,92,255,0.2);
-    }
-
-    .callout.success {
-      background: rgba(16,185,129,0.07);
-      border: 1px solid rgba(16,185,129,0.2);
-    }
-
-    .callout.warning {
-      background: rgba(245,158,11,0.07);
-      border: 1px solid rgba(245,158,11,0.2);
-    }
-
-    .callout-icon {
-      font-size: 1.2rem;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .callout.info .callout-icon {
-      color: var(--blue-accent);
-    }
-
-    .callout.success .callout-icon {
-      color: #10b981;
-    }
-
-    .callout.warning .callout-icon {
-      color: #f59e0b;
-    }
-
-    .callout-text {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .callout-text strong {
-      color: var(--ink);
-      display: block;
-      margin-bottom: 4px;
-      font-size: 0.9rem;
-    }
-
-    .callout-text p {
-      color: var(--ink-light);
-      margin: 0;
-      font-size: 0.88rem;
-    }
-
-    /* Table */
-    .table-wrap {
-      overflow-x: auto;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-      margin: 20px 0;
-      width: 100%;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 500px;
-    }
-
-    thead {
-      background: var(--ink);
-    }
-
-    th {
-      color: rgba(255,255,255,0.9);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 12px 16px;
-      text-align: left;
-    }
-
-    td {
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.9rem;
-      color: var(--ink-light);
-      transition: color var(--transition), background var(--transition);
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    tbody tr:hover td {
-      background: var(--paper-warm);
-    }
-
-    td a {
-      color: var(--blue-accent);
+    a {
+      color: var(--accent-primary);
       text-decoration: none;
       font-weight: 500;
-      transition: color var(--transition);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      word-wrap: break-word;
+      transition: var(--transition);
     }
 
-    td a::after {
-      content: '↗';
-      font-size: 0.75rem;
-      opacity: 0.6;
-    }
-
-    td a:hover {
+    a:hover {
       text-decoration: underline;
     }
 
-    /* Platform icons */
-    .platform-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-      margin-right: 8px;
-      flex-shrink: 0;
-    }
-
-    .pi-yt {
-      background: rgba(255,0,0,0.1);
-      color: #ff0000;
-    }
-
-    .pi-tt {
-      background: rgba(0,0,0,0.08);
-      color: var(--ink);
-    }
-
-    .pi-ig {
-      background: rgba(214,94,233,0.1);
-      color: #d65ee9;
-    }
-
-    .pi-sc {
-      background: rgba(255,85,0,0.1);
-      color: #ff5500;
-    }
-
-    .pi-gh {
-      background: rgba(10,15,30,0.08);
-      color: var(--ink);
-    }
-
-    body.dark .pi-tt,
-    body.dark .pi-gh {
-      background: rgba(255,255,255,0.08);
-      color: var(--ink);
-    }
-
-    /* Sitemap grid */
-    .sitemap-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 16px;
-      margin: 20px 0;
-      width: 100%;
-    }
-
-    .sitemap-card {
-      background: var(--paper-warm);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 18px;
-      transition: all var(--transition);
-      width: 100%;
-    }
-
-    .sitemap-card:hover {
-      border-color: var(--gold);
-      box-shadow: var(--shadow-sm);
-      transform: translateY(-2px);
-    }
-
-    .sitemap-card-head {
+    /* Email Chips */
+    .email-chips {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 14px;
-    }
-
-    .sitemap-card-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      background: var(--ink);
-      color: var(--gold-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      flex-shrink: 0;
-    }
-
-    .sitemap-card h4 {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--ink);
-      word-wrap: break-word;
-    }
-
-    .sitemap-stat {
-      font-size: 1.8rem;
-      font-family: 'DM Serif Display', serif;
-      color: var(--ink);
-      line-height: 1;
-      margin-bottom: 4px;
-      word-wrap: break-word;
-    }
-
-    .sitemap-stat-label {
-      font-size: 0.75rem;
-      color: var(--ink-muted);
-      font-weight: 500;
-      word-wrap: break-word;
-    }
-
-    /* Album chips */
-    .album-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 14px 0;
-    }
-
-    .album-chip {
-      background: var(--ink);
-      color: rgba(255,255,255,0.85);
-      padding: 6px 12px;
-      border-radius: 40px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      white-space: nowrap;
-    }
-
-    .album-chip .count {
-      background: var(--gold);
-      color: var(--ink);
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      font-size: 0.7rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-    }
-
-    /* Email chips */
-    .email-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 16px 0;
+      flex-direction: column;
+      gap: 12px;
+      margin: 24px 0;
     }
 
     .email-chip {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 8px;
-      background: var(--paper-warm);
-      border: 1px solid var(--border);
-      color: var(--ink-light);
-      padding: 8px 16px;
-      border-radius: 40px;
-      font-size: 0.85rem;
-      font-weight: 500;
+      justify-content: space-between;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-default);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
       cursor: pointer;
-      transition: all var(--transition);
+      transition: var(--transition);
       position: relative;
-      word-wrap: break-word;
-      max-width: 100%;
-    }
-
-    .email-chip i {
-      color: var(--gold);
-      font-size: 0.85rem;
-      flex-shrink: 0;
+      overflow: hidden;
     }
 
     .email-chip:hover {
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
     }
 
-    .email-chip:hover i {
-      color: var(--gold-light);
+    .email-chip-label {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-right: 12px;
+      flex: 1;
     }
 
-    .email-chip .copy-hint {
-      font-size: 0.7rem;
-      opacity: 0;
-      transition: opacity var(--transition);
-      color: var(--gold-light);
-      white-space: nowrap;
+    .email-chip-address {
+      font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+      font-size: 0.95rem;
+      color: var(--accent-primary);
+      word-break: break-all;
     }
 
-    .email-chip:hover .copy-hint {
-      opacity: 1;
-    }
-
-    /* License grid */
+    /* License Grid */
     .license-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 12px;
-      margin: 16px 0;
-      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 32px 0;
     }
 
-    .license-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 16px 12px;
+    .license-item {
+      background: var(--bg-surface);
+      border: 2px solid var(--border-default);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: var(--transition);
       text-align: center;
-      transition: all var(--transition);
-    }
-
-    .license-card:hover {
-      border-color: var(--gold);
-      background: var(--gold-dim);
-    }
-
-    .license-card .license-type {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.4rem;
-      color: var(--ink);
+      text-decoration: none;
       display: block;
-      margin-bottom: 4px;
     }
 
-    .license-card strong {
-      display: block;
-      color: var(--ink);
-      margin-bottom: 4px;
+    .license-item:hover {
+      border-color: var(--accent-primary);
+      transform: translateY(-2px);
+    }
+
+    .license-type {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .credit-format {
+      background: rgba(37, 99, 235, 0.1);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin: 16px 0;
+      font-family: 'SF Mono', Monaco, monospace;
       font-size: 0.9rem;
-      word-wrap: break-word;
+      text-align: left;
+      word-break: break-all;
     }
 
-    .license-card .license-desc {
-      font-size: 0.75rem;
-      color: var(--ink-muted);
-      word-wrap: break-word;
-    }
-
-    .print-btn {
+    /* Buttons */
+    .btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--ink-muted);
-      padding: 6px 12px;
-      border-radius: 40px;
-      font-size: 0.75rem;
+      gap: 8px;
+      padding: 12px 24px;
+      border: 1px solid var(--accent-primary);
+      background: var(--accent-primary);
+      color: white;
+      border-radius: var(--radius-md);
       font-weight: 600;
       cursor: pointer;
-      transition: all var(--transition);
-      white-space: nowrap;
-    }
-
-    .print-btn:hover {
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
-    }
-
-    /* --------------------------------
-       FOOTER
-    -------------------------------- */
-    .footer {
-      background: var(--ink);
-      color: rgba(255,255,255,0.7);
-      padding: 50px var(--container-padding) 30px;
-      text-align: center;
-      border-top: 1px solid rgba(201,168,76,0.2);
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .footer::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201,168,76,0.05) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .footer-logo {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: contain;
-      border: 1.5px solid rgba(201,168,76,0.4);
-      padding: 6px;
-      background: rgba(255,255,255,0.05);
-      margin-bottom: 16px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .footer-name {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.3rem;
-      color: #fff;
-      margin-bottom: 8px;
-      position: relative;
-      z-index: 1;
-      word-wrap: break-word;
-    }
-
-    .footer-tagline {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.4);
-      margin-bottom: 28px;
-      letter-spacing: 0.3px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
-    }
-
-    .footer-link {
-      color: rgba(255,255,255,0.7);
+      transition: var(--transition);
       text-decoration: none;
-      font-size: 0.85rem;
-      padding: 6px 14px;
-      border-radius: 40px;
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: all var(--transition);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: 500;
+      font-size: 0.95rem;
     }
 
-    .footer-link:hover {
-      background: rgba(201,168,76,0.15);
-      border-color: rgba(201,168,76,0.4);
-      color: var(--gold-light);
+    .btn-outline {
+      background: transparent;
+      color: var(--accent-primary);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /*=============================FOOTER==============*/
+    .footer {
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border-default);
+      padding: 60px 0 40px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .footer-content {
+      opacity: 0.8;
+      transition: var(--transition);
+    }
+
+    .footer-content:hover {
+      opacity: 1;
     }
 
     .social-links {
       display: flex;
       justify-content: center;
-      gap: 8px;
-      margin-bottom: 28px;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
+      gap: 16px;
+      margin: 32px 0;
     }
 
     .social-link {
-      width: 38px;
-      height: 38px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.12);
-      color: rgba(255,255,255,0.6);
-      text-decoration: none;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-default);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.9rem;
-      transition: all var(--transition);
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      transition: var(--transition);
     }
 
     .social-link:hover {
-      background: rgba(255,255,255,0.08);
-      border-color: var(--gold);
-      color: var(--gold-light);
-      transform: translateY(-3px);
+      background: var(--accent-primary);
+      color: white;
+      transform: translateY(-4px) rotate(5deg);
     }
 
-    .github-links {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 28px;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
+    /*=============================RESPONSIVE & ANIMATIONS==============*/
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 16px;
+      }
+      .nav-tabs {
+        flex-direction: column;
+      }
+      .nav-tab {
+        border-radius: 8px;
+      }
+      .card {
+        padding: 24px;
+        margin: 24px 0;
+      }
+      .license-grid {
+        grid-template-columns: 1fr;
+      }
+      .card-header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
     }
 
-    .github-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: rgba(255,255,255,0.65);
-      text-decoration: none;
-      font-size: 0.8rem;
-      padding: 6px 14px;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 40px;
-      transition: all var(--transition);
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
     }
 
-    .github-link:hover {
-      border-color: rgba(201,168,76,0.4);
-      color: var(--gold-light);
-      background: rgba(201,168,76,0.07);
-    }
-
-    .license-tag {
-      background: var(--gold);
-      color: var(--ink);
-      padding: 2px 6px;
-      border-radius: 20px;
-      font-size: 0.6rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      white-space: nowrap;
-    }
-
-    .footer-divider {
-      width: 60px;
-      height: 1px;
-      background: rgba(201,168,76,0.3);
-      margin: 0 auto 20px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .copyright {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.35);
-      letter-spacing: 0.5px;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* --------------------------------
-       BACK TO TOP
-    -------------------------------- */
-    #backToTop {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 44px;
-      height: 44px;
-      background: var(--ink);
-      color: #fff;
-      border: 1px solid rgba(201,168,76,0.4);
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-md);
-      z-index: 99;
-      transition: all var(--transition);
-      font-size: 0.9rem;
-    }
-
-    #backToTop:hover {
-      background: var(--gold);
-      color: var(--ink);
-      border-color: var(--gold);
-      transform: translateY(-3px);
-    }
-
-    /* --------------------------------
-       TOAST NOTIFICATION
-    -------------------------------- */
-    .toast {
-      position: fixed;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: var(--ink);
-      color: #fff;
-      padding: 10px 24px;
-      border-radius: 40px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      border: 1px solid rgba(201,168,76,0.3);
-      box-shadow: var(--shadow-lg);
-      z-index: 9998;
-      opacity: 0;
-      transition: all var(--transition);
-      pointer-events: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      max-width: 90vw;
-      width: auto;
-    }
-
-    .toast.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-
-    .toast i {
-      color: var(--gold);
-      flex-shrink: 0;
-    }
-
-    .toast span {
-      word-wrap: break-word;
-    }
-
-    /* --------------------------------
-       COOKIE BANNER
-    -------------------------------- */
-    .cookie-banner {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      max-width: 400px;
-      width: calc(100% - 40px);
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: var(--shadow-lg);
-      display: none;
-      z-index: 1000;
-      transition: background var(--transition), border-color var(--transition);
-      margin: 0 auto;
-    }
-
-    .cookie-banner-head {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .cookie-banner-head i {
-      color: var(--gold);
-      font-size: 1.1rem;
-    }
-
-    .cookie-banner-head strong {
-      font-size: 0.95rem;
-      color: var(--ink);
-    }
-
-    .cookie-banner p {
-      font-size: 0.82rem;
-      color: var(--ink-muted);
-      margin-bottom: 16px;
-    }
-
-    .cookie-btns {
-      display: flex;
-      gap: 10px;
-    }
-
-    .cookie-btn {
-      flex: 1;
-      padding: 8px 14px;
-      border-radius: 40px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      cursor: pointer;
-      border: 1px solid var(--border);
-      background: var(--paper-warm);
-      color: var(--ink-light);
-      transition: all var(--transition);
-    }
-
-    .cookie-btn.primary {
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
-    }
-
-    .cookie-btn:hover {
-      transform: translateY(-1px);
-    }
-
-    .cookie-btn.primary:hover {
-      background: var(--blue-accent);
-      border-color: var(--blue-accent);
-    }
-
-    /* --------------------------------
-       KEYFRAMES
-    -------------------------------- */
-    @keyframes fadeUp {
+    @keyframes fadeInUp {
       from {
         opacity: 0;
         transform: translateY(20px);
@@ -1482,696 +691,340 @@
       }
     }
 
-    /* --------------------------------
-       RESPONSIVE
-    -------------------------------- */
-    @media (max-width: 900px) {
-      .content-wrap {
-        grid-template-columns: 1fr;
-      }
-      .toc {
-        display: none;
-      }
-    }
-
-    @media (max-width: 700px) {
-      .header-inner {
-        flex-direction: column;
-        text-align: center;
-      }
-      .logo-link {
-        justify-content: center;
-        width: 100%;
-      }
-      .header-actions {
-        width: 100%;
-        justify-content: center;
-      }
-      .nav-area {
-        flex-direction: column;
-      }
-      .nav-tabs {
-        width: 100%;
-      }
-      .nav-tab {
-        padding: 8px 12px;
-        font-size: 0.8rem;
-      }
-      .reading-badge {
-        width: 100%;
-        justify-content: center;
-      }
-      .card-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .meta-row {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .meta-chip {
-        width: 100%;
-        justify-content: center;
-      }
-      .badge {
-        width: 100%;
-        justify-content: center;
-      }
-      .print-btn {
-        width: 100%;
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .hero-eyebrow {
-        font-size: 0.7rem;
-        padding: 4px 12px;
-      }
-      .hero h1 {
-        font-size: 1.8rem;
-      }
-      .card-title {
-        font-size: 1.4rem;
-      }
-      .section-heading {
-        font-size: 1.1rem;
-      }
-      .sitemap-grid {
-        grid-template-columns: 1fr;
-      }
-      .license-grid {
-        grid-template-columns: 1fr;
-      }
-      .email-chip {
-        width: 100%;
-        justify-content: center;
-      }
-      .email-chip .copy-hint {
-        opacity: 1;
-      }
-      .github-links {
-        flex-direction: column;
-        align-items: center;
-      }
-      .github-link {
-        width: 100%;
-        justify-content: center;
-      }
-      .cookie-banner {
-        left: 10px;
-        right: 10px;
-        width: calc(100% - 20px);
-        padding: 16px;
-      }
-      .cookie-btns {
-        flex-direction: column;
-      }
-    }
-
-    @media print {
-      .header,
-      .nav-area,
-      .toc,
-      .cookie-banner,
-      #backToTop,
-      .toast,
-      .theme-toggle,
-      .progress-bar {
-        display: none !important;
-      }
-      .content-wrap {
-        grid-template-columns: 1fr;
-        padding: 0 16px;
-      }
-      .card {
-        box-shadow: none;
-        border: 1px solid #ddd;
-        page-break-inside: avoid;
-      }
-      .app-viewport::before {
-        display: none;
-      }
+    /* Utility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
     }
   </style>
 </head>
-<body>
-  <div class="app-viewport">
-    <!-- Progress Bar -->
-    <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Scroll progress"></div>
 
-    <!-- Header -->
-    <header class="header">
+<body data-theme="dark">
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
       <div class="header-inner">
-        <a href="https://hajirmuhaajir.github.io/main-showcase/" class="logo-link" aria-label="Beranda Muhaajir">
-          <img src="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png" alt="Logo Muhaajir" class="header-logo" loading="lazy" decoding="async">
-          <span class="logo-text">Muhaajir Official</span>
+        <a href="/" class="logo">
+          <img src="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png" alt="Muhaajir Official" width="40" height="40">
+          <span>Muhaajir</span>
         </a>
         <div class="header-actions">
-          <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
-            <i class="fas fa-moon" id="themeIcon"></i>
+          <!-- Tombol Cetak PDF -->
+          <button class="print-pdf-btn" id="printPDFBtn" aria-label="Cetak halaman sebagai PDF">
+            <i class="fas fa-print"></i>
           </button>
-          </div> <!-- Perbaiki: tutup header-actions -->
-    </header> <!-- header ditutup dengan benar -->
-
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-eyebrow">
-        <i class="fas fa-scroll"></i>
-        Dokumen Legal
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
       </div>
-      <h1>Privasi, Syarat &<br><em>Peta Situs</em></h1>
-      <p class="hero-sub">Transparansi penuh tentang cara data dikelola dan hak atas konten Muhaajir Official.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Legal & Sitemap</h1>
+        <p>Dokumen resmi Muhaajir Official – Musik · Fotografi · Tools Digital<br>Versi 3.4 — 19 April 2026</p>
+      </div>
     </section>
 
-    <!-- Navigation Tabs + Reading Time -->
-    <div class="nav-area">
-      <nav class="nav-tabs" role="tablist" aria-label="Navigasi halaman">
-        <a href="#privacy" class="nav-tab active" role="tab" aria-selected="true">
-          <i class="fas fa-shield-alt"></i> Privasi
-        </a>
-        <a href="#terms" class="nav-tab" role="tab" aria-selected="false">
-          <i class="fas fa-file-contract"></i> Syarat
-        </a>
-        <a href="#sitemap" class="nav-tab" role="tab" aria-selected="false">
-          <i class="fas fa-sitemap"></i> Sitemap
-        </a>
+    <div class="container">
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-tab="privacy">
+          <i class="fas fa-shield-alt"></i>
+          Privasi
+        </button>
+        <button class="nav-tab" data-tab="terms">
+          <i class="fas fa-file-contract"></i>
+          Syarat & Ketentuan
+        </button>
+        <button class="nav-tab" data-tab="sitemap">
+          <i class="fas fa-sitemap"></i>
+          Sitemap
+        </button>
       </nav>
-      <div class="reading-badge">
-        <i class="fas fa-clock"></i> ~5 menit baca
-      </div>
-    </div>
 
-    <!-- Main Content: Sidebar + Cards -->
-    <div class="content-wrap">
-      <!-- Table of Contents Sidebar -->
-      <aside class="toc" aria-label="Daftar isi">
-        <div class="toc-title">
-          <i class="fas fa-list"></i> Isi Halaman
+      <!-- Privacy Policy Section -->
+      <section id="privacy" class="section active">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div>
+              <h2 class="card-title">Kebijakan Privasi</h2>
+              <p class="card-subtitle">Versi 3.4 — 19 April 2026</p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h3>Komitmen Privasi</h3>
+            <p>Saya, Muhaajir, berkomitmen melindungi privasi Anda dengan transparan. Data Anda tidak pernah dijual, disewakan, atau dibagikan untuk keperluan pemasaran.</p>
+
+            <h3>1. Data yang Dikumpulkan</h3>
+            <p>1.1 Informasi sukarela: Nama dan alamat email yang Anda kirim melalui formulir kontak.<br>
+               1.2 Data teknis: Alamat IP, jenis browser, dan halaman yang dikunjungi (dicatat secara anonim melalui Google Analytics).<br>
+               1.3 Preferensi lokal: Pengaturan tema (dark/light mode) dan preferensi tools yang disimpan di browser Anda.<br>
+               1.4 Data sesi tools: Penggunaan Hajirsync, Muhaajir Delta, Muhaajir Scrub, atau Mehaajir Vault hanya menyimpan preferensi lokal.</p>
+
+            <h3>2. Penggunaan Cookies & Pihak Ketiga</h3>
+            <p>Cookies fungsional: Menyimpan preferensi pengguna (tidak mengumpulkan data pribadi).<br>
+               Cookies analitik: Google Analytics untuk meningkatkan pengalaman situs (anonim).<br>
+               Formulir kontak diproses oleh Formspree (data dihapus otomatis setelah maksimal 30 hari).<br>
+               Penyimpanan aset musik: Dropbox dan Google Drive.<br>
+               Link eksternal (YouTube, TikTok, Instagram, SoundCloud, GitHub) tunduk pada kebijakan privasi masing-masing.</p>
+
+            <h3>3. Keamanan Data</h3>
+            <p>Seluruh situs menggunakan koneksi HTTPS/TLS.<br>
+               Content Security Policy (CSP) aktif.<br>
+               Validasi input untuk mencegah serangan.<br>
+               Akses data sangat dibatasi.</p>
+
+            <h3>4. Hak Anda</h3>
+            <p>Anda berhak untuk:<br>
+               • Mengakses data pribadi yang tersimpan tentang Anda.<br>
+               • Meminta perbaikan atau penghapusan data (right to erasure).<br>
+               • Membatasi pemrosesan data.<br><br>
+               Untuk menggunakan hak tersebut, silakan hubungi: <strong>hajirmuhaajir@yahoo.com</strong></p>
+          </div>
         </div>
-        <ul class="toc-list">
-          <li><span class="toc-section-label">Privasi</span></li>
-          <li><a href="#s-collect">Data Dikumpulkan</a></li>
-          <li><a href="#s-cookies">Cookies</a></li>
-          <li><a href="#s-formspree">Formulir Kontak</a></li>
-          <li><a href="#s-third">Pihak Ketiga</a></li>
-          <li><a href="#s-security">Keamanan</a></li>
-          <li><a href="#s-rights">Hak Anda</a></li>
-          <li><span class="toc-section-label">Syarat</span></li>
-          <li><a href="#s-license">Lisensi Musik</a></li>
-          <li><a href="#s-use">Penggunaan</a></li>
-          <li><a href="#s-disclaimer">Disclaimer</a></li>
-          <li><span class="toc-section-label">Sitemap</span></li>
-          <li><a href="#s-stats">Statistik</a></li>
-          <li><a href="#s-social">Media Sosial</a></li>
-          <li><a href="#s-contact">Kontak</a></li>
-        </ul>
-      </aside>
+      </section>
 
-      <!-- Cards Column -->
-      <div class="cards-col">
-        <!-- Kebijakan Privasi Card -->
-        <section class="card" id="privacy">
+      <!-- Terms & Conditions -->
+      <section id="terms" class="section">
+        <div class="card">
           <div class="card-header">
-            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
-            <div class="card-header-text">
-              <div class="section-eyebrow">Dokumen Legal</div>
-              <h1 class="card-title">Kebijakan Privasi</h1>
+            <div class="card-icon">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <div>
+              <h2 class="card-title">Syarat & Ketentuan</h2>
+              <p class="card-subtitle">Versi 3.4 — 19 April 2026</p>
             </div>
           </div>
 
-          <div class="meta-row">
-            <span class="meta-chip"><i class="fas fa-tag"></i> Versi 3.2</span>
-            <span class="meta-chip"><i class="fas fa-calendar"></i> 7 Februari 2026</span>
-            <button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i> Cetak</button>
+          <div class="space-y-4">
+            <p>Dengan mengakses situs ini, Anda dianggap menyetujui ketentuan berikut:</p>
+
+            <h3>1. Kekayaan Intelektual & Lisensi</h3>
+            <p>1.1 Semua karya musik (12 lagu original: 5 Fragmen Suara + 7 Resonansi Dalam Diam), foto, teks, desain, dan tools digital adalah milik penuh Muhaajir dan dilindungi hak cipta.<br>
+               1.2 Penggunaan Personal: Streaming, download, dan mendengarkan untuk keperluan pribadi & non-komersial gratis.<br>
+               1.3 Penggunaan Komersial (iklan, film, event, dll): Wajib mendapatkan lisensi berbayar.<br>
+               1.4 Cover / Remix: Diperbolehkan dengan mencantumkan kredit jelas:<br>
+               <span class="credit-format">“© Muhaajir – hajirmuhaajir.github.io”</span><br>
+               1.5 Tools digital (Hajirsync, Muhaajir Delta, Muhaajir Scrub, Mehaajir Vault) adalah properti intelektual Muhaajir. Penggunaan komersial memerlukan izin.</p>
+
+            <h3>2. Larangan</h3>
+            <p>Dilarang mendistribusikan ulang, menjual, atau mengklaim kepemilikan konten tanpa izin tertulis.<br>
+               Dilarang melakukan scraping otomatis atau upaya meretas sistem.<br>
+               Kredit wajib diberikan saat menggunakan foto atau musik.</p>
+
+            <h3>3. Batasan Tanggung Jawab (Disclaimer)</h3>
+            <p>Situs dan konten disediakan “sebagaimana adanya” tanpa jaminan ketersediaan atau bebas kesalahan.<br>
+               Kami tidak bertanggung jawab atas kegagalan unduhan di Dropbox/Google Drive atau dampak teknis dari penggunaan tools.<br>
+               Tautan ke platform eksternal bukan merupakan endorsement.<br>
+               Muhaajir berhak mengubah atau menghapus konten kapan saja tanpa pemberitahuan sebelumnya.</p>
+
+            <h3>4. Hukum Berlaku</h3>
+            <p>Setiap sengketa akan diselesaikan di bawah hukum Indonesia, dengan domisili hukum di Bogor, Indonesia.</p>
           </div>
+        </div>
+      </section>
 
-          <div class="callout info">
-            <i class="fas fa-heart callout-icon"></i>
-            <div class="callout-text">
-              <strong>Komitmen Privasi</strong>
-              <p>Saya, Muhaajir, berkomitmen untuk melindungi privasi setiap pengunjung situs ini secara transparan.</p>
-            </div>
-          </div>
-
-          <h2 class="section-heading" id="s-collect"><span class="num">1</span> Informasi yang Dikumpulkan</h2>
-          <p>Situs ini dapat mengumpulkan data berikut saat Anda berinteraksi:</p>
-          <ul>
-            <li><strong>Data kontak:</strong> Nama dan alamat email yang Anda isi melalui formulir kontak.</li>
-            <li><strong>Data teknis:</strong> Alamat IP, jenis browser, dan halaman yang dikunjungi (via Google Analytics).</li>
-            <li><strong>Preferensi lokal:</strong> Pengaturan tema (dark/light mode) yang tersimpan di browser Anda.</li>
-          </ul>
-
-          <h2 class="section-heading" id="s-cookies"><span class="num">2</span> Penggunaan Cookies</h2>
-          <p>Situs menggunakan dua jenis cookies:</p>
-          <ul>
-            <li><strong>Cookies fungsional:</strong> Menyimpan preferensi seperti <code>darkMode</code> dan <code>lastTrack</code>.</li>
-            <li><strong>Cookies analitik:</strong> Google Analytics mengumpulkan data penggunaan secara anonim untuk meningkatkan pengalaman pengguna.</li>
-          </ul>
-
-          <div class="callout warning">
-            <i class="fas fa-cookie-bite callout-icon"></i>
-            <div class="callout-text">
-              <strong>Kontrol Cookie</strong>
-              <p>Anda dapat menolak cookies melalui banner di halaman ini. Cookies fungsional tidak mengumpulkan data pribadi.</p>
-            </div>
-          </div>
-
-          <h2 class="section-heading" id="s-formspree"><span class="num">3</span> Formulir Kontak (Formspree)</h2>
-          <p>Pesan yang dikirim melalui formulir kontak diproses oleh <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspree</a>. Data disimpan maksimal <strong>30 hari</strong> sebelum dihapus secara otomatis dari server mereka.</p>
-
-          <h2 class="section-heading" id="s-third"><span class="num">4</span> Layanan Pihak Ketiga</h2>
-          <p>Situs ini menampilkan tautan atau konten dari layanan berikut. Interaksi Anda dengan layanan tersebut tunduk pada kebijakan privasi masing-masing:</p>
-          <ul>
-            <li>YouTube, GitHub Pages, TikTok, Instagram, SoundCloud</li>
-          </ul>
-
-          <h2 class="section-heading" id="s-security"><span class="num">5</span> Keamanan Data</h2>
-          <p>Langkah-langkah keamanan yang diterapkan:</p>
-          <ul>
-            <li>Seluruh koneksi dienkripsi dengan <strong>HTTPS/TLS</strong></li>
-            <li>Validasi input untuk mencegah injeksi berbahaya</li>
-            <li>Content Security Policy (CSP) aktif</li>
-            <li>Akses data dibatasi hanya untuk keperluan operasional</li>
-          </ul>
-
-          <div class="callout success">
-            <i class="fas fa-lock callout-icon"></i>
-            <div class="callout-text">
-              <strong>Tidak Ada Penjualan Data</strong>
-              <p>Data Anda tidak pernah dijual, disewakan, atau dibagi dengan pihak ketiga untuk keperluan pemasaran.</p>
-            </div>
-          </div>
-
-          <h2 class="section-heading" id="s-rights"><span class="num">6</span> Hak Anda (GDPR / UU PDP)</h2>
-          <p>Sesuai dengan regulasi perlindungan data, Anda berhak untuk:</p>
-          <ul>
-            <li><strong>Mengakses</strong> data pribadi yang kami simpan tentang Anda</li>
-            <li><strong>Menghapus</strong> data atas permintaan (right to erasure)</li>
-            <li><strong>Memperbaiki</strong> data yang tidak akurat</li>
-            <li><strong>Membatasi</strong> pemrosesan data dalam kondisi tertentu</li>
-          </ul>
-          <p>Untuk menggunakan hak-hak tersebut, hubungi melalui email di bagian Sitemap.</p>
-        </section>
-
-        <!-- Syarat & Ketentuan Card -->
-        <section class="card" id="terms">
+      <!-- Sitemap -->
+      <section id="sitemap" class="section">
+        <div class="card">
           <div class="card-header">
-            <div class="card-icon"><i class="fas fa-file-contract"></i></div>
-            <div class="card-header-text">
-              <div class="section-eyebrow">Dokumen Legal</div>
-              <h1 class="card-title">Syarat & Ketentuan</h1>
+            <div class="card-icon">
+              <i class="fas fa-sitemap"></i>
+            </div>
+            <div>
+              <h2 class="card-title">Sitemap</h2>
+              <p class="card-subtitle">Navigasi lengkap situs Muhaajir Official – Versi 3.4</p>
             </div>
           </div>
-
-          <div class="meta-row">
-            <span class="meta-chip"><i class="fas fa-tag"></i> Versi 3.2</span>
-            <span class="meta-chip"><i class="fas fa-calendar"></i> 7 Februari 2026</span>
-          </div>
-
-          <h2 class="section-heading" id="s-license"><span class="num">1</span> Lisensi Hak Cipta Musik</h2>
-          <p>Semua karya musik di situs ini adalah karya orisinal Muhaajir dan dilindungi oleh hak cipta. Berikut ketentuan penggunaannya:</p>
 
           <div class="license-grid">
-            <div class="license-card">
-              <span class="license-type">🎧</span>
-              <strong>Personal</strong>
-              <span class="license-desc">Streaming & download untuk pribadi, non-komersial. Gratis.</span>
-            </div>
-            <div class="license-card">
-              <span class="license-type">💼</span>
-              <strong>Komersial</strong>
-              <span class="license-desc">Konten iklan, film, event. Perlu lisensi berbayar.</span>
-            </div>
-            <div class="license-card">
-              <span class="license-type">🎤</span>
-              <strong>Cover / Remix</strong>
-              <span class="license-desc">Diperbolehkan dengan kredit jelas ke Muhaajir.</span>
-            </div>
+            <a href="/" class="license-item">
+              <i class="fas fa-home" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 12px; display: block;"></i>
+              <div class="license-type">Beranda</div>
+              <p>Profil, Bio, Galeri, Audio Player</p>
+            </a>
+            <a href="/main-showcase" class="license-item">
+              <i class="fas fa-music" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 12px; display: block;"></i>
+              <div class="license-type">Showcase</div>
+              <p>Portofolio musik & fotografi</p>
+            </a>
           </div>
 
-          <h2 class="section-heading" id="s-use"><span class="num">2</span> Ketentuan Penggunaan Konten</h2>
-          <ul>
-            <li>Semua konten (audio, foto, teks, desain) dilindungi hak cipta © Muhaajir.</li>
-            <li>Dilarang mendistribusikan ulang, menjual, atau mengklaim kepemilikan tanpa izin tertulis.</li>
-            <li>Kredit wajib diberikan dalam format: <strong>"© Muhaajir – hajirmuhaajir.github.io"</strong></li>
-            <li>Penggunaan komersial tanpa lisensi merupakan pelanggaran hukum.</li>
-          </ul>
+          <h3>Navigasi Utama</h3>
+          <p>Beranda (Profil, Bio, Galeri, Audio Player)<br>Legal (Privacy, Terms & Conditions, Sitemap)</p>
 
-          <h2 class="section-heading" id="s-disclaimer"><span class="num">3</span> Disclaimer & Batasan</h2>
-          <div class="callout warning">
-            <i class="fas fa-exclamation-triangle callout-icon"></i>
-            <div class="callout-text">
-              <strong>Perubahan Konten</strong>
-              <p>Muhaajir berhak memperbarui, mengubah, atau menghapus konten kapan saja tanpa pemberitahuan sebelumnya.</p>
-            </div>
-          </div>
-          <ul>
-            <li>Situs disediakan "sebagaimana adanya" tanpa jaminan ketersediaan penuh.</li>
-            <li>Tautan ke situs pihak ketiga tidak berarti endorsement dari Muhaajir.</li>
-            <li>Syarat dan ketentuan dapat diperbarui sewaktu-waktu. Versi terbaru selalu tersedia di halaman ini.</li>
-          </ul>
-        </section>
+          <h3>Katalog Konten & Tools</h3>
+          <p>Koleksi Audio: 12 lagu original<br>
+             Koleksi Visual: 3 galeri foto high-resolution<br>
+             Tools Digital: Hajirsync • Muhaajir Delta • Muhaajir Scrub • Mehaajir Vault</p>
 
-        <!-- Sitemap Card -->
-        <section class="card" id="sitemap">
-          <div class="card-header">
-            <div class="card-icon"><i class="fas fa-sitemap"></i></div>
-            <div class="card-header-text">
-              <div class="section-eyebrow">Peta Situs</div>
-              <h1 class="card-title">Sitemap</h1>
-            </div>
-          </div>
+          <h3>Media Sosial & Kontak</h3>
+          <p>YouTube: @hajirstein<br>
+             TikTok: @muhaajir_muhaajir<br>
+             Instagram: @muhaajirere<br>
+             SoundCloud: Muhaajir<br>
+             GitHub: hajirmuhaajir<br><br>
+             <strong>Email resmi (satu-satunya kontak aktif):</strong> hajirmuhaajir@yahoo.com</p>
 
-          <div class="meta-row">
-            <span class="meta-chip"><i class="fas fa-tag"></i> Versi 3.2</span>
-            <span class="meta-chip"><i class="fas fa-calendar"></i> 7 Februari 2026</span>
-            <span class="badge gold"><i class="fas fa-code"></i> XML Tersedia</span>
-          </div>
-
-          <!-- Stats -->
-          <h2 class="section-heading" id="s-stats"><span class="num">1</span> Statistik Konten</h2>
-          <div class="sitemap-grid">
-            <div class="sitemap-card">
-              <div class="sitemap-card-head">
-                <div class="sitemap-card-icon"><i class="fas fa-music"></i></div>
-                <h4>Musik</h4>
-              </div>
-              <div class="sitemap-stat">7</div>
-              <div class="sitemap-stat-label">Lagu Original</div>
-            </div>
-            <div class="sitemap-card">
-              <div class="sitemap-card-head">
-                <div class="sitemap-card-icon"><i class="fas fa-camera"></i></div>
-                <h4>Fotografi</h4>
-              </div>
-              <div class="sitemap-stat">3</div>
-              <div class="sitemap-stat-label">Foto Galeri</div>
-            </div>
-            <div class="sitemap-card">
-              <div class="sitemap-card-head">
-                <div class="sitemap-card-icon"><i class="fas fa-compact-disc"></i></div>
-                <h4>Album</h4>
-              </div>
-              <div class="sitemap-stat">2</div>
-              <div class="sitemap-stat-label">Album Dirilis</div>
-            </div>
-          </div>
-
-          <div class="album-chips">
-            <span class="album-chip">Fragmen Suara <span class="count">5</span></span>
-            <span class="album-chip">Resonansi <span class="count">7</span></span>
-          </div>
-
-          <!-- Social Media Table -->
-          <h2 class="section-heading" id="s-social"><span class="num">2</span> Media Sosial & Tautan</h2>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Platform</th>
-                  <th>Handle / Profil</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span class="platform-icon pi-yt"><i class="fab fa-youtube"></i></span> YouTube</td>
-                  <td><a href="https://www.youtube.com/@hajirstein" target="_blank" rel="noopener noreferrer">@hajirstein</a></td>
-                </tr>
-                <tr>
-                  <td><span class="platform-icon pi-tt"><i class="fab fa-tiktok"></i></span> TikTok</td>
-                  <td><a href="https://www.tiktok.com/@muhaajir_muhaajir" target="_blank" rel="noopener noreferrer">@muhaajir_muhaajir</a></td>
-                </tr>
-                <tr>
-                  <td><span class="platform-icon pi-ig"><i class="fab fa-instagram"></i></span> Instagram</td>
-                  <td><a href="https://www.instagram.com/muhaajirere" target="_blank" rel="noopener noreferrer">@muhaajirere</a></td>
-                </tr>
-                <tr>
-                  <td><span class="platform-icon pi-sc"><i class="fab fa-soundcloud"></i></span> SoundCloud</td>
-                  <td><a href="https://on.soundcloud.com/m65TNUx3XarndC67jO" target="_blank" rel="noopener noreferrer">Muhaajir</a></td>
-                </tr>
-                <tr>
-                  <td><span class="platform-icon pi-gh"><i class="fab fa-github"></i></span> GitHub</td>
-                  <td><a href="https://hajirmuhaajir.github.io" target="_blank" rel="noopener noreferrer">hajirmuhaajir</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Contact Emails -->
-          <h2 class="section-heading" id="s-contact"><span class="num">3</span> Kontak Email</h2>
-          <p>Klik email untuk menyalin ke clipboard:</p>
-          <div class="email-list">
-            <span class="email-chip" data-email="muhaajirmuhaajir9@hotmail.com" tabindex="0" role="button" aria-label="Salin email Hotmail">
-              <i class="fas fa-envelope"></i>
-              muhaajirmuhaajir9@hotmail.com
-              <span class="copy-hint"><i class="fas fa-copy"></i> salin</span>
-            </span>
-            <span class="email-chip" data-email="muhaajirmuhaajir9@gmail.com" tabindex="0" role="button" aria-label="Salin email Gmail">
-              <i class="fas fa-envelope"></i>
-              muhaajirmuhaajir9@gmail.com
-              <span class="copy-hint"><i class="fas fa-copy"></i> salin</span>
-            </span>
-            <span class="email-chip" data-email="muhaajirmuhaajir9@proton.me" tabindex="0" role="button" aria-label="Salin email Proton">
-              <i class="fas fa-shield-alt"></i>
-              muhaajirmuhaajir9@proton.me
-              <span class="copy-hint"><i class="fas fa-copy"></i> salin</span>
-            </span>
-          </div>
-        </section>
-      </div>
-      <!-- End cards-col -->
+          <p style="margin-top:32px;font-size:0.9rem;opacity:0.7;">Riwayat Versi Terbaru<br>
+             v.3.4 (19 April 2026): Rombak total UI, integrasi 4 tools digital, migrasi penyimpanan ke Dropbox & Google Drive, penyederhanaan kontak ke Yahoo Mail, dan pembaruan sistem penomoran dokumen.</p>
+        </div>
+      </section>
     </div>
-    <!-- End content-wrap -->
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <img src="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png" alt="Logo Muhaajir" class="footer-logo" loading="lazy" decoding="async">
-      <div class="footer-name">Muhaajir Official</div>
-      <div class="footer-tagline">Musik · Fotografi</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div style="margin-bottom: 24px;">
+          <img src="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png" alt="Logo" width="60" height="60" style="border-radius: 50%; border: 2px solid rgba(255,255,255,0.3);">
+        </div>
+        <p style="margin-bottom: 24px; opacity: 0.8;">© 2026 Muhaajir Official. <strong>Versi 3.4</strong> — 19 April 2026</p>
+        
+        <div class="social-links">
+          <a href="https://www.youtube.com/@hajirstein" class="social-link" title="YouTube" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@muhaajir_muhaajir" class="social-link" title="TikTok" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.instagram.com/muhaajirere" class="social-link" title="Instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://on.soundcloud.com/m65TNUx3XarndC67jO" class="social-link" title="SoundCloud" aria-label="SoundCloud">
+            <i class="fab fa-soundcloud"></i>
+          </a>
+          <a href="https://github.com/hajirmuhaajir" class="social-link" title="GitHub" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
 
-      <div class="footer-links">
-        <a href="#privacy" class="footer-link"><i class="fas fa-shield-alt"></i> Privasi</a>
-        <a href="#terms" class="footer-link"><i class="fas fa-file-contract"></i> Syarat</a>
-        <a href="#sitemap" class="footer-link"><i class="fas fa-sitemap"></i> Sitemap</a>
-      </div>
-
-      <div class="social-links">
-        <a href="https://www.youtube.com/@hajirstein" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@muhaajir_muhaajir" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.instagram.com/muhaajirere" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://on.soundcloud.com/m65TNUx3XarndC67jO" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
-        <a href="https://github.com/hajirmuhaajir" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      </div>
-
-      <div class="footer-divider"></div>
-      <div class="copyright">© 2026 Muhaajir. All rights reserved.</div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" aria-label="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
-
-    <!-- Toast Notification -->
-    <div class="toast" id="toast"><i class="fas fa-check-circle"></i> <span id="toastMsg"></span></div>
-
-    <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookieBanner">
-      <div class="cookie-banner-head">
-        <i class="fas fa-cookie-bite"></i>
-        <strong>Kebijakan Cookie</strong>
-      </div>
-      <p>Situs ini menggunakan cookies untuk meningkatkan pengalaman dan analitik. Pilihan Anda akan diingat.</p>
-      <div class="cookie-btns">
-        <button class="cookie-btn primary" onclick="acceptCookies()">Setuju</button>
-        <button class="cookie-btn" onclick="declineCookies()">Tolak</button>
+        <!-- Email resmi tunggal -->
+        <div class="email-chips">
+          <div class="email-chip" data-copy="hajirmuhaajir@yahoo.com">
+            <div>
+              <div class="email-chip-label">Kontak Resmi & Legal</div>
+              <div class="email-chip-address">hajirmuhaajir@yahoo.com</div>
+            </div>
+            <i class="fas fa-copy"></i>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- End app-viewport -->
+  </footer>
 
   <script>
-  (function() {
-    'use strict';
+    //=============================THEME TOGGLE + SYSTEM PREFERENCE==============*/
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const progressBar = document.getElementById('progressBar');
 
-    // ----- THEME TOGGLE -----
-    const toggle = document.getElementById('themeToggle');
-    const icon = document.getElementById('themeIcon');
-
-    function applyTheme(dark) {
-      document.body.classList.toggle('dark', dark);
-      icon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
-      try {
-        localStorage.setItem('darkMode', dark ? 'enabled' : 'disabled');
-      } catch (e) {}
-    }
-
-    // Initial theme: prefer saved, else system preference
-    const savedTheme = localStorage.getItem('darkMode');
-    if (savedTheme) {
-      applyTheme(savedTheme === 'enabled');
-    } else {
-      applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
-    }
-
-    toggle.addEventListener('click', () => {
-      applyTheme(!document.body.classList.contains('dark'));
-    });
-
-    // ----- PROGRESS BAR -----
-    const bar = document.getElementById('progressBar');
-    const viewport = document.querySelector('.app-viewport');
-
-    if (viewport) {
-      viewport.addEventListener('scroll', () => {
-        const scrollPercent = (viewport.scrollTop / (viewport.scrollHeight - viewport.clientHeight)) * 100;
-        bar.style.width = scrollPercent + '%';
-      }, { passive: true });
-    }
-
-    // ----- TOAST NOTIFICATION -----
-    const toastEl = document.getElementById('toast');
-    const toastMsg = document.getElementById('toastMsg');
-
-    function showToast(msg) {
-      if (!toastEl || !toastMsg) return;
-      toastMsg.textContent = msg;
-      toastEl.classList.add('show');
-      setTimeout(() => toastEl.classList.remove('show'), 2200);
-    }
-
-    // ----- COPY EMAIL -----
-    async function copyEmail(text) {
-      try {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          await navigator.clipboard.writeText(text);
-        } else {
-          // Fallback
-          const ta = document.createElement('textarea');
-          ta.value = text;
-          ta.style.position = 'fixed';
-          ta.style.opacity = '0';
-          document.body.appendChild(ta);
-          ta.select();
-          document.execCommand('copy');
-          document.body.removeChild(ta);
-        }
-        showToast('Email disalin: ' + text);
-      } catch {
-        showToast('Gagal menyalin.');
-      }
-    }
-
-    document.querySelectorAll('.email-chip[data-email]').forEach(el => {
-      el.addEventListener('click', () => copyEmail(el.dataset.email));
-      el.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          copyEmail(el.dataset.email);
-        }
-      });
-    });
-
-    // ----- NAVIGATION TABS -----
-    const tabs = document.querySelectorAll('.nav-tab');
-
-    function updateTabs() {
-      const hash = window.location.hash || '#privacy';
-      tabs.forEach(t => {
-        const href = t.getAttribute('href');
-        const active = href === hash;
-        t.classList.toggle('active', active);
-        t.setAttribute('aria-selected', String(active));
-      });
-    }
-
-    window.addEventListener('hashchange', updateTabs);
-    updateTabs();
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = tab.getAttribute('href');
-        const target = document.querySelector(targetId);
-        if (target && viewport) {
-          const targetPosition = target.offsetTop;
-          viewport.scrollTo({
-            top: targetPosition - 80,
-            behavior: 'smooth'
-          });
-          window.history.pushState(null, null, targetId);
-          updateTabs();
-        }
-      });
-    });
-
-    // ----- TABLE OF CONTENTS ACTIVE STATE -----
-    const tocLinks = document.querySelectorAll('.toc-list a[href^="#"]');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
     
-    if (viewport && tocLinks.length) {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            tocLinks.forEach(l => l.classList.remove('active-toc'));
-            const link = document.querySelector('.toc-list a[href="#' + entry.target.id + '"]');
-            if (link) link.classList.add('active-toc');
-          }
-        });
-      }, {
-        root: viewport,
-        rootMargin: '-20% 0px -70% 0px',
-        threshold: 0.1
-      });
+    const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
+    html.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
 
-      document.querySelectorAll('.section-heading[id], .card[id]').forEach(el => {
-        if (el) observer.observe(el);
-      });
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+      const icon = themeToggle.querySelector('i');
+      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     }
 
-    // ----- BACK TO TOP -----
-    const backBtn = document.getElementById('backToTop');
-
-    if (viewport && backBtn) {
-      viewport.addEventListener('scroll', () => {
-        backBtn.style.display = viewport.scrollTop > 400 ? 'flex' : 'none';
-      }, { passive: true });
-
-      backBtn.addEventListener('click', () => {
-        viewport.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-
-    // ----- COOKIE CONSENT -----
-    window.acceptCookies = function() {
-      try {
-        localStorage.setItem('cookiesAccepted', 'true');
-      } catch (e) {}
-      const banner = document.getElementById('cookieBanner');
-      if (banner) banner.style.display = 'none';
-      showToast('Preferensi cookie disimpan.');
-    };
-
-    window.declineCookies = function() {
-      try {
-        localStorage.setItem('cookiesAccepted', 'false');
-      } catch (e) {}
-      const banner = document.getElementById('cookieBanner');
-      if (banner) banner.style.display = 'none';
-    };
-
-    try {
-      if (!localStorage.getItem('cookiesAccepted')) {
-        setTimeout(() => {
-          const banner = document.getElementById('cookieBanner');
-          if (banner) banner.style.display = 'block';
-        }, 1800);
+    prefersDark.addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        html.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        updateThemeIcon(e.matches ? 'dark' : 'light');
       }
-    } catch (e) {
-      setTimeout(() => {
-        const banner = document.getElementById('cookieBanner');
-        if (banner) banner.style.display = 'block';
-      }, 1800);
+    });
+
+    //=============================TAB NAVIGATION==============*/
+    const navTabs = document.querySelectorAll('.nav-tab');
+    const sections = document.querySelectorAll('.section');
+
+    navTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.dataset.tab;
+        navTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        sections.forEach(s => s.classList.remove('active'));
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+
+    //=============================PROGRESS BAR==============*/
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      progressBar.style.transform = `scaleX(${progress / 100})`;
+    });
+
+    //=============================EMAIL COPY TO CLIPBOARD==============*/
+    document.querySelectorAll('.email-chip').forEach(chip => {
+      chip.addEventListener('click', async () => {
+        const email = chip.dataset.copy;
+        try {
+          await navigator.clipboard.writeText(email);
+          const originalText = chip.querySelector('.email-chip-address').textContent;
+          chip.querySelector('.email-chip-address').textContent = '✅ Disalin!';
+          setTimeout(() => {
+            chip.querySelector('.email-chip-address').textContent = originalText;
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy email:', err);
+        }
+      });
+    });
+
+    //=============================TOMBOL CETAK PDF==============*/
+    const printBtn = document.getElementById('printPDFBtn');
+    if (printBtn) {
+      printBtn.addEventListener('click', () => {
+        window.print();
+      });
     }
-  })();
+
+    //=============================SMOOTH SCROLL==============*/
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    console.log('✅ Muhaajir Legal Page v3.4 + PDF Print + Neon Glow Effects loaded perfectly!');
   </script>
 </body>
 </html>
