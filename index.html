@@ -11,19 +11,19 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://i.postimg.cc; connect-src 'self'; frame-src 'none'; base-uri 'self'; form-action 'self';">
 
   <!-- SEO Meta -->
-  <meta name="description" content="Kebijakan Privasi, Syarat & Ketentuan, dan Sitemap Muhaajir Official – Musik, Fotografi & Tools Digital. Versi 3.4 (19 April 2026)">
+  <meta name="description" content="Kebijakan Privasi, Syarat & Ketentuan, dan Sitemap Muhaajir Official – Musik, Fotografi & Tools Digital. Versi 3.5 (1 Maret 2026)">
   <meta name="keywords" content="Muhaajir, privasi, syarat ketentuan, sitemap, kebijakan privasi, lisensi musik, tools digital">
   <meta name="author" content="Muhaajir">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Legal & Sitemap v3.4 | Muhaajir Official">
-  <meta property="og:description" content="Dokumen resmi Muhaajir Official – Kebijakan Privasi, Syarat & Ketentuan, Sitemap. Versi 3.4 (19 April 2026)">
-  <meta property="og:image" content="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png">
-  <meta property="og:url" content="https://hajirmuhaajir.github.io/footer-essentials">
+  <meta property="og:title" content="Legal & Sitemap v3.5 | Muhaajir Official">
+  <meta property="og:description" content="Dokumen resmi Muhaajir Official – Kebijakan Privasi, Syarat & Ketentuan, Sitemap. Versi 3.5 (1 Maret 2026)">
+  <meta property="og:image" content="https://i.postimg.cc/JztFxsRH/hajir-logo-putih.webp">
+  <meta property="og:url" content="https://hajirmuhaajir.github.io/main">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png">
+  <link rel="icon" type="image/webp" href="https://i.postimg.cc/JztFxsRH/hajir-logo-putih.webp">
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -34,17 +34,17 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Legal & Sitemap v3.4 - Muhaajir Official",
-    "url": "https://hajirmuhaajir.github.io/footer-essentials",
+    "name": "Legal & Sitemap v3.5 - Muhaajir Official",
+    "url": "https://hajirmuhaajir.github.io/main",
     "isPartOf": {
       "@type": "WebSite",
       "name": "Muhaajir Official",
-      "url": "https://hajirmuhaajir.github.io/main-showcase/"
+      "url": "https://hajirmuhaajir.github.io/main"
     },
     "about": {
       "@type": "Organization",
       "name": "Muhaajir Official",
-      "logo": "https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png",
+      "logo": "https://i.postimg.cc/JztFxsRH/hajir-logo-putih.webp",
       "sameAs": [
         "https://www.youtube.com/@hajirstein",
         "https://www.tiktok.com/@muhaajir_muhaajir",
@@ -56,7 +56,7 @@
   }
   </script>
 
-  <title>Legal & Sitemap v3.4 | Muhaajir Official</title>
+  <title>Legal & Sitemap v3.5 | Muhaajir Official</title>
 
   <style>
     /*=============================CSS VARIABLES - DARK/LIGHT MODE SYSTEM==============*/
@@ -95,6 +95,53 @@
       --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     }
 
+    /*=============================LOGO VISIBILITY FIX==============*/
+    /* Logo putih akan terlihat di light mode dengan background gelap */
+    .logo-img-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #0F172A; /* Dark background agar logo putih selalu terlihat */
+      flex-shrink: 0;
+    }
+
+    [data-theme="dark"] .logo-img-wrap {
+      background: transparent; /* Di dark mode tidak perlu background */
+    }
+
+    .logo img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .footer-logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background: #0F172A;
+      margin-bottom: 24px;
+    }
+
+    [data-theme="dark"] .footer-logo-wrap {
+      background: transparent;
+    }
+
+    .footer-logo-wrap img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     /*=============================NEON GLOW, INNER SHADOW & AMBIENT BLUE LIGHT (DARK MODE)==============*/
     [data-theme="dark"] .card {
       box-shadow: 
@@ -115,7 +162,7 @@
 
     /* Button & Interactive Elements Glow + Inner Shadow */
     [data-theme="dark"] .btn,
-    [data-theme="dark"] .theme-toggle,
+    [data-theme="dark"] .lang-toggle,
     [data-theme="dark"] .print-pdf-btn,
     [data-theme="dark"] .nav-tab {
       box-shadow: 
@@ -125,7 +172,7 @@
     }
 
     [data-theme="dark"] .btn:hover,
-    [data-theme="dark"] .theme-toggle:hover,
+    [data-theme="dark"] .lang-toggle:hover,
     [data-theme="dark"] .print-pdf-btn:hover,
     [data-theme="dark"] .nav-tab:hover,
     [data-theme="dark"] .nav-tab.active {
@@ -135,7 +182,6 @@
       transform: translateY(-1px);
     }
 
-    /* Ambient blue light pada tombol aksen */
     [data-theme="dark"] .btn-primary,
     [data-theme="dark"] .nav-tab.active {
       box-shadow: 
@@ -151,9 +197,8 @@
         font-size: 12pt;
         line-height: 1.5;
       }
-      .header, .footer, .nav-tabs, .theme-toggle, .print-pdf-btn, 
-      .progress-bar, .social-links, .email-chips .fa-copy,
-      .btn, .card-icon, .theme-toggle, .print-pdf-btn {
+      .header, .footer, .nav-tabs, .lang-toggle, .print-pdf-btn, 
+      .progress-bar, .social-links, .btn, .card-icon, .status-badge {
         display: none !important;
       }
       .card {
@@ -181,7 +226,7 @@
         background: none !important;
         color: black !important;
       }
-      .credit-format, .email-chip {
+      .credit-format {
         border: 1px solid #aaa !important;
         background: #f5f5f5 !important;
         color: black !important;
@@ -276,28 +321,57 @@
       font-weight: 700;
       font-size: 1.25rem;
       color: var(--text-primary);
-    }
-
-    .logo img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--accent-primary);
+      min-width: 0;
+      flex-shrink: 1;
     }
 
     .header-actions {
       display: flex;
       gap: 12px;
       align-items: center;
+      flex-shrink: 0;
     }
 
-    .theme-toggle, .print-pdf-btn {
+    /* Language Toggle Button */
+    .lang-toggle {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-default);
+      color: var(--text-primary);
+      min-width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+      font-family: 'Inter', sans-serif;
+      padding: 0 12px;
+      white-space: nowrap;
+      gap: 4px;
+    }
+
+    .lang-toggle:hover {
+      background: var(--accent-primary);
+      color: white;
+      border-color: var(--accent-primary);
+      transform: scale(1.05);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .lang-toggle:active {
+      transform: scale(0.95);
+    }
+
+    .print-pdf-btn {
       background: var(--bg-surface);
       border: 1px solid var(--border-default);
       color: var(--text-secondary);
-      width: 44px;
-      height: 44px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       cursor: pointer;
       display: flex;
@@ -307,14 +381,37 @@
       font-size: 1.1rem;
     }
 
-    .theme-toggle:hover, .print-pdf-btn:hover {
+    .print-pdf-btn:hover {
       background: var(--accent-primary);
       color: white;
-      transform: rotate(180deg);
+      transform: translateY(-2px);
     }
 
-    .print-pdf-btn:hover {
-      transform: translateY(-2px) rotate(0deg);
+    /* Status Badge */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+    .status-badge .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+      50% { opacity: 0.5; box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
     }
 
     /*=============================HERO SECTION==============*/
@@ -340,6 +437,15 @@
       font-size: 1.2rem;
       max-width: 600px;
       margin: 0 auto;
+    }
+
+    .hero .version-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 12px;
+      flex-wrap: wrap;
     }
 
     /*=============================NAV TABS==============*/
@@ -370,6 +476,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
+      min-height: 48px;
     }
 
     .nav-tab.active,
@@ -489,48 +596,6 @@
       text-decoration: underline;
     }
 
-    /* Email Chips */
-    .email-chips {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin: 24px 0;
-    }
-
-    .email-chip {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-default);
-      padding: 16px 20px;
-      border-radius: var(--radius-md);
-      cursor: pointer;
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .email-chip:hover {
-      border-color: var(--accent-primary);
-      box-shadow: var(--shadow-md);
-      transform: translateX(4px);
-    }
-
-    .email-chip-label {
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-right: 12px;
-      flex: 1;
-    }
-
-    .email-chip-address {
-      font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
-      font-size: 0.95rem;
-      color: var(--accent-primary);
-      word-break: break-all;
-    }
-
     /* License Grid */
     .license-grid {
       display: grid;
@@ -589,6 +654,7 @@
       transition: var(--transition);
       text-decoration: none;
       font-size: 0.95rem;
+      min-height: 48px;
     }
 
     .btn-outline {
@@ -639,6 +705,8 @@
       color: var(--text-secondary);
       font-size: 1.1rem;
       transition: var(--transition);
+      min-width: 48px;
+      min-height: 48px;
     }
 
     .social-link:hover {
@@ -652,11 +720,39 @@
       .container {
         padding: 0 16px;
       }
+      .header-inner {
+        gap: 10px;
+        padding: 12px 0;
+      }
+      .logo span {
+        font-size: 1rem;
+      }
+      .logo-img-wrap {
+        width: 34px;
+        height: 34px;
+      }
+      .logo img {
+        width: 30px;
+        height: 30px;
+      }
+      .lang-toggle {
+        min-width: 44px;
+        height: 44px;
+        font-size: 0.78rem;
+        padding: 0 10px;
+        border-radius: 22px;
+      }
+      .print-pdf-btn {
+        width: 44px;
+        height: 44px;
+      }
       .nav-tabs {
         flex-direction: column;
       }
       .nav-tab {
         border-radius: 8px;
+        min-height: 48px;
+        padding: 14px 20px;
       }
       .card {
         padding: 24px;
@@ -669,6 +765,32 @@
         flex-direction: column;
         gap: 12px;
         text-align: center;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .header-actions {
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .logo span {
+        display: none;
+      }
+      .lang-toggle {
+        font-size: 0.7rem;
+        padding: 0 8px;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 20px;
+      }
+      .print-pdf-btn {
+        width: 40px;
+        height: 40px;
       }
     }
 
@@ -703,6 +825,9 @@
       white-space: nowrap;
       border: 0;
     }
+    .space-y-4 > * + * {
+      margin-top: 16px;
+    }
   </style>
 </head>
 
@@ -715,16 +840,19 @@
     <div class="container">
       <div class="header-inner">
         <a href="/" class="logo">
-          <img src="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png" alt="Muhaajir Official" width="40" height="40">
+          <span class="logo-img-wrap">
+            <img src="https://i.postimg.cc/JztFxsRH/hajir-logo-putih.webp" alt="Muhaajir Official" width="36" height="36" loading="eager">
+          </span>
           <span>Muhaajir</span>
         </a>
         <div class="header-actions">
-          <!-- Tombol Cetak PDF -->
-          <button class="print-pdf-btn" id="printPDFBtn" aria-label="Cetak halaman sebagai PDF">
-            <i class="fas fa-print"></i>
+          <!-- Tombol Bahasa ID/EN -->
+          <button class="lang-toggle" id="langToggle" aria-label="Ganti bahasa / Switch language" title="Bahasa Indonesia / English">
+            <span id="langLabel">EN</span>
           </button>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon"></i>
+          <!-- Tombol Cetak PDF -->
+          <button class="print-pdf-btn" id="printPDFBtn" aria-label="Cetak halaman sebagai PDF" title="Cetak PDF">
+            <i class="fas fa-print"></i>
           </button>
         </div>
       </div>
@@ -735,25 +863,31 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Legal & Sitemap</h1>
-        <p>Dokumen resmi Muhaajir Official – Musik · Fotografi · Tools Digital<br>Versi 3.4 — 19 April 2026</p>
+        <h1 data-i18n="hero.title">Legal & Sitemap</h1>
+        <p data-i18n="hero.subtitle">Dokumen resmi Muhaajir Official – Musik · Fotografi · Tools Digital</p>
+        <div class="version-row">
+          <span style="color:var(--text-secondary);font-weight:500;" data-i18n="hero.version">Versi 3.5 — 1 Maret 2026</span>
+          <span class="status-badge">
+            <span class="dot"></span> Stable
+          </span>
+        </div>
       </div>
     </section>
 
     <div class="container">
       <!-- Navigation Tabs -->
       <nav class="nav-tabs" role="tablist">
-        <button class="nav-tab active" data-tab="privacy">
+        <button class="nav-tab active" data-tab="privacy" role="tab" aria-selected="true">
           <i class="fas fa-shield-alt"></i>
-          Privasi
+          <span data-i18n="nav.privacy">Privasi</span>
         </button>
-        <button class="nav-tab" data-tab="terms">
+        <button class="nav-tab" data-tab="terms" role="tab" aria-selected="false">
           <i class="fas fa-file-contract"></i>
-          Syarat & Ketentuan
+          <span data-i18n="nav.terms">Syarat & Ketentuan</span>
         </button>
-        <button class="nav-tab" data-tab="sitemap">
+        <button class="nav-tab" data-tab="sitemap" role="tab" aria-selected="false">
           <i class="fas fa-sitemap"></i>
-          Sitemap
+          <span data-i18n="nav.sitemap">Sitemap</span>
         </button>
       </nav>
 
@@ -765,40 +899,40 @@
               <i class="fas fa-shield-alt"></i>
             </div>
             <div>
-              <h2 class="card-title">Kebijakan Privasi</h2>
-              <p class="card-subtitle">Versi 3.4 — 19 April 2026</p>
+              <h2 class="card-title" data-i18n="privacy.title">Kebijakan Privasi</h2>
+              <p class="card-subtitle" data-i18n="privacy.versionLabel">Versi 3.5 — 1 Maret 2026</p>
             </div>
           </div>
 
           <div class="space-y-4">
-            <h3>Komitmen Privasi</h3>
-            <p>Saya, Muhaajir, berkomitmen melindungi privasi Anda dengan transparan. Data Anda tidak pernah dijual, disewakan, atau dibagikan untuk keperluan pemasaran.</p>
+            <h3 data-i18n="privacy.commitmentTitle">Komitmen Privasi</h3>
+            <p data-i18n="privacy.commitmentText">Saya, Muhaajir, berkomitmen melindungi privasi Anda dengan transparan. Data Anda tidak pernah dijual, disewakan, atau dibagikan untuk keperluan pemasaran.</p>
 
-            <h3>1. Data yang Dikumpulkan</h3>
-            <p>1.1 Informasi sukarela: Nama dan alamat email yang Anda kirim melalui formulir kontak.<br>
-               1.2 Data teknis: Alamat IP, jenis browser, dan halaman yang dikunjungi (dicatat secara anonim melalui Google Analytics).<br>
-               1.3 Preferensi lokal: Pengaturan tema (dark/light mode) dan preferensi tools yang disimpan di browser Anda.<br>
-               1.4 Data sesi tools: Penggunaan Hajirsync, Muhaajir Delta, Muhaajir Scrub, atau Mehaajir Vault hanya menyimpan preferensi lokal.</p>
+            <h3 data-i18n="privacy.dataTitle">1. Data yang Dikumpulkan</h3>
+            <p data-i18n="privacy.dataText">1.1 Informasi sukarela: Nama asli (min. 4 huruf) dan pesan jelas (min. 20 karakter) yang Anda kirim melalui formulir kontak Formspree.<br>
+              1.2 Data teknis: Alamat IP, jenis browser, dan halaman yang dikunjungi (dicatat secara anonim melalui Google Analytics).<br>
+              1.3 Preferensi lokal: Pengaturan bahasa (ID/EN) dan preferensi tools yang disimpan di browser Anda.<br>
+              1.4 Data sesi tools: Penggunaan Hajirsync, Muhaajir Delta, Muhaajir Scrub, atau Mehaajir Vault hanya menyimpan preferensi lokal.</p>
 
-            <h3>2. Penggunaan Cookies & Pihak Ketiga</h3>
-            <p>Cookies fungsional: Menyimpan preferensi pengguna (tidak mengumpulkan data pribadi).<br>
-               Cookies analitik: Google Analytics untuk meningkatkan pengalaman situs (anonim).<br>
-               Formulir kontak diproses oleh Formspree (data dihapus otomatis setelah maksimal 30 hari).<br>
-               Penyimpanan aset musik: Dropbox dan Google Drive.<br>
-               Link eksternal (YouTube, TikTok, Instagram, SoundCloud, GitHub) tunduk pada kebijakan privasi masing-masing.</p>
+            <h3 data-i18n="privacy.cookiesTitle">2. Penggunaan Cookies & Pihak Ketiga</h3>
+            <p data-i18n="privacy.cookiesText">Cookies fungsional: Menyimpan preferensi pengguna (tidak mengumpulkan data pribadi).<br>
+              Cookies analitik: Google Analytics untuk meningkatkan pengalaman situs (anonim).<br>
+              Formulir kontak diproses oleh Formspree (data dihapus otomatis setelah maksimal 30 hari).<br>
+              Penyimpanan aset musik: Dropbox dan Google Drive.<br>
+              Link eksternal (YouTube, TikTok, Instagram, SoundCloud, GitHub) tunduk pada kebijakan privasi masing-masing.</p>
 
-            <h3>3. Keamanan Data</h3>
-            <p>Seluruh situs menggunakan koneksi HTTPS/TLS.<br>
-               Content Security Policy (CSP) aktif.<br>
-               Validasi input untuk mencegah serangan.<br>
-               Akses data sangat dibatasi.</p>
+            <h3 data-i18n="privacy.securityTitle">3. Keamanan Data</h3>
+            <p data-i18n="privacy.securityText">Seluruh situs menggunakan koneksi HTTPS/TLS.<br>
+              Content Security Policy (CSP) aktif.<br>
+              Validasi input untuk mencegah serangan.<br>
+              Akses data sangat dibatasi.</p>
 
-            <h3>4. Hak Anda</h3>
-            <p>Anda berhak untuk:<br>
-               • Mengakses data pribadi yang tersimpan tentang Anda.<br>
-               • Meminta perbaikan atau penghapusan data (right to erasure).<br>
-               • Membatasi pemrosesan data.<br><br>
-               Untuk menggunakan hak tersebut, silakan hubungi: <strong>hajirmuhaajir@yahoo.com</strong></p>
+            <h3 data-i18n="privacy.rightsTitle">4. Hak Anda</h3>
+            <p data-i18n="privacy.rightsText">Anda berhak untuk:<br>
+              • Mengakses data pribadi yang tersimpan tentang Anda.<br>
+              • Meminta perbaikan atau penghapusan data (right to erasure).<br>
+              • Membatasi pemrosesan data.<br><br>
+              Untuk menggunakan hak tersebut, silakan hubungi melalui <strong>formulir kontak Formspree</strong> di halaman utama.</p>
           </div>
         </div>
       </section>
@@ -811,35 +945,35 @@
               <i class="fas fa-file-contract"></i>
             </div>
             <div>
-              <h2 class="card-title">Syarat & Ketentuan</h2>
-              <p class="card-subtitle">Versi 3.4 — 19 April 2026</p>
+              <h2 class="card-title" data-i18n="terms.title">Syarat & Ketentuan</h2>
+              <p class="card-subtitle" data-i18n="terms.versionLabel">Versi 3.5 — 1 Maret 2026</p>
             </div>
           </div>
 
           <div class="space-y-4">
-            <p>Dengan mengakses situs ini, Anda dianggap menyetujui ketentuan berikut:</p>
+            <p data-i18n="terms.intro">Dengan mengakses situs ini, Anda dianggap menyetujui ketentuan berikut:</p>
 
-            <h3>1. Kekayaan Intelektual & Lisensi</h3>
-            <p>1.1 Semua karya musik (12 lagu original: 5 Fragmen Suara + 7 Resonansi Dalam Diam), foto, teks, desain, dan tools digital adalah milik penuh Muhaajir dan dilindungi hak cipta.<br>
-               1.2 Penggunaan Personal: Streaming, download, dan mendengarkan untuk keperluan pribadi & non-komersial gratis.<br>
-               1.3 Penggunaan Komersial (iklan, film, event, dll): Wajib mendapatkan lisensi berbayar.<br>
-               1.4 Cover / Remix: Diperbolehkan dengan mencantumkan kredit jelas:<br>
-               <span class="credit-format">“© Muhaajir”</span><br>
-               1.5 Tools digital (Hajirsync, Muhaajir Delta, Muhaajir Scrub, Mehaajir Vault) adalah properti intelektual Muhaajir. Penggunaan komersial memerlukan izin.</p>
+            <h3 data-i18n="terms.ipTitle">1. Kekayaan Intelektual & Lisensi</h3>
+            <p data-i18n="terms.ipText">1.1 Semua karya musik (12 lagu original: 5 Fragmen Suara + 7 Resonansi Dalam Diam), foto, teks, desain, dan tools digital adalah milik penuh Muhaajir dan dilindungi hak cipta.<br>
+              1.2 Penggunaan Personal: Streaming, download, dan mendengarkan untuk keperluan pribadi & non-komersial gratis.<br>
+              1.3 Penggunaan Komersial (iklan, film, event, dll): Wajib mendapatkan lisensi berbayar.<br>
+              1.4 Cover / Remix: Diperbolehkan dengan mencantumkan kredit jelas:<br>
+              <span class="credit-format">“© Muhaajir”</span><br>
+              1.5 Tools digital (Hajirsync, Muhaajir Delta, Muhaajir Scrub, Mehaajir Vault) adalah properti intelektual Muhaajir. Penggunaan komersial memerlukan izin.</p>
 
-            <h3>2. Larangan</h3>
-            <p>Dilarang mendistribusikan ulang, menjual, atau mengklaim kepemilikan konten tanpa izin tertulis.<br>
-               Dilarang melakukan scraping otomatis atau upaya meretas sistem.<br>
-               Kredit wajib diberikan saat menggunakan foto atau musik.</p>
+            <h3 data-i18n="terms.prohibitionTitle">2. Larangan</h3>
+            <p data-i18n="terms.prohibitionText">Dilarang mendistribusikan ulang, menjual, atau mengklaim kepemilikan konten tanpa izin tertulis.<br>
+              Dilarang melakukan scraping otomatis atau upaya meretas sistem.<br>
+              Kredit wajib diberikan saat menggunakan foto atau musik.</p>
 
-            <h3>3. Batasan Tanggung Jawab (Disclaimer)</h3>
-            <p>Situs dan konten disediakan “sebagaimana adanya” tanpa jaminan ketersediaan atau bebas kesalahan.<br>
-               Kami tidak bertanggung jawab atas kegagalan unduhan di Dropbox/Google Drive atau dampak teknis dari penggunaan tools.<br>
-               Tautan ke platform eksternal bukan merupakan endorsement.<br>
-               Muhaajir berhak mengubah atau menghapus konten kapan saja tanpa pemberitahuan sebelumnya.</p>
+            <h3 data-i18n="terms.disclaimerTitle">3. Batasan Tanggung Jawab (Disclaimer)</h3>
+            <p data-i18n="terms.disclaimerText">Situs dan konten disediakan "sebagaimana adanya" tanpa jaminan ketersediaan atau bebas kesalahan.<br>
+              Kami tidak bertanggung jawab atas kegagalan unduhan di Dropbox/Google Drive atau dampak teknis dari penggunaan tools.<br>
+              Tautan ke platform eksternal bukan merupakan endorsement.<br>
+              Muhaajir berhak mengubah atau menghapus konten kapan saja tanpa pemberitahuan sebelumnya.</p>
 
-            <h3>4. Hukum Berlaku</h3>
-            <p>Setiap sengketa akan diselesaikan di bawah hukum Indonesia, dengan domisili hukum di Bogor, Indonesia.</p>
+            <h3 data-i18n="terms.lawTitle">4. Hukum Berlaku</h3>
+            <p data-i18n="terms.lawText">Setiap sengketa akan diselesaikan di bawah hukum Indonesia, dengan domisili hukum di Bogor, Indonesia.</p>
           </div>
         </div>
       </section>
@@ -852,42 +986,42 @@
               <i class="fas fa-sitemap"></i>
             </div>
             <div>
-              <h2 class="card-title">Sitemap</h2>
-              <p class="card-subtitle">Navigasi lengkap situs Muhaajir Official – Versi 3.4</p>
+              <h2 class="card-title" data-i18n="sitemap.title">Sitemap</h2>
+              <p class="card-subtitle" data-i18n="sitemap.subtitle">Navigasi lengkap situs Muhaajir Official – Versi 3.5</p>
             </div>
           </div>
 
           <div class="license-grid">
             <a href="/" class="license-item">
               <i class="fas fa-home" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 12px; display: block;"></i>
-              <div class="license-type">Beranda</div>
-              <p>Profil, Bio, Galeri, Audio Player</p>
+              <div class="license-type" data-i18n="sitemap.homeTitle">Beranda</div>
+              <p data-i18n="sitemap.homeDesc">Profil, Bio, Galeri, Audio Player</p>
             </a>
-            <a href="/main-showcase" class="license-item">
+            <a href="https://hajirmuhaajir.github.io/main" class="license-item">
               <i class="fas fa-music" style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 12px; display: block;"></i>
-              <div class="license-type">Showcase</div>
-              <p>Portofolio musik & fotografi</p>
+              <div class="license-type" data-i18n="sitemap.showcaseTitle">Showcase</div>
+              <p data-i18n="sitemap.showcaseDesc">Portofolio musik & fotografi</p>
             </a>
           </div>
 
-          <h3>Navigasi Utama</h3>
-          <p>Beranda (Profil, Bio, Galeri, Audio Player)<br>Legal (Privacy, Terms & Conditions, Sitemap)</p>
+          <h3 data-i18n="sitemap.navTitle">Navigasi Utama</h3>
+          <p data-i18n="sitemap.navText">Beranda (Profil, Bio, Galeri, Audio Player)<br>Legal (Privacy, Terms & Conditions, Sitemap)</p>
 
-          <h3>Katalog Konten & Tools</h3>
-          <p>Koleksi Audio: 12 lagu original<br>
-             Koleksi Visual: 3 galeri foto high-resolution<br>
-             Tools Digital: Hajirsync • Muhaajir Delta • Muhaajir Scrub • Mehaajir Vault</p>
+          <h3 data-i18n="sitemap.catalogTitle">Katalog Konten & Tools</h3>
+          <p data-i18n="sitemap.catalogText">Koleksi Audio: 12 lagu original<br>
+            Koleksi Visual: 3 galeri foto high-resolution<br>
+            Tools Digital: Hajirsync • Muhaajir Delta • Muhaajir Scrub • Mehaajir Vault</p>
 
-          <h3>Media Sosial & Kontak</h3>
-          <p>YouTube: @hajirstein<br>
-             TikTok: @muhaajir_muhaajir<br>
-             Instagram: @muhaajirere<br>
-             SoundCloud: Muhaajir<br>
-             GitHub: hajirmuhaajir<br><br>
-             <strong>Email resmi (satu-satunya kontak aktif):</strong> hajirmuhaajir@yahoo.com</p>
+          <h3 data-i18n="sitemap.socialTitle">Media Sosial & Kontak</h3>
+          <p data-i18n="sitemap.socialText">YouTube: @hajirstein<br>
+            TikTok: @muhaajir_muhaajir<br>
+            Instagram: @muhaajirere<br>
+            SoundCloud: Muhaajir<br>
+            GitHub: hajirmuhaajir<br><br>
+            <strong data-i18n="sitemap.contactNote">Kontak resmi melalui formulir Formspree di halaman utama.</strong></p>
 
-          <p style="margin-top:32px;font-size:0.9rem;opacity:0.7;">Riwayat Versi Terbaru<br>
-             v.3.4 (19 April 2026): Rombak total UI, integrasi 4 tools digital, migrasi penyimpanan ke Dropbox & Google Drive, penyederhanaan kontak ke Yahoo Mail, dan pembaruan sistem penomoran dokumen.</p>
+          <p style="margin-top:32px;font-size:0.9rem;opacity:0.7;" data-i18n="sitemap.changelog">Riwayat Versi Terbaru<br>
+            v.3.5 (1 Maret 2026): Migrasi logo ke .webp, sistem ganti logo otomatis (Hitam/Putih) sesuai tema, persiapan URL ke hajirmuhaajir.github.io/main, validasi Formspree (nama min. 4 huruf, pesan min. 20 karakter), teks bilingual ID/EN yang ramah, tombol aksesibel min. 48px, label status proyek (Stable/WIP/Beta), dan penghapusan email Yahoo.</p>
         </div>
       </section>
     </div>
@@ -897,72 +1031,235 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div style="margin-bottom: 24px;">
-          <img src="https://i.postimg.cc/Kvg50f5n/IMG-20250812-164118-putih.png" alt="Logo" width="60" height="60" style="border-radius: 50%; border: 2px solid rgba(255,255,255,0.3);">
+        <div class="footer-logo-wrap">
+          <img src="https://i.postimg.cc/JztFxsRH/hajir-logo-putih.webp" alt="Logo Muhaajir" width="60" height="60" loading="lazy">
         </div>
-        <p style="margin-bottom: 24px; opacity: 0.8;">© 2026 Muhaajir Official. <strong>Versi 3.4</strong> — 19 April 2026</p>
+        <p style="margin-bottom: 24px; opacity: 0.8;" data-i18n="footer.copyright">© 2026 Muhaajir Official. <strong>Versi 3.5</strong> — 1 Maret 2026</p>
         
         <div class="social-links">
-          <a href="https://www.youtube.com/@hajirstein" class="social-link" title="YouTube" aria-label="YouTube">
+          <a href="https://www.youtube.com/@hajirstein" class="social-link" title="YouTube" aria-label="YouTube" target="_blank" rel="noopener">
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="https://www.tiktok.com/@muhaajir_muhaajir" class="social-link" title="TikTok" aria-label="TikTok">
+          <a href="https://www.tiktok.com/@muhaajir_muhaajir" class="social-link" title="TikTok" aria-label="TikTok" target="_blank" rel="noopener">
             <i class="fab fa-tiktok"></i>
           </a>
-          <a href="https://www.instagram.com/muhaajirere" class="social-link" title="Instagram" aria-label="Instagram">
+          <a href="https://www.instagram.com/muhaajirere" class="social-link" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://on.soundcloud.com/m65TNUx3XarndC67jO" class="social-link" title="SoundCloud" aria-label="SoundCloud">
+          <a href="https://on.soundcloud.com/m65TNUx3XarndC67jO" class="social-link" title="SoundCloud" aria-label="SoundCloud" target="_blank" rel="noopener">
             <i class="fab fa-soundcloud"></i>
           </a>
-          <a href="https://github.com/hajirmuhaajir" class="social-link" title="GitHub" aria-label="GitHub">
+          <a href="https://github.com/hajirmuhaajir" class="social-link" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener">
             <i class="fab fa-github"></i>
           </a>
         </div>
 
-        <!-- Email resmi tunggal -->
-        <div class="email-chips">
-          <div class="email-chip" data-copy="hajirmuhaajir@yahoo.com">
-            <div>
-              <div class="email-chip-label">Kontak Resmi & Legal</div>
-              <div class="email-chip-address">hajirmuhaajir@yahoo.com</div>
-            </div>
-            <i class="fas fa-copy"></i>
-          </div>
-        </div>
+        <p style="opacity:0.7;font-size:0.9rem;" data-i18n="footer.contactNote">
+          Kontak resmi melalui formulir di halaman utama.
+        </p>
       </div>
     </div>
   </footer>
 
   <script>
-    //=============================THEME TOGGLE + SYSTEM PREFERENCE==============*/
-    const themeToggle = document.getElementById('themeToggle');
-    const html = document.documentElement;
-    const progressBar = document.getElementById('progressBar');
+    /* ─── I18N TRANSLATIONS ─── */
+    const translations = {
+      id: {
+        hero: {
+          title: 'Legal & Sitemap',
+          subtitle: 'Dokumen resmi Muhaajir Official – Musik · Fotografi · Tools Digital',
+          version: 'Versi 3.5 — 1 Maret 2026'
+        },
+        nav: {
+          privacy: 'Privasi',
+          terms: 'Syarat & Ketentuan',
+          sitemap: 'Sitemap'
+        },
+        privacy: {
+          title: 'Kebijakan Privasi',
+          versionLabel: 'Versi 3.5 — 1 Maret 2026',
+          commitmentTitle: 'Komitmen Privasi',
+          commitmentText: 'Saya, Muhaajir, berkomitmen melindungi privasi Anda dengan transparan. Data Anda tidak pernah dijual, disewakan, atau dibagikan untuk keperluan pemasaran.',
+          dataTitle: '1. Data yang Dikumpulkan',
+          dataText: '1.1 Informasi sukarela: Nama asli (min. 4 huruf) dan pesan jelas (min. 20 karakter) yang Anda kirim melalui formulir kontak Formspree.<br>1.2 Data teknis: Alamat IP, jenis browser, dan halaman yang dikunjungi (dicatat secara anonim melalui Google Analytics).<br>1.3 Preferensi lokal: Pengaturan bahasa (ID/EN) dan preferensi tools yang disimpan di browser Anda.<br>1.4 Data sesi tools: Penggunaan Hajirsync, Muhaajir Delta, Muhaajir Scrub, atau Mehaajir Vault hanya menyimpan preferensi lokal.',
+          cookiesTitle: '2. Penggunaan Cookies & Pihak Ketiga',
+          cookiesText: 'Cookies fungsional: Menyimpan preferensi pengguna (tidak mengumpulkan data pribadi).<br>Cookies analitik: Google Analytics untuk meningkatkan pengalaman situs (anonim).<br>Formulir kontak diproses oleh Formspree (data dihapus otomatis setelah maksimal 30 hari).<br>Penyimpanan aset musik: Dropbox dan Google Drive.<br>Link eksternal (YouTube, TikTok, Instagram, SoundCloud, GitHub) tunduk pada kebijakan privasi masing-masing.',
+          securityTitle: '3. Keamanan Data',
+          securityText: 'Seluruh situs menggunakan koneksi HTTPS/TLS.<br>Content Security Policy (CSP) aktif.<br>Validasi input untuk mencegah serangan.<br>Akses data sangat dibatasi.',
+          rightsTitle: '4. Hak Anda',
+          rightsText: 'Anda berhak untuk:<br>• Mengakses data pribadi yang tersimpan tentang Anda.<br>• Meminta perbaikan atau penghapusan data (right to erasure).<br>• Membatasi pemrosesan data.<br><br>Untuk menggunakan hak tersebut, silakan hubungi melalui <strong>formulir kontak Formspree</strong> di halaman utama.'
+        },
+        terms: {
+          title: 'Syarat & Ketentuan',
+          versionLabel: 'Versi 3.5 — 1 Maret 2026',
+          intro: 'Dengan mengakses situs ini, Anda dianggap menyetujui ketentuan berikut:',
+          ipTitle: '1. Kekayaan Intelektual & Lisensi',
+          ipText: '1.1 Semua karya musik (12 lagu original: 5 Fragmen Suara + 7 Resonansi Dalam Diam), foto, teks, desain, dan tools digital adalah milik penuh Muhaajir dan dilindungi hak cipta.<br>1.2 Penggunaan Personal: Streaming, download, dan mendengarkan untuk keperluan pribadi & non-komersial gratis.<br>1.3 Penggunaan Komersial (iklan, film, event, dll): Wajib mendapatkan lisensi berbayar.<br>1.4 Cover / Remix: Diperbolehkan dengan mencantumkan kredit jelas:<br><span class="credit-format">"© Muhaajir"</span><br>1.5 Tools digital (Hajirsync, Muhaajir Delta, Muhaajir Scrub, Mehaajir Vault) adalah properti intelektual Muhaajir. Penggunaan komersial memerlukan izin.',
+          prohibitionTitle: '2. Larangan',
+          prohibitionText: 'Dilarang mendistribusikan ulang, menjual, atau mengklaim kepemilikan konten tanpa izin tertulis.<br>Dilarang melakukan scraping otomatis atau upaya meretas sistem.<br>Kredit wajib diberikan saat menggunakan foto atau musik.',
+          disclaimerTitle: '3. Batasan Tanggung Jawab (Disclaimer)',
+          disclaimerText: 'Situs dan konten disediakan "sebagaimana adanya" tanpa jaminan ketersediaan atau bebas kesalahan.<br>Kami tidak bertanggung jawab atas kegagalan unduhan di Dropbox/Google Drive atau dampak teknis dari penggunaan tools.<br>Tautan ke platform eksternal bukan merupakan endorsement.<br>Muhaajir berhak mengubah atau menghapus konten kapan saja tanpa pemberitahuan sebelumnya.',
+          lawTitle: '4. Hukum Berlaku',
+          lawText: 'Setiap sengketa akan diselesaikan di bawah hukum Indonesia, dengan domisili hukum di Bogor, Indonesia.'
+        },
+        sitemap: {
+          title: 'Sitemap',
+          subtitle: 'Navigasi lengkap situs Muhaajir Official – Versi 3.5',
+          homeTitle: 'Beranda',
+          homeDesc: 'Profil, Bio, Galeri, Audio Player',
+          showcaseTitle: 'Showcase',
+          showcaseDesc: 'Portofolio musik & fotografi',
+          navTitle: 'Navigasi Utama',
+          navText: 'Beranda (Profil, Bio, Galeri, Audio Player)<br>Legal (Privacy, Terms & Conditions, Sitemap)',
+          catalogTitle: 'Katalog Konten & Tools',
+          catalogText: 'Koleksi Audio: 12 lagu original<br>Koleksi Visual: 3 galeri foto high-resolution<br>Tools Digital: Hajirsync • Muhaajir Delta • Muhaajir Scrub • Mehaajir Vault',
+          socialTitle: 'Media Sosial & Kontak',
+          socialText: 'YouTube: @hajirstein<br>TikTok: @muhaajir_muhaajir<br>Instagram: @muhaajirere<br>SoundCloud: Muhaajir<br>GitHub: hajirmuhaajir<br><br><strong>Kontak resmi melalui formulir Formspree di halaman utama.</strong>',
+          contactNote: 'Kontak resmi melalui formulir Formspree di halaman utama.',
+          changelog: 'Riwayat Versi Terbaru<br>v.3.5 (1 Maret 2026): Migrasi logo ke .webp, sistem ganti logo otomatis (Hitam/Putih) sesuai tema, persiapan URL ke hajirmuhaajir.github.io/main, validasi Formspree (nama min. 4 huruf, pesan min. 20 karakter), teks bilingual ID/EN yang ramah, tombol aksesibel min. 48px, label status proyek (Stable/WIP/Beta), dan penghapusan email Yahoo.'
+        },
+        footer: {
+          copyright: '© 2026 Muhaajir Official. <strong>Versi 3.5</strong> — 1 Maret 2026',
+          contactNote: 'Kontak resmi melalui formulir di halaman utama.'
+        },
+        langLabel: 'EN',
+        langTitle: 'Switch to English'
+      },
+      en: {
+        hero: {
+          title: 'Legal & Sitemap',
+          subtitle: 'Official documents of Muhaajir Official – Music · Photography · Digital Tools',
+          version: 'Version 3.5 — March 1, 2026'
+        },
+        nav: {
+          privacy: 'Privacy',
+          terms: 'Terms & Conditions',
+          sitemap: 'Sitemap'
+        },
+        privacy: {
+          title: 'Privacy Policy',
+          versionLabel: 'Version 3.5 — March 1, 2026',
+          commitmentTitle: 'Privacy Commitment',
+          commitmentText: 'I, Muhaajir, am committed to protecting your privacy transparently. Your data is never sold, rented, or shared for marketing purposes.',
+          dataTitle: '1. Data Collected',
+          dataText: '1.1 Voluntary information: Real name (min. 4 characters) and clear message (min. 20 characters) submitted via the Formspree contact form.<br>1.2 Technical data: IP address, browser type, and pages visited (anonymously logged via Google Analytics).<br>1.3 Local preferences: Language settings (ID/EN) and tool preferences stored in your browser.<br>1.4 Tool session data: Usage of Hajirsync, Muhaajir Delta, Muhaajir Scrub, or Mehaajir Vault only stores local preferences.',
+          cookiesTitle: '2. Cookies & Third Parties',
+          cookiesText: 'Functional cookies: Store user preferences (no personal data collected).<br>Analytics cookies: Google Analytics to improve site experience (anonymous).<br>Contact forms processed by Formspree (data automatically deleted after max 30 days).<br>Music asset storage: Dropbox and Google Drive.<br>External links (YouTube, TikTok, Instagram, SoundCloud, GitHub) are subject to their respective privacy policies.',
+          securityTitle: '3. Data Security',
+          securityText: 'The entire site uses HTTPS/TLS connections.<br>Content Security Policy (CSP) is active.<br>Input validation to prevent attacks.<br>Data access is strictly limited.',
+          rightsTitle: '4. Your Rights',
+          rightsText: 'You have the right to:<br>• Access personal data stored about you.<br>• Request correction or deletion of data (right to erasure).<br>• Restrict data processing.<br><br>To exercise these rights, please contact us via the <strong>Formspree contact form</strong> on the main page.'
+        },
+        terms: {
+          title: 'Terms & Conditions',
+          versionLabel: 'Version 3.5 — March 1, 2026',
+          intro: 'By accessing this site, you are deemed to agree to the following terms:',
+          ipTitle: '1. Intellectual Property & Licensing',
+          ipText: '1.1 All musical works (12 original songs: 5 Fragmen Suara + 7 Resonansi Dalam Diam), photos, text, designs, and digital tools are the full property of Muhaajir and are protected by copyright.<br>1.2 Personal Use: Streaming, downloading, and listening for personal & non-commercial purposes is free.<br>1.3 Commercial Use (advertising, film, events, etc.): Requires a paid license.<br>1.4 Cover / Remix: Allowed with clear credit:<br><span class="credit-format">"© Muhaajir"</span><br>1.5 Digital tools (Hajirsync, Muhaajir Delta, Muhaajir Scrub, Mehaajir Vault) are the intellectual property of Muhaajir. Commercial use requires permission.',
+          prohibitionTitle: '2. Prohibitions',
+          prohibitionText: 'Redistributing, selling, or claiming ownership of content without written permission is prohibited.<br>Automated scraping or attempts to hack the system are prohibited.<br>Credit must be given when using photos or music.',
+          disclaimerTitle: '3. Disclaimer',
+          disclaimerText: 'The site and content are provided "as is" without warranty of availability or error-free operation.<br>We are not responsible for download failures on Dropbox/Google Drive or technical impacts from using the tools.<br>Links to external platforms do not constitute endorsement.<br>Muhaajir reserves the right to change or remove content at any time without prior notice.',
+          lawTitle: '4. Governing Law',
+          lawText: 'Any disputes shall be resolved under Indonesian law, with legal domicile in Bogor, Indonesia.'
+        },
+        sitemap: {
+          title: 'Sitemap',
+          subtitle: 'Complete site navigation of Muhaajir Official – Version 3.5',
+          homeTitle: 'Home',
+          homeDesc: 'Profile, Bio, Gallery, Audio Player',
+          showcaseTitle: 'Showcase',
+          showcaseDesc: 'Music & photography portfolio',
+          navTitle: 'Main Navigation',
+          navText: 'Home (Profile, Bio, Gallery, Audio Player)<br>Legal (Privacy, Terms & Conditions, Sitemap)',
+          catalogTitle: 'Content Catalog & Tools',
+          catalogText: 'Audio Collection: 12 original songs<br>Visual Collection: 3 high-resolution photo galleries<br>Digital Tools: Hajirsync • Muhaajir Delta • Muhaajir Scrub • Mehaajir Vault',
+          socialTitle: 'Social Media & Contact',
+          socialText: 'YouTube: @hajirstein<br>TikTok: @muhaajir_muhaajir<br>Instagram: @muhaajirere<br>SoundCloud: Muhaajir<br>GitHub: hajirmuhaajir<br><br><strong>Official contact via the Formspree form on the main page.</strong>',
+          contactNote: 'Official contact via the Formspree form on the main page.',
+          changelog: 'Latest Version History<br>v.3.5 (March 1, 2026): Logo migration to .webp, auto-switch logo system (Black/White) by theme, URL migration prep to hajirmuhaajir.github.io/main, Formspree validation (min. 4-char name, min. 20-char message), friendly bilingual ID/EN text, accessible buttons min. 48px, project status labels (Stable/WIP/Beta), and Yahoo email removal.'
+        },
+        footer: {
+          copyright: '© 2026 Muhaajir Official. <strong>Version 3.5</strong> — March 1, 2026',
+          contactNote: 'Official contact via the form on the main page.'
+        },
+        langLabel: 'ID',
+        langTitle: 'Beralih ke Bahasa Indonesia'
+      }
+    };
 
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
-    html.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    //=============================LANGUAGE SYSTEM==============*/
+    let currentLang = localStorage.getItem('lang') || 'id';
+    const htmlEl = document.documentElement;
+    const langToggle = document.getElementById('langToggle');
+    const langLabel = document.getElementById('langLabel');
 
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateThemeIcon(newTheme);
+    function applyTranslations(lang) {
+      const t = translations[lang];
+      htmlEl.setAttribute('lang', lang);
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = t;
+        for (const k of keys) {
+          if (value && typeof value === 'object' && k in value) {
+            value = value[k];
+          } else {
+            value = null;
+            break;
+          }
+        }
+        if (value && typeof value === 'string') {
+          el.innerHTML = value;
+        }
+      });
+
+      langLabel.textContent = t.langLabel;
+      langToggle.setAttribute('title', t.langTitle);
+      langToggle.setAttribute('aria-label', t.langTitle);
+
+      document.title = 'Legal & Sitemap v3.5 | Muhaajir Official';
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', 'Legal & Sitemap v3.5 | Muhaajir Official');
+
+      const jsonLd = document.querySelector('script[type="application/ld+json"]');
+      if (jsonLd) {
+        try {
+          const data = JSON.parse(jsonLd.textContent);
+          data.name = 'Legal & Sitemap v3.5 - Muhaajir Official';
+          jsonLd.textContent = JSON.stringify(data, null, 2);
+        } catch (e) { /* ignore */ }
+      }
+
+      localStorage.setItem('lang', lang);
+      currentLang = lang;
+    }
+
+    langToggle.addEventListener('click', () => {
+      const newLang = currentLang === 'id' ? 'en' : 'id';
+      applyTranslations(newLang);
     });
 
-    function updateThemeIcon(theme) {
-      const icon = themeToggle.querySelector('i');
-      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    applyTranslations(currentLang);
+
+    //=============================THEME SYSTEM==============*/
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function applyTheme(theme) {
+      htmlEl.setAttribute('data-theme', theme);
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    } else {
+      applyTheme(prefersDark.matches ? 'dark' : 'light');
     }
 
     prefersDark.addEventListener('change', (e) => {
       if (!localStorage.getItem('theme')) {
-        html.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-        updateThemeIcon(e.matches ? 'dark' : 'light');
+        applyTheme(e.matches ? 'dark' : 'light');
       }
     });
 
@@ -973,8 +1270,12 @@
     navTabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const targetId = tab.dataset.tab;
-        navTabs.forEach(t => t.classList.remove('active'));
+        navTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
         tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
         sections.forEach(s => s.classList.remove('active'));
         document.getElementById(targetId).classList.add('active');
       });
@@ -984,25 +1285,8 @@
     window.addEventListener('scroll', () => {
       const scrollTop = window.pageYOffset;
       const docHeight = document.body.scrollHeight - window.innerHeight;
-      const progress = (scrollTop / docHeight) * 100;
-      progressBar.style.transform = `scaleX(${progress / 100})`;
-    });
-
-    //=============================EMAIL COPY TO CLIPBOARD==============*/
-    document.querySelectorAll('.email-chip').forEach(chip => {
-      chip.addEventListener('click', async () => {
-        const email = chip.dataset.copy;
-        try {
-          await navigator.clipboard.writeText(email);
-          const originalText = chip.querySelector('.email-chip-address').textContent;
-          chip.querySelector('.email-chip-address').textContent = '✅ Disalin!';
-          setTimeout(() => {
-            chip.querySelector('.email-chip-address').textContent = originalText;
-          }, 2000);
-        } catch (err) {
-          console.error('Failed to copy email:', err);
-        }
-      });
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('progressBar').style.transform = `scaleX(${progress / 100})`;
     });
 
     //=============================TOMBOL CETAK PDF==============*/
@@ -1024,7 +1308,7 @@
       });
     });
 
-    console.log('✅ Muhaajir Legal Page v3.4 + PDF Print + Neon Glow Effects loaded perfectly!');
+    console.log('✅ Muhaajir Legal Page v3.5 + I18N ID/EN + Logo .webp + Logo Visibility Fix — loaded perfectly!');
   </script>
 </body>
 </html>
