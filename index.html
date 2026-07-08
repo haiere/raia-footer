@@ -26,9 +26,7 @@
     <title>Legal & Sitemap | Haiere Official</title>
 
     <style>
-        /* ============================================================
-           ROOT VARIABLES & RESET
-           ============================================================ */
+        /* ===== RESET & ROOT VARIABLES ===== */
         *,
         *::before,
         *::after {
@@ -91,9 +89,7 @@
             flex-direction: column;
         }
 
-        /* ============================================================
-           SKIP LINK
-           ============================================================ */
+        /* ===== SKIP LINK ===== */
         .skip-link {
             position: absolute;
             top: -100%;
@@ -111,9 +107,7 @@
             top: 0;
         }
 
-        /* ============================================================
-           PROGRESS BAR
-           ============================================================ */
+        /* ===== PROGRESS BAR ===== */
         .progress-bar {
             position: fixed;
             top: 0;
@@ -127,9 +121,7 @@
             will-change: transform;
         }
 
-        /* ============================================================
-           CONTAINER
-           ============================================================ */
+        /* ===== CONTAINER ===== */
         .container {
             max-width: 1060px;
             margin: 0 auto;
@@ -137,9 +129,7 @@
             width: 100%;
         }
 
-        /* ============================================================
-           HEADER
-           ============================================================ */
+        /* ===== HEADER ===== */
         .header {
             position: sticky;
             top: 0;
@@ -240,9 +230,7 @@
             outline-offset: 2px;
         }
 
-        /* ============================================================
-           HERO
-           ============================================================ */
+        /* ===== HERO ===== */
         .hero {
             text-align: center;
             padding: 50px 0 32px;
@@ -305,9 +293,7 @@
             }
         }
 
-        /* ============================================================
-           TABLIST (ARIA Tabs)
-           ============================================================ */
+        /* ===== TABLIST ===== */
         .tablist-wrapper {
             margin: 24px 0 32px;
         }
@@ -378,9 +364,7 @@
             }
         }
 
-        /* ============================================================
-           CARDS
-           ============================================================ */
+        /* ===== CARDS ===== */
         .card {
             background: var(--bg-surface);
             border: 1px solid var(--border);
@@ -482,9 +466,7 @@
             color: var(--text-primary);
         }
 
-        /* ============================================================
-           SITEMAP GRID
-           ============================================================ */
+        /* ===== SITEMAP GRID ===== */
         .sitemap-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -525,9 +507,7 @@
             margin-bottom: 0;
         }
 
-        /* ============================================================
-           PROJECT GRID (Ekosistem)
-           ============================================================ */
+        /* ===== PROJECT GRID ===== */
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -565,9 +545,7 @@
             color: var(--text-muted);
         }
 
-        /* ============================================================
-           CHANGELOG
-           ============================================================ */
+        /* ===== CHANGELOG ===== */
         .changelog {
             background: var(--bg-primary);
             border-left: 3px solid var(--accent);
@@ -586,9 +564,7 @@
             margin-bottom: 4px;
         }
 
-        /* ============================================================
-           COOKIE TABLE
-           ============================================================ */
+        /* ===== COOKIE TABLE ===== */
         .cookie-table-wrap {
             overflow-x: auto;
             margin: 16px 0;
@@ -631,9 +607,7 @@
             border-radius: 20px;
         }
 
-        /* ============================================================
-           BACK TO TOP
-           ============================================================ */
+        /* ===== BACK TO TOP ===== */
         .back-to-top {
             position: fixed;
             bottom: 28px;
@@ -669,9 +643,7 @@
             outline-offset: 2px;
         }
 
-        /* ============================================================
-           FOOTER
-           ============================================================ */
+        /* ===== FOOTER ===== */
         .footer {
             background: var(--bg-surface);
             border-top: 1px solid var(--border);
@@ -748,9 +720,7 @@
             text-decoration: underline;
         }
 
-        /* ============================================================
-           RESPONSIVE
-           ============================================================ */
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .container {
                 padding: 0 16px;
@@ -859,9 +829,7 @@
             }
         }
 
-        /* ============================================================
-           PRINT
-           ============================================================ */
+        /* ===== PRINT ===== */
         @media print {
             .progress-bar,
             .back-to-top,
@@ -912,9 +880,7 @@
             }
         }
 
-        /* ============================================================
-           FOCUS VISIBLE
-           ============================================================ */
+        /* ===== FOCUS VISIBLE ===== */
         :focus-visible {
             outline: 2px solid var(--accent);
             outline-offset: 2px;
@@ -923,13 +889,13 @@
 </head>
 <body>
 
-    <!-- ====== SKIP LINK ====== -->
+    <!-- ===== SKIP LINK ===== -->
     <a href="#privacy-panel" class="skip-link" data-i18n="skip">Lompat ke konten utama</a>
 
-    <!-- ====== PROGRESS BAR ====== -->
+    <!-- ===== PROGRESS BAR ===== -->
     <div class="progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-    <!-- ====== HEADER ====== -->
+    <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="container">
             <div class="header-inner">
@@ -958,11 +924,11 @@
         </div>
     </header>
 
-    <!-- ====== MAIN ====== -->
+    <!-- ===== MAIN ===== -->
     <main>
         <div class="container">
 
-            <!-- HERO -->
+            <!-- ===== HERO ===== -->
             <div class="hero">
                 <h1 data-i18n="hero.title">Legal &amp; Sitemap</h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">Dokumen resmi Haiere Official – Musik · Tools Digital</p>
@@ -972,7 +938,7 @@
                 </div>
             </div>
 
-            <!-- ====== TABLIST (ARIA) ====== -->
+            <!-- ===== TABLIST ===== -->
             <div class="tablist-wrapper">
                 <ul class="tablist" role="tablist" aria-label="Navigasi Legal">
                     <li class="tablist-item" role="none">
@@ -998,7 +964,7 @@
                 </ul>
             </div>
 
-            <!-- PANEL: PRIVACY ========================================================== -->
+            <!-- ===== PANEL: PRIVACY ===== -->
             <section id="privacy-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-privacy" aria-hidden="false">
                 <article class="card">
                     <div class="card-header">
@@ -1010,7 +976,7 @@
                     </div>
 
                     <h3 data-i18n="privacy.commitment.title">Komitmen Privasi</h3>
-                    <p data-i18n="privacy.commitment.desc">Saya, <strong>Haiere</strong>, berkomitmen melindungi privasi Anda dengan transparan penuh. Data Anda <strong>tidak pernah dijual, disewakan, atau dibagikan</strong> untuk keperluan pemasaran kepada pihak ketiga mana pun. Setiap interaksi di situs ini dirancang dengan prinsip <em>privacy-first</em>.</p>
+                    <p data-i18n="privacy.commitment.desc">Saya, <strong>Hajir</strong>, berkomitmen melindungi privasi Anda dengan transparan penuh. Data Anda <strong>tidak pernah dijual, disewakan, atau dibagikan</strong> untuk keperluan pemasaran kepada pihak ketiga mana pun. Setiap interaksi di situs ini dirancang dengan prinsip <em>privacy-first</em>.</p>
 
                     <h3 data-i18n="privacy.data.title">1. Data yang Dikumpulkan</h3>
                     <p data-i18n="privacy.data.desc">Kami mengumpulkan data berikut secara minimal:</p>
@@ -1053,7 +1019,7 @@
                 </article>
             </section>
 
-            <!-- PANEL: TERMS ========================================================== -->
+            <!-- ===== PANEL: TERMS ===== -->
             <section id="terms-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-terms" aria-hidden="true">
                 <article class="card">
                     <div class="card-header">
@@ -1105,7 +1071,7 @@
                 </article>
             </section>
 
-            <!-- PANEL: SITEMAP ========================================================== -->
+            <!-- ===== PANEL: SITEMAP ===== -->
             <section id="sitemap-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-sitemap" aria-hidden="true">
                 <article class="card">
                     <div class="card-header">
@@ -1191,7 +1157,7 @@
                     <h3 data-i18n="sitemap.social.title">Media Sosial &amp; Kontak</h3>
                     <p>
                         <a href="https://www.youtube.com/@hajirstein" target="_blank" rel="noopener noreferrer">YouTube: @hajirstein</a><br />
-                        <a href="https://www.instagram.com/muhaajirere" target="_blank" rel="noopener noreferrer">Instagram: @muhaajirere</a><br />
+                        <a href="https://www.instagram.com/hajirstein" target="_blank" rel="noopener noreferrer">Instagram: @hajirstein</a><br />
                         <a href="https://on.soundcloud.com/m65TNUx3XarndC67jO" target="_blank" rel="noopener noreferrer">SoundCloud: Muhaajir</a><br />
                         <a href="https://github.com/haiere" target="_blank" rel="noopener noreferrer">GitHub: haiere</a><br />
                         <span data-i18n="sitemap.social.note"><strong>Kontak resmi</strong> melalui <a href="https://haiere.github.io#contact">formulir Formspree</a> di halaman utama.</span>
@@ -1212,7 +1178,7 @@
                 </article>
             </section>
 
-            <!-- PANEL: COOKIES ========================================================== -->
+            <!-- ===== PANEL: COOKIES ===== -->
             <section id="cookies-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-cookies" aria-hidden="true">
                 <article class="card">
                     <div class="card-header">
@@ -1315,7 +1281,7 @@
         </div>
     </main>
 
-    <!-- ====== FOOTER ====== -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
@@ -1359,14 +1325,11 @@
         </div>
     </footer>
 
-    <!-- ====== BACK TO TOP ====== -->
+    <!-- ===== BACK TO TOP ===== -->
     <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- ============================================================
-    SCRIPT
-    ============================================================ -->
     <script>
         (function() {
             'use strict';
@@ -1386,20 +1349,9 @@
             const headerLogo = document.getElementById('header-logo');
             const footerLogo = document.getElementById('footer-logo');
 
-            // ─── LOGO THEME SWITCH ─────────────────────────────
+            // ─── CONSTANTS ──────────────────────────────────────
             const LOGO_LIGHT = 'https://i.postimg.cc/GmWt2wch/H-blue.webp';
             const LOGO_DARK = 'https://i.postimg.cc/8PJ0bhb1/H-haiere.webp';
-
-            function updateLogo() {
-                const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-                const src = isDark ? LOGO_DARK : LOGO_LIGHT;
-                if (headerLogo && headerLogo.src !== src) {
-                    headerLogo.src = src;
-                }
-                if (footerLogo && footerLogo.src !== src) {
-                    footerLogo.src = src;
-                }
-            }
 
             // ─── THEME ──────────────────────────────────────────
             function getTheme() {
@@ -1411,18 +1363,28 @@
                 try {
                     localStorage.setItem('legalTheme', theme);
                 } catch (_) {}
-                const icon = themeIcon;
-                if (icon) {
-                    icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+                if (themeIcon) {
+                    themeIcon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
                 }
                 updateLogo();
             }
 
             function toggleTheme() {
-                const current = getTheme();
-                setTheme(current === 'dark' ? 'light' : 'dark');
+                setTheme(getTheme() === 'dark' ? 'light' : 'dark');
             }
 
+            function updateLogo() {
+                const isDark = getTheme() === 'dark';
+                const src = isDark ? LOGO_DARK : LOGO_LIGHT;
+                if (headerLogo && headerLogo.src !== src) {
+                    headerLogo.src = src;
+                }
+                if (footerLogo && footerLogo.src !== src) {
+                    footerLogo.src = src;
+                }
+            }
+
+            // Initialize theme
             (function() {
                 let saved;
                 try {
@@ -1455,7 +1417,7 @@
                     'privacy.title': 'Kebijakan Privasi',
                     'privacy.version': 'Versi 3.8.b — 23 Juni 2026',
                     'privacy.commitment.title': 'Komitmen Privasi',
-                    'privacy.commitment.desc': 'Saya, Haiere, berkomitmen melindungi privasi Anda dengan transparan penuh. Data Anda tidak pernah dijual, disewakan, atau dibagikan untuk keperluan pemasaran kepada pihak ketiga mana pun. Setiap interaksi di situs ini dirancang dengan prinsip privacy-first.',
+                    'privacy.commitment.desc': 'Saya, Hajir, berkomitmen melindungi privasi Anda dengan transparan penuh. Data Anda tidak pernah dijual, disewakan, atau dibagikan untuk keperluan pemasaran kepada pihak ketiga mana pun. Setiap interaksi di situs ini dirancang dengan prinsip privacy-first.',
                     'privacy.data.title': '1. Data yang Dikumpulkan',
                     'privacy.data.desc': 'Kami mengumpulkan data berikut secara minimal:',
                     'privacy.data.item1': 'Informasi Sukarela — nama dan pesan yang Anda kirimkan melalui formulir kontak.',
@@ -1604,7 +1566,7 @@
                     'privacy.title': 'Privacy Policy',
                     'privacy.version': 'Version 3.8.b — June 23, 2026',
                     'privacy.commitment.title': 'Privacy Commitment',
-                    'privacy.commitment.desc': 'I, Haiere, am committed to protecting your privacy with full transparency. Your data is never sold, rented, or shared for marketing purposes with any third party. Every interaction on this site is designed with privacy-first principles.',
+                    'privacy.commitment.desc': 'I\'m, Hajir, am committed to protecting your privacy with full transparency. Your data is never sold, rented, or shared for marketing purposes with any third party. Every interaction on this site is designed with privacy-first principles.',
                     'privacy.data.title': '1. Data Collected',
                     'privacy.data.desc': 'We collect the following minimal data:',
                     'privacy.data.item1': 'Voluntary Information — name and message you send through the contact form.',
@@ -1752,69 +1714,42 @@
                     const key = el.getAttribute('data-i18n');
                     const value = t[key];
                     if (value !== undefined) {
-                        if (el.querySelector('a')) {
-                            if (value.includes('<')) {
-                                el.innerHTML = value;
-                            } else {
-                                el.textContent = value;
-                            }
+                        if (el.querySelector('a') && value.includes('<')) {
+                            el.innerHTML = value;
                         } else {
                             el.textContent = value;
                         }
                     }
                 });
 
-                document.querySelectorAll('.cookie-table td').forEach(td => {
-                    const key = td.getAttribute('data-i18n');
+                document.querySelectorAll('.cookie-table td, .cookie-table th, .badge-cookie').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
                     if (key && t[key] !== undefined) {
-                        td.textContent = t[key];
-                    }
-                });
-
-                document.querySelectorAll('.cookie-table th').forEach(th => {
-                    const key = th.getAttribute('data-i18n');
-                    if (key && t[key] !== undefined) {
-                        th.textContent = t[key];
-                    }
-                });
-
-                document.querySelectorAll('.badge-cookie').forEach(badge => {
-                    const key = badge.getAttribute('data-i18n');
-                    if (key && t[key] !== undefined) {
-                        badge.textContent = t[key];
+                        el.textContent = t[key];
                     }
                 });
 
                 const metaDesc = document.querySelector('meta[name="description"]');
                 if (metaDesc) {
-                    const desc = lang === 'id' ?
+                    metaDesc.setAttribute('content', lang === 'id' ?
                         'Kebijakan Privasi, Syarat & Ketentuan, Sitemap, dan Kebijakan Cookie Haiere Official – Musik & Tools Digital. Versi 3.8.b' :
-                        'Privacy Policy, Terms & Conditions, Sitemap, and Cookie Policy of Haiere Official – Music & Digital Tools. Version 3.8.b';
-                    metaDesc.setAttribute('content', desc);
+                        'Privacy Policy, Terms & Conditions, Sitemap, and Cookie Policy of Haiere Official – Music & Digital Tools. Version 3.8.b'
+                    );
                 }
 
                 const ogDesc = document.querySelector('meta[property="og:description"]');
                 if (ogDesc) {
-                    const desc = lang === 'id' ?
+                    ogDesc.setAttribute('content', lang === 'id' ?
                         'Dokumen resmi Haiere Official – Kebijakan Privasi, Syarat & Ketentuan, Sitemap, Kebijakan Cookie.' :
-                        'Official documents of Haiere Official – Privacy Policy, Terms & Conditions, Sitemap, Cookie Policy.';
-                    ogDesc.setAttribute('content', desc);
+                        'Official documents of Haiere Official – Privacy Policy, Terms & Conditions, Sitemap, Cookie Policy.'
+                    );
                 }
-
-                const ogTitle = document.querySelector('meta[property="og:title"]');
-                if (ogTitle) {
-                    ogTitle.setAttribute('content', lang === 'id' ? 'Legal & Sitemap | Haiere Official' :
-                        'Legal & Sitemap | Haiere Official');
-                }
-
-                document.title = lang === 'id' ? 'Legal & Sitemap | Haiere Official' :
-                    'Legal & Sitemap | Haiere Official';
 
                 document.documentElement.lang = lang;
-
                 console.log('✅ Language set to:', lang);
             }
 
+            // Initialize language
             (function() {
                 let saved;
                 try {
@@ -1833,15 +1768,17 @@
                 window.print();
             });
 
-            // ─── BACK TO TOP ───────────────────────────────────
+            // ─── BACK TO TOP & PROGRESS BAR ────────────────────
             function onScroll() {
                 const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
                 const height = document.documentElement.scrollHeight - window.innerHeight;
                 const scrolled = height > 0 ? (scrollTop / height) * 100 : 0;
+
                 if (progressBar) {
                     progressBar.style.transform = 'scaleX(' + (scrolled / 100) + ')';
                     progressBar.setAttribute('aria-valuenow', Math.round(scrolled));
                 }
+
                 if (backBtn) {
                     backBtn.classList.toggle('show', scrollTop > 300);
                 }
@@ -1932,19 +1869,16 @@
                 });
             });
 
-            function activateFromHash() {
+            // Initialize from hash or default
+            (function() {
                 let hash = window.location.hash;
                 if (!hash || hash === '#') {
                     hash = '#privacy';
                 }
                 const panelId = hash.replace('#', '') + '-panel';
                 const tabExists = document.querySelector('.tab-btn[data-target="' + panelId + '"]');
-                if (tabExists) {
-                    activateTab(panelId);
-                } else {
-                    activateTab('privacy-panel');
-                }
-            }
+                activateTab(tabExists ? panelId : 'privacy-panel');
+            })();
 
             window.addEventListener('hashchange', function() {
                 const hash = window.location.hash || '#privacy';
@@ -1954,11 +1888,6 @@
                     activateTab(panelId);
                 }
             });
-
-            activateFromHash();
-
-            // ─── INIT LOGO ─────────────────────────────────────
-            updateLogo();
 
             console.log('✅ Legal & Sitemap v3.8.b (Haiere) loaded with ARIA Tablist & I18N');
         })();
