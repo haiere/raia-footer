@@ -45,9 +45,7 @@
     </script>
 
     <style>
-        /* ═══════════════════════════════════════════════════
-                   RESET & ROOT VARIABLES
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- RESET & ROOT VARIABLES ---------- */
         *,
         *::before,
         *::after {
@@ -57,14 +55,12 @@
         }
 
         :root {
-            /* ── Color ── */
             --accent: #2563EB;
             --accent-hover: #1D4ED8;
             --accent-glow: rgba(37, 99, 235, 0.35);
             --accent-soft: rgba(37, 99, 235, 0.08);
             --accent-border: rgba(37, 99, 235, 0.20);
 
-            /* ── Light ── */
             --bg-primary: #F1F5F9;
             --bg-surface: rgba(255, 255, 255, 0.68);
             --bg-card: rgba(255, 255, 255, 0.72);
@@ -105,7 +101,6 @@
             --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.30);
         }
 
-        /* ── Typography ── */
         :root {
             --font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
             --mono: 'JetBrains Mono', monospace;
@@ -134,9 +129,7 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   SKIP LINK
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- SKIP LINK ---------- */
         .skip-link {
             position: absolute;
             top: -100%;
@@ -155,9 +148,7 @@
             top: 0;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   PROGRESS BAR
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- PROGRESS BAR ---------- */
         .progress-bar {
             position: fixed;
             top: 0;
@@ -173,9 +164,7 @@
             box-shadow: 0 0 12px var(--accent-glow);
         }
 
-        /* ═══════════════════════════════════════════════════
-                   GLASS HEADER
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- GLASS HEADER ---------- */
         .header {
             position: fixed;
             top: 0;
@@ -237,7 +226,6 @@
             letter-spacing: -0.02em;
         }
 
-        /* ── Desktop Nav ── */
         .header-nav {
             display: flex;
             gap: 4px;
@@ -276,7 +264,6 @@
             border-radius: 2px;
         }
 
-        /* ── Header Actions ── */
         .header-actions {
             display: flex;
             gap: 8px;
@@ -315,7 +302,6 @@
             outline-offset: 2px;
         }
 
-        /* ── Hamburger ── */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -354,7 +340,6 @@
             transform: translateY(-7.5px) rotate(-45deg);
         }
 
-        /* ── Mobile Menu ── */
         .mobile-menu {
             display: none;
             position: fixed;
@@ -403,9 +388,7 @@
             font-weight: 600;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   CONTAINER
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- CONTAINER ---------- */
         .container {
             max-width: 1060px;
             margin: 0 auto;
@@ -413,9 +396,7 @@
             width: 100%;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   HERO
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- HERO ---------- */
         .hero {
             text-align: center;
             padding: 120px 0 40px;
@@ -503,9 +484,7 @@
             }
         }
 
-        /* ═══════════════════════════════════════════════════
-                   TABLIST — Glass
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- TABLIST ---------- */
         .tablist-wrapper {
             margin: 28px 0 40px;
         }
@@ -578,9 +557,7 @@
             }
         }
 
-        /* ═══════════════════════════════════════════════════
-                   GLASS CARDS
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- GLASS CARDS ---------- */
         .card {
             background: var(--bg-card);
             backdrop-filter: blur(20px) saturate(1.4);
@@ -692,9 +669,7 @@
             color: var(--text-primary);
         }
 
-        /* ═══════════════════════════════════════════════════
-                   SITEMAP GRID
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- SITEMAP GRID ---------- */
         .sitemap-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -739,7 +714,6 @@
             margin-bottom: 0;
         }
 
-        /* ── Project Grid ── */
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -781,7 +755,6 @@
             color: var(--text-muted);
         }
 
-        /* ── Changelog ── */
         .changelog {
             background: var(--bg-primary);
             border-left: 4px solid var(--accent);
@@ -802,9 +775,7 @@
             margin-bottom: 4px;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   COOKIE TABLE
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- COOKIE TABLE ---------- */
         .cookie-table-wrap {
             overflow-x: auto;
             margin: 18px 0;
@@ -850,9 +821,7 @@
             border-radius: 20px;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   BACK TO TOP — Glass
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- BACK TO TOP ---------- */
         .back-to-top {
             position: fixed;
             bottom: 32px;
@@ -892,9 +861,7 @@
             outline-offset: 2px;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   FOOTER — Glass
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- FOOTER ---------- */
         .footer {
             background: var(--bg-surface);
             backdrop-filter: blur(16px) saturate(1.4);
@@ -985,11 +952,7 @@
             margin-top: 6px;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   RESPONSIVE
-                   ═══════════════════════════════════════════════════ */
-
-        /* ── Tablet & below ── */
+        /* ---------- RESPONSIVE ---------- */
         @media (max-width: 820px) {
             .header-nav {
                 display: none;
@@ -1187,7 +1150,6 @@
             }
         }
 
-        /* ── Large screens ── */
         @media (min-width: 1440px) {
             .container {
                 max-width: 1160px;
@@ -1214,9 +1176,7 @@
             }
         }
 
-        /* ═══════════════════════════════════════════════════
-                   PRINT
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- PRINT ---------- */
         @media print {
             .progress-bar,
             .back-to-top,
@@ -1293,17 +1253,13 @@
             }
         }
 
-        /* ═══════════════════════════════════════════════════
-                   FOCUS VISIBLE
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- FOCUS VISIBLE ---------- */
         :focus-visible {
             outline: 2px solid var(--accent);
             outline-offset: 3px;
         }
 
-        /* ═══════════════════════════════════════════════════
-                   REDUCED MOTION
-                   ═══════════════════════════════════════════════════ */
+        /* ---------- REDUCED MOTION ---------- */
         @media (prefers-reduced-motion: reduce) {
             *,
             *::before,
@@ -1332,13 +1288,13 @@
 </head>
 <body>
 
-    <!-- ═══ SKIP LINK ═══ -->
+    <!-- SKIP LINK -->
     <a href="#privacy-panel" class="skip-link" data-i18n="skip">Lompat ke konten utama</a>
 
-    <!-- ═══ PROGRESS BAR ═══ -->
+    <!-- PROGRESS BAR -->
     <div class="progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-    <!-- ═══ HEADER — Glass ═══ -->
+    <!-- HEADER -->
     <header class="header" id="mainHeader" role="banner">
         <div class="header-inner">
             <a href="https://haiere.github.io" class="logo" aria-label="Beranda Haiere">
@@ -1367,7 +1323,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <nav class="mobile-menu" id="mobileMenu" aria-label="Navigasi mobile">
             <a href="https://haiere.github.io" data-i18n="nav.home">Beranda</a>
             <a href="https://haiere.github.io#music" data-i18n="nav.music">Musik</a>
@@ -1376,11 +1331,11 @@
         </nav>
     </header>
 
-    <!-- ═══ MAIN ═══ -->
+    <!-- MAIN -->
     <main id="mainContent">
         <div class="container">
 
-            <!-- ═══ HERO ═══ -->
+            <!-- HERO -->
             <section class="hero" aria-label="Halaman Legal & Sitemap">
                 <h1 data-i18n="hero.title">Legal &amp; Sitemap</h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">Dokumen resmi Haiere Official – Musik · Tools Digital</p>
@@ -1390,7 +1345,7 @@
                 </div>
             </section>
 
-            <!-- ═══ TABLIST ═══ -->
+            <!-- TABLIST -->
             <div class="tablist-wrapper">
                 <ul class="tablist" role="tablist" aria-label="Navigasi Legal">
                     <li class="tablist-item" role="none">
@@ -1416,7 +1371,7 @@
                 </ul>
             </div>
 
-            <!-- ═══ PANEL: PRIVACY ═══ -->
+            <!-- PANEL: PRIVACY -->
             <section id="privacy-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-privacy" aria-hidden="false">
                 <article class="card">
                     <div class="card-header">
@@ -1471,7 +1426,7 @@
                 </article>
             </section>
 
-            <!-- ═══ PANEL: TERMS ═══ -->
+            <!-- PANEL: TERMS -->
             <section id="terms-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-terms" aria-hidden="true">
                 <article class="card">
                     <div class="card-header">
@@ -1523,7 +1478,7 @@
                 </article>
             </section>
 
-            <!-- ═══ PANEL: SITEMAP ═══ -->
+            <!-- PANEL: SITEMAP -->
             <section id="sitemap-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-sitemap" aria-hidden="true">
                 <article class="card">
                     <div class="card-header">
@@ -1630,7 +1585,7 @@
                 </article>
             </section>
 
-            <!-- ═══ PANEL: COOKIES ═══ -->
+            <!-- PANEL: COOKIES -->
             <section id="cookies-panel" class="tabpanel" role="tabpanel" aria-labelledby="tab-cookies" aria-hidden="true">
                 <article class="card">
                     <div class="card-header">
@@ -1733,7 +1688,7 @@
         </div>
     </main>
 
-    <!-- ═══ FOOTER — Glass ═══ -->
+    <!-- FOOTER -->
     <footer class="footer" role="contentinfo">
         <div class="footer-inner">
             <div class="footer-logo">
@@ -1775,19 +1730,17 @@
         </div>
     </footer>
 
-    <!-- ═══ BACK TO TOP ═══ -->
+    <!-- BACK TO TOP -->
     <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- ═══════════════════════════════════════════════════
-    JAVASCRIPT
-    ═══════════════════════════════════════════════════ -->
+    <!-- JAVASCRIPT -->
     <script>
         (function() {
             'use strict';
 
-            // ─── DOM REFS ───────────────────────────────────────
+            // DOM REFS
             const header = document.getElementById('mainHeader');
             const themeToggle = document.getElementById('themeToggle');
             const themeIcon = document.getElementById('themeIcon');
@@ -1805,11 +1758,11 @@
             const headerLogo = document.getElementById('header-logo');
             const footerLogo = document.getElementById('footer-logo');
 
-            // ─── CONSTANTS ──────────────────────────────────────
+            // CONSTANTS
             const LOGO_LIGHT = 'https://i.postimg.cc/GmWt2wch/H-blue.webp';
             const LOGO_DARK = 'https://i.postimg.cc/8PJ0bhb1/H-haiere.webp';
 
-            // ─── THEME ──────────────────────────────────────────
+            // THEME
             function getTheme() {
                 return document.documentElement.getAttribute('data-theme') || 'dark';
             }
@@ -1834,7 +1787,6 @@
                 if (footerLogo && footerLogo.src !== src) { footerLogo.src = src; }
             }
 
-            // Init theme
             (function() {
                 let saved;
                 try { saved = localStorage.getItem('legalTheme'); } catch (_) {}
@@ -1844,7 +1796,7 @@
 
             themeToggle.addEventListener('click', toggleTheme);
 
-            // ─── I18N ──────────────────────────────────────────
+            // I18N
             const translations = {
                 id: {
                     skip: 'Lompat ke konten utama',
@@ -2194,7 +2146,6 @@
                 document.documentElement.lang = lang;
             }
 
-            // Init language
             (function() {
                 let saved;
                 try { saved = localStorage.getItem('legalLang'); } catch (_) {}
@@ -2206,12 +2157,12 @@
                 applyLang(currentLang === 'id' ? 'en' : 'id');
             });
 
-            // ─── PRINT ──────────────────────────────────────────
+            // PRINT
             printBtn.addEventListener('click', function() {
                 window.print();
             });
 
-            // ─── BACK TO TOP & PROGRESS BAR ────────────────────
+            // BACK TO TOP & PROGRESS BAR
             function onScroll() {
                 const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
                 const height = document.documentElement.scrollHeight - window.innerHeight;
@@ -2226,7 +2177,6 @@
                     backBtn.classList.toggle('show', scrollTop > 300);
                 }
 
-                // Header scroll effect
                 if (header) {
                     header.classList.toggle('scrolled', scrollTop > 20);
                 }
@@ -2248,12 +2198,12 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // ─── YEAR ───────────────────────────────────────────
+            // YEAR
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
             }
 
-            // ─── HAMBURGER ──────────────────────────────────────
+            // HAMBURGER
             function toggleMobileMenu(open) {
                 const isOpen = open !== undefined ? open : !mobileMenu.classList.contains('open');
                 mobileMenu.classList.toggle('open', isOpen);
@@ -2267,14 +2217,12 @@
                 toggleMobileMenu();
             });
 
-            // Close mobile menu on link click
             mobileMenu.querySelectorAll('a').forEach(function(link) {
                 link.addEventListener('click', function() {
                     toggleMobileMenu(false);
                 });
             });
 
-            // Close on outside click
             document.addEventListener('click', function(e) {
                 if (mobileMenu.classList.contains('open') &&
                     !mobileMenu.contains(e.target) &&
@@ -2283,7 +2231,6 @@
                 }
             });
 
-            // Close on escape
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
                     toggleMobileMenu(false);
@@ -2291,7 +2238,7 @@
                 }
             });
 
-            // ─── TABLIST LOGIC ──────────────────────────────────
+            // TABLIST
             function activateTab(tabId) {
                 tabButtons.forEach(function(btn) {
                     btn.setAttribute('aria-selected', 'false');
@@ -2316,7 +2263,6 @@
                     selectedPanel.style.display = 'block';
                 }
 
-                // Update mobile menu active state
                 document.querySelectorAll('.mobile-menu a').forEach(function(a) {
                     a.classList.toggle('active', a.getAttribute('href') === '#' + tabId.replace('-panel', ''));
                 });
@@ -2328,7 +2274,6 @@
                     if (target) {
                         activateTab(target);
                         history.pushState(null, null, '#' + target.replace('-panel', ''));
-                        // Close mobile menu
                         toggleMobileMenu(false);
                     }
                 });
@@ -2362,7 +2307,6 @@
                 });
             });
 
-            // Init from hash or default
             (function() {
                 let hash = window.location.hash;
                 if (!hash || hash === '#') {
@@ -2382,7 +2326,6 @@
                 }
             });
 
-            // ─── KEYBOARD: close mobile menu on Escape ──────────
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
                     toggleMobileMenu(false);
