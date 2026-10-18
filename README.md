@@ -2,8 +2,8 @@
 
 <img src="https://i.postimg.cc/GmWt2wch/H-blue.webp" alt="Haiere Logo" width="120" />
 
-# Legal & Sitemap
-### Raia Footer v3.9.b — Official Legal Hub for Haiere
+# Legal, Tools & Sitemap
+### Raia Footer v4.0.0 — Official Legal Hub for Haiere
 
 <p>
   <a href="https://raia-footer.netlify.app/">
@@ -15,8 +15,8 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/version-3.9.b-6366f1?style=for-the-badge" alt="Version 3.9.b">
-  <img src="https://img.shields.io/badge/updated-October_9,_2026-8b5cf6?style=for-the-badge" alt="Last updated October 9, 2026">
+  <img src="https://img.shields.io/badge/version-4.0.0-6366f1?style=for-the-badge" alt="Version 4.0.0">
+  <img src="https://img.shields.io/badge/updated-October_10,_2026-8b5cf6?style=for-the-badge" alt="Last updated October 10, 2026">
   <img src="https://img.shields.io/badge/license-See_License-22c55e?style=for-the-badge" alt="License">
 </p>
 
@@ -32,9 +32,9 @@
   <img src="https://img.shields.io/badge/Made_by-Haiere-ff69b4?style=for-the-badge" alt="Made by Haiere">
 </p>
 
-<strong>The official legal documentation hub for Haiere Official.</strong><br>
-Privacy Policy · Terms & Conditions · Sitemap · Cookie Policy<br>
-Modern glassmorphism interface with Indonesian & English support.
+<strong>The official legal, tools, AI, and games hub for Haiere Official.</strong><br>
+Privacy Policy · Terms & Conditions · Sitemap · Cookie Policy · Tools · AI / Bot · Games<br>
+Modern glassmorphism interface with Indonesian and English support.
 
 </div>
 
@@ -52,7 +52,11 @@ Modern glassmorphism interface with Indonesian & English support.
 - [Configuration](#configuration)
 - [Internationalization](#internationalization)
 - [Legal Documents](#legal-documents)
+- [Tools Directory](#tools-directory)
+- [AI and Bot Directory](#ai-and-bot-directory)
+- [Games Directory](#games-directory)
 - [Haiere Ecosystem](#haiere-ecosystem)
+- [Scroll and Animation System](#scroll-and-animation-system)
 - [Accessibility](#accessibility)
 - [Development](#development)
 - [Adding a Translation](#adding-a-translation)
@@ -66,39 +70,43 @@ Modern glassmorphism interface with Indonesian & English support.
 
 ## About the Project
 
-**Legal & Sitemap** is the central legal and navigation hub for the **Haiere** ecosystem. It brings together all important legal documents and provides a complete sitemap covering Haiere pages, projects, tools, content, and official channels.
+**Legal, Tools & Sitemap** is the central hub for the **Haiere** ecosystem. It brings together all important legal documents and provides a complete directory covering Haiere pages, projects, tools, AI assistants, games, and official channels.
 
 The interface is built with a modern **glassmorphism** design and supports:
 
-- Glassmorphism UI
+- Glassmorphism UI with subtle gradients
 - Dark and light themes
 - Indonesian and English language support
 - Responsive layout for desktop, tablet, and mobile
 - Accessibility and print support
-- Fast static site — no backend required
+- Smooth, GPU-friendly scroll reveal animations
+- Fast static site with no backend required
 
-> **Architecture update — October 9, 2026:**  
-> The project now uses separated files: `index.html`, `style.css`, `i18n.js`, and `script.js`. Translations are managed in `i18n.js` for easier maintenance and future language additions.
+> **Architecture update — October 10, 2026:**
+> The project uses separated files: `index.html`, `style.css`, `i18n.js`, and `script.js`. Version v4.0.0 adds three new sections (Tools, AI / Bot, Games), rebuilds the scroll animation system, and improves accessibility across all interactive cards.
 
 ---
 
 ## Features
 
-- **Tabbed legal content** — Switch between Privacy Policy, Terms & Conditions, Sitemap, and Cookie Policy.
-- **Bilingual support** — Toggle the interface and legal content between Indonesian and English.
+- **Seven-tab navigation** — Privacy Policy, Terms & Conditions, Sitemap, Cookie Policy, Tools, AI / Bot, and Games.
+- **Bilingual support** — Toggle the interface and content between Indonesian and English.
 - **Dark and light themes** — Follow system preference or switch manually.
 - **Persistent preferences** — Theme and language are stored in `localStorage`.
-- **Interactive table of contents** — Navigate quickly to specific sections of each legal document.
-- **Scroll spy** — Highlights the section currently being viewed.
 - **Comprehensive sitemap** — Displays Haiere pages, projects, tools, content, and official channels.
+- **Tools directory** — Direct cards to HajirSync, Raia Vault, Raia Scrub, Raia Delta, Raia Minify, RaiaSpace, and Calc.
+- **AI / Bot directory** — Direct cards to Raia and Kirana.
+- **Games directory** — Direct cards to Chess, Loveyou, Orbit Weaver, and Starfall.
 - **Cookie policy table** — Shows cookie names, types, purposes, and durations.
-- **Version history** — Track updates to legal documents through a changelog.
+- **Version history** — Track updates through a changelog.
+- **Scroll reveal animations** — Smooth, GPU-friendly reveals using `IntersectionObserver` and CSS transforms.
 - **Glassmorphism UI** — Backdrop blur, subtle shadows, and smooth transitions.
 - **Responsive design** — Optimized for desktop, tablet, and mobile devices.
 - **Accessibility support** — Skip links, ARIA attributes, keyboard navigation, and reduced-motion support.
 - **Print-friendly layout** — Optimized for printing and PDF export.
 - **Back to top** — Smooth scroll button for long pages.
 - **Progress bar** — Visual reading progress indicator.
+- **Copy utilities** — Copy credit and summary text with one tap.
 
 ---
 
@@ -107,13 +115,14 @@ The interface is built with a modern **glassmorphism** design and supports:
 | Technology | Purpose |
 |---|---|
 | HTML5 | Page structure and semantic content |
-| CSS3 | Glassmorphism, themes, responsive layout, print styles |
-| JavaScript (ES6+) | Tabs, theme switching, i18n, scroll spy, TOC |
+| CSS3 | Glassmorphism, themes, responsive layout, scroll reveal, print styles |
+| JavaScript (ES6+) | Tabs, theme switching, i18n, scroll reveal, utilities |
+| `IntersectionObserver` | Scroll reveal animations without external libraries |
 | `localStorage` | Persistent user preferences |
 | Google Fonts | Inter, Plus Jakarta Sans, JetBrains Mono |
 | Font Awesome | Icons |
 
-No frameworks, no build tools, no backend.
+No frameworks, no build tools, no backend, no animation libraries.
 
 ---
 
@@ -121,10 +130,10 @@ No frameworks, no build tools, no backend.
 
 ```text
 .
-├── index.html      # Page structure & legal content
-├── style.css       # Themes, glassmorphism, responsive & print styles
+├── index.html      # Page structure, legal content, tools, AI, games
+├── style.css       # Themes, glassmorphism, scroll reveal, responsive & print styles
 ├── i18n.js         # Indonesian/English translations + I18NManager
-├── script.js       # Tabs, theme, scroll spy, TOC, utilities
+├── script.js       # Tabs, theme, scroll reveal, utilities
 └── README.md       # This documentation
 ```
 
@@ -147,6 +156,7 @@ Not required:
 · Package manager
 · JavaScript framework
 · Server-side runtime
+· Animation library
 
 ---
 
@@ -173,7 +183,7 @@ Open the following address in your browser:
 http://localhost:8000
 ```
 
-You may also open index.html directly for basic testing. However, using a local web server is recommended for accurate testing of relative files and resources.
+You may also open index.html directly for basic testing. Using a local web server is recommended for accurate testing of relative files and resources.
 
 Deployment
 
@@ -206,16 +216,19 @@ Use the tab buttons at the top of the page to open:
 · Terms & Conditions
 · Sitemap
 · Cookie Policy
+· Tools
+· AI / Bot
+· Games
 
-Each document includes a table of contents with links to its individual sections.
+The tablist scrolls horizontally on small screens so all tabs remain reachable without wrapping.
 
 Theme Switching
 
 Click the moon or sun icon in the header to switch between themes.
 
-· The selected theme is saved in localStorage.
+· The selected theme is saved in localStorage under raiaTheme.
 · The preference persists across sessions.
-· The system preference can be used as the initial theme.
+· The system preference is used as the initial theme.
 
 Theme Description
 Dark Deep navy background with gradients and glass overlays.
@@ -229,21 +242,11 @@ Language Toggle Label
 Indonesian ID
 English EN
 
-The legal content, navigation labels, and page metadata update according to the selected language.
-
-Sitemap
-
-The Sitemap tab provides an overview of:
-
-· Main pages: Home, Showcase, Tools, and RAIA.
-· Haiere ecosystem projects.
-· Navigation paths.
-· Music collections and digital tools.
-· Social media and contact channels.
+The content, navigation labels, and page metadata update according to the selected language. The choice is stored in localStorage under raiaLang.
 
 Print and PDF
 
-Use the print button in the header or your browser’s print function. The layout is optimized for printing and PDF export.
+Use the print button in the header or your browser's print function. The layout is optimized for printing and PDF export. All tabs are expanded in the print view so the entire document can be printed at once.
 
 ---
 
@@ -252,8 +255,8 @@ Configuration
 No special configuration is required. User preferences are stored locally in the browser using localStorage.
 
 Setting Available Values Storage Key
-Theme Dark or Light theme
-Language Indonesian or English raiaLang
+Theme light or dark raiaTheme
+Language id or en raiaLang
 Cookie consent Accepted or Declined haiere-cookie
 RAIA settings Provider, model, parameters raia_state_v1
 
@@ -357,18 +360,132 @@ Includes:
 
 ---
 
+Tools Directory
+
+The Tools tab provides direct access to the following digital tools. Every card opens in a new tab with rel="noopener noreferrer" and is fully keyboard accessible.
+
+Tool Description Link
+HajirSync A tool to sync lyrics with the song. https://hajirsync.haiere.workers.dev/
+Raia Vault A personal password vault. https://raia-vault.haiere.workers.dev/
+Raia Scrub Metadata cleaner for your files. https://raia-scrub.haiere.workers.dev/
+Raia Delta Text diff checker to spot differences. https://raia-delta.haiere.workers.dev/
+Raia Minify Shrink file size (HTML, CSS, JS). https://raiaminify.haiere.workers.dev/
+RaiaSpace A digital workspace from Raia. https://hajir.is-a.dev/raiaspace
+Calc A simple calculator for daily needs. https://hajir.is-a.dev/calc
+
+Each card displays an icon, the tool name, a short description, and an "Open Tool" call-to-action with an external link indicator.
+
+---
+
+AI and Bot Directory
+
+The AI / Bot tab provides access to the following assistants. Cards use the same visual language as the Tools section.
+
+Name Description Link
+Raia AI chatbot with support for many model providers. https://raia.is-a.bot/
+Kirana An AI assistant by Haiere. https://hajir.is-a.dev/kirana
+
+Each card carries an AI badge and a "Start Chat" call-to-action.
+
+---
+
+Games Directory
+
+The Games tab provides access to the following browser games.
+
+Game Description Link
+Chess The classic game of chess. https://hajir.is-a.dev/chess
+Loveyou A small game with a sweet theme. https://hajir.is-a.dev/loveyou
+Orbit Weaver A game about orbits and motion. https://hajir.is-a.dev/game/orbit-weaver.html
+Starfall A game about falling stars. https://hajir.is-a.dev/game/starfall.html
+
+Each card displays an icon, the game name, a short description, and a "Play" call-to-action.
+
+---
+
 Haiere Ecosystem
 
-The Sitemap provides direct links to the following Haiere projects:
+The Sitemap provides direct links to the following Haiere projects.
 
 Project Description Link
-HajirSync LRC generator for synchronized lyrics. Visit
-Raia Delta Text difference and comparison tool. Visit
-Raia Scrub Metadata cleaner for images and PDF files. Visit
-Raia Vault Secure password manager. Visit
-Signature Music Web-based music player. Visit
-RaiaMinify Minify your files. Visit
-RAIA AI AI chatbot supporting more than nine providers. Visit
+HajirSync LRC generator for synchronized lyrics. https://hajirsync.haiere.workers.dev/
+Raia Delta Text difference and comparison tool. https://raia-delta.haiere.workers.dev/
+Raia Scrub Metadata cleaner for images and PDF files. https://raia-scrub.haiere.workers.dev/
+Raia Vault Secure password manager. https://raia-vault.haiere.workers.dev/
+Signature Music Web-based music player. https://signature-music.netlify.app/
+RaiaMinify Minify your files. https://raiaminify.haiere.workers.dev/
+RAIA AI AI chatbot supporting more than nine providers. https://raia.is-a.bot/
+
+---
+
+Scroll and Animation System
+
+Version v4.0.0 introduces a rebuilt animation system designed to be smooth, natural, and layout-safe.
+
+Principles
+
+· Animations use only opacity and transform so the browser can hand them off to the GPU.
+· No layout-triggering properties (such as top, height, or margin) are animated.
+· Elements are revealed when they enter the viewport using IntersectionObserver.
+· Once revealed, an element is unobserved to avoid redundant work.
+
+Implementation
+
+Elements mark themselves with a data-scroll-reveal attribute:
+
+```html
+<div class="tool-card" data-scroll-reveal>
+  ...
+</div>
+```
+
+The CSS handles the visual state:
+
+```css
+[data-scroll-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity 0.7s var(--reveal-ease),
+              transform 0.7s var(--reveal-ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-scroll-reveal].is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+```
+
+The JavaScript observer is defined in script.js:
+
+```javascript
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-revealed');
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+```
+
+Stagger
+
+Grid items are staggered by a small, capped delay (maximum 360 ms) so groups appear in a natural sequence without feeling slow:
+
+```javascript
+children.forEach((el, i) => {
+  el.style.setProperty('--reveal-delay', Math.min(i * 60, 360) + 'ms');
+});
+```
+
+Reduced Motion
+
+When the user prefers reduced motion, the animation system is disabled entirely. Elements appear immediately without transition.
+
+Tab Awareness
+
+Because inactive tab panels use display: none, elements inside them are not observed until the tab becomes active. A custom event (raia:tabchange) is dispatched on tab activation so the observer can pick up newly visible elements.
 
 ---
 
@@ -379,13 +496,13 @@ The project follows several accessibility best practices:
 · Skip link for keyboard navigation.
 · Semantic HTML structure.
 · ARIA roles and attributes for tabs and panels.
-· Keyboard navigation support.
-· Arrow key, Home, and End key support.
+· Keyboard navigation support for tabs (arrow keys, Home, End).
 · Visible focus indicators for interactive elements.
-· prefers-reduced-motion support.
-· prefers-reduced-transparency support.
+· Full-card clickable areas remain focusable as anchors.
+· Reduced-motion support for all transitions and reveals.
 · High-contrast colors for dark and light themes.
 · Print-optimized document layout.
+· External links use target="_blank" with rel="noopener noreferrer".
 
 ---
 
@@ -398,7 +515,7 @@ Responsible for:
 · Page structure.
 · Legal document markup.
 · Tab navigation.
-· Table of contents.
+· Tools, AI / Bot, and Games sections.
 · Metadata and accessibility landmarks.
 
 style.css
@@ -408,10 +525,10 @@ Responsible for:
 · Layout and responsive behavior.
 · Dark and light themes.
 · Glassmorphism effects.
-· Animations and transitions.
+· Scroll reveal animations.
 · Focus states.
 · Print stylesheets.
-· Reduced-motion and reduced-transparency preferences.
+· Reduced-motion preferences.
 
 i18n.js
 
@@ -426,11 +543,10 @@ script.js
 
 Responsible for:
 
-· Tab switching.
+· Tab switching and hash-based routing.
 · Theme switching.
 · Language toggle UI.
-· Scroll spy and table-of-contents navigation.
-· Keyboard navigation.
+· Scroll reveal via IntersectionObserver.
 · Progress bar and back-to-top button.
 · Copy buttons and utilities.
 
@@ -441,11 +557,24 @@ No build or compilation process is required. After modifying a file, refresh the
 Adding a New Tab
 
 1. Add a new tab button to the tab list in index.html.
-2. Assign the tab a unique ID.
+2. Assign the tab a unique ID and data-target matching the panel ID.
 3. Add a corresponding content section with role="tabpanel".
 4. Add the required translations to i18n.js.
-5. Ensure the tab logic in script.js recognizes the new tab.
+5. If the tab contains a grid, add the grid class to the stagger selector in script.js (for example, .tools-grid).
 6. Test mouse, keyboard, mobile, and print behavior.
+
+Example tab markup:
+
+```html
+<li role="none">
+  <button class="tab-btn" id="tab-example" role="tab"
+          aria-controls="example-panel" aria-selected="false"
+          tabindex="-1" data-target="example-panel">
+    <i class="fas fa-star" aria-hidden="true"></i>
+    <span data-i18n="tab.example">Example</span>
+  </button>
+</li>
+```
 
 ---
 
@@ -465,26 +594,37 @@ Theme Preference Is Not Persisting
 · Check for localStorage errors in the DevTools Console.
 · Clear site data and set the theme again if necessary.
 
-Table of Contents Links Are Not Scrolling
+Scroll Reveal Elements Do Not Appear
 
-· Confirm that the target section IDs match the link targets.
-· Make sure JavaScript is enabled.
-· Older browsers may not support smooth scrolling.
-· Scroll manually if smooth scrolling is unavailable.
+· Confirm that the element has the data-scroll-reveal attribute.
+· Check that script.js is loaded after i18n.js.
+· Verify in the Console that no JavaScript error interrupts execution.
+· If the element is inside a hidden tab panel, ensure it is inside a container that triggers the raia:tabchange event.
+
+Tablist Is Not Scrolling on Mobile
+
+· Confirm that .tablist has overflow-x: auto (defined in style.css).
+· Check that the browser supports overflow-x (all modern browsers do).
+· On desktop, the tablist displays all tabs inline without scroll.
 
 Cookie Table Is Not Displaying
 
 · Check that the HTML table structure is valid.
 · Make sure the table is not hidden by CSS.
 · Confirm that the browser supports the required CSS features.
-· Check the Console if the table is generated dynamically.
 
 Print Output Is Missing Styles
 
-· Use the browser’s built-in print function.
+· Use the browser's built-in print function.
 · Confirm that the @media print stylesheet is loaded.
 · Enable background graphics in the print settings if required.
 · Review the layout in print preview before exporting.
+
+Reveal Animation Feels Choppy
+
+· Confirm that prefers-reduced-motion is not enabled in the OS (which disables animations by design).
+· Test in a Chromium-based browser for the best transform / opacity performance.
+· Avoid adding a large number of data-scroll-reveal elements per viewport; the system is tuned for grouped grids.
 
 ---
 
@@ -500,7 +640,7 @@ See the License section for more information.
 
 Author
 
-Developed by Haiere and HajirStudio as part of the official Haiere legal documentation hub.
+Developed by Haiere and HajirStudio as part of the official Haiere hub.
 
 · GitHub: @haiere
 · Main site: hajir.is-a.dev
@@ -510,7 +650,19 @@ Developed by Haiere and HajirStudio as part of the official Haiere legal documen
 
 Changelog
 
-v3.9.b — October 9, 2026
+v4.0.0 — October 10, 2026
+
+· Added three new tabs: Tools, AI / Bot, and Games.
+· Rebuilt the scroll animation system using IntersectionObserver and GPU-friendly opacity / transform transitions.
+· Added automatic stagger (capped at 360 ms) for grid items.
+· Tablist is now horizontally scrollable on small screens without wrapping.
+· Added reduced-motion handling that fully disables reveal animations.
+· All external links now use target="_blank" with rel="noopener noreferrer".
+· Improved keyboard navigation and focus states on all interactive cards.
+· Updated version strings and metadata across all files.
+· No new dependencies introduced — pure HTML, CSS, and JavaScript.
+
+v3.9.b & last xxxxxxx xx, 2026
 
 · Legal page rebuilt. Cleaner, more modern, and easier to read.
 · Language simplified for all ages.
@@ -523,7 +675,7 @@ v3.9.b — October 9, 2026
 
 <div align="center">
 
-Last updated: October 9, 2026
+Last updated: October 10, 2026
 Made by Haiere
 
 </div>

@@ -1,6 +1,7 @@
 /* ============================================================
-   i18n.js — Raia Footer v3.9.b
+   i18n.js — Raia Footer v4.0.0
    Manajemen terjemahan (ID / EN) + helper untuk ganti bahasa.
+   + Konten Tools, AI / Bot, Games.
    ============================================================ */
 
 window.I18N = {
@@ -17,86 +18,89 @@ window.I18N = {
         'aria.print': 'Cetak halaman ini',
 
         /* --- hero --- */
-        'hero.title': 'Info Legal & Daftar Halaman',
-        'hero.subtitle': 'Hal-hal penting tentang situs ini, ditulis dengan kata-kata yang mudah dimengerti.',
-        'hero.version': 'Raia Footer v3.9.b — 9 Oktober 2026',
+        'hero.title': 'Info Legal, Tools & Halaman',
+        'hero.subtitle': 'Hal-hal penting soal situs ini, ditulis dengan bahasa yang gampang dimengerti.',
+        'hero.version': 'Raia Footer v4.0.0 — 10 Oktober 2026',
         'hero.stable': 'Stabil',
 
         /* --- about --- */
         'about.title': 'Tentang Raia Footer',
-        'about.text': 'Raia Footer itu bagian bawah situs yang bisa kamu pakai di website kamu. Versi v3.9.b ini sudah diperbaiki dan ditambah fiturnya. Sekarang makin enak dipakai — untuk proyek pribadi maupun untuk usaha.',
+        'about.text': 'Raia Footer adalah bagian bawah situs yang bisa kamu pasang di websitemu sendiri. Di versi v4.0.0 ini, animasi scroll-nya makin halus, ada tiga section baru (Tools, AI/Bot, Games), plus aksesibilitas dan performa yang lebih baik.',
 
         /* --- tabs --- */
         'tab.privacy': 'Privasi',
         'tab.terms': 'Aturan Pakai',
         'tab.sitemap': 'Peta Situs',
         'tab.cookies': 'Cookie',
+        'tab.tools': 'Tools',
+        'tab.ai': 'AI / Bot',
+        'tab.games': 'Games',
 
         /* --- privacy --- */
         'privacy.title': 'Aturan Privasi',
-        'privacy.version': 'Versi 3.9.b — 9 Oktober 2026',
-        'privacy.intro': 'Singkatnya: kami cuma ambil data yang benar-benar perlu. Itu pun kalau kamu sendiri yang memberi. Data kamu <strong>tidak pernah kami jual</strong> ke siapa pun.',
+        'privacy.version': 'Versi 4.0.0 — 10 Oktober 2026',
+        'privacy.intro': 'Singkatnya: kami cuma ambil data yang beneran perlu, dan itu pun kalau kamu sendiri yang kasih. Data kamu <strong>nggak akan pernah kami jual</strong> ke siapa pun.',
         'privacy.data.title': '1. Data apa yang kami ambil?',
-        'privacy.data.item1': '<strong>Yang kamu tulis sendiri</strong> — misalnya nama dan pesan lewat formulir kontak.',
-        'privacy.data.item2': '<strong>Info teknis tanpa nama</strong> — seperti jenis browser dan perangkat, dari Google Analytics. Ini tidak bisa dipakai untuk mengenali kamu.',
-        'privacy.data.item3': '<strong>Pilihan kamu</strong> — bahasa dan tema disimpan di browser kamu sendiri (<code>localStorage</code>), bukan di server kami.',
-        'privacy.data.item4': '<strong>Alat digital</strong> — seperti HajirSync, Raia Delta, Scrub, Vault, Minify, dan RAIA. Semuanya jalan <strong>di perangkat kamu sendiri</strong>. Tidak ada data yang dikirim ke mana pun.',
+        'privacy.data.item1': '<strong>Yang kamu ketik sendiri</strong> — misalnya nama dan pesan lewat formulir kontak.',
+        'privacy.data.item2': '<strong>Info teknis tanpa nama</strong> — kayak jenis browser dan perangkat, dari Google Analytics. Info ini nggak bisa dipakai buat ngenalin kamu.',
+        'privacy.data.item3': '<strong>Pilihan kamu</strong> — bahasa dan tema disimpan di browser kamu sendiri (<code>localStorage</code>), bukan di server kami. Jadi kamu yang pegang kendali.',
+        'privacy.data.item4': '<strong>Alat digital</strong> — kayak HajirSync, Raia Delta, Scrub, Vault, Minify, dan RAIA. Semuanya jalan <strong>di perangkat kamu sendiri</strong>, jadi nggak ada data yang dikirim ke mana-mana.',
         'privacy.cookies.title': '2. Cookie &amp; layanan lain',
-        'privacy.cookies.item1': '<strong>Cookie untuk fungsi</strong> — supaya pilihan kamu (bahasa, tema) tetap diingat saat kamu kembali.',
-        'privacy.cookies.item2': '<strong>Google Analytics</strong> — IP-nya disamarkan. Cuma untuk melihat statistik kunjungan secara umum.',
-        'privacy.cookies.item3': '<strong>Formspree</strong> — mengurus formulir kontak. Pesan otomatis dihapus paling lama 30 hari setelah dikirim.',
-        'privacy.cookies.item4': '<strong>Link ke luar</strong> — seperti YouTube, Instagram, SoundCloud, dan GitHub. Masing-masing punya aturan privasi sendiri.',
+        'privacy.cookies.item1': '<strong>Cookie buat fungsi</strong> — biar pilihan kamu (bahasa, tema) tetap keingat pas kamu balik lagi.',
+        'privacy.cookies.item2': '<strong>Google Analytics</strong> — IP-nya disamarkan, cuma buat lihat statistik kunjungan secara umum.',
+        'privacy.cookies.item3': '<strong>Formspree</strong> — yang ngurus formulir kontak. Pesanmu otomatis dihapus paling lama 30 hari setelah terkirim.',
+        'privacy.cookies.item4': '<strong>Link ke luar</strong> — kayak YouTube, Instagram, SoundCloud, dan GitHub. Masing-masing punya aturan privasi sendiri.',
         'privacy.security.title': '3. Bagaimana data dijaga?',
-        'privacy.security.item1': 'Situs ini pakai <strong>HTTPS/TLS</strong>. Artinya semua hubungan ke situs ini dikunci, jadi orang lain tidak bisa membacanya.',
-        'privacy.security.item2': 'Ada <strong>Content Security Policy (CSP)</strong>. Ini lapisan pengaman untuk menangkal serangan digital.',
+        'privacy.security.item1': 'Situs ini pakai <strong>HTTPS/TLS</strong>. Jadi semua koneksi ke situs ini terkunci, dan orang lain nggak bisa baca data yang lewat.',
+        'privacy.security.item2': 'Ada <strong>Content Security Policy (CSP)</strong> — lapisan pengaman buat nangkal serangan digital.',
         'privacy.security.item3': 'Semua data yang masuk diperiksa dengan teliti.',
         'privacy.security.item4': 'Semua alat jalan di browser kamu. Data tetap tinggal di perangkat kamu.',
         'privacy.rights.title': '4. Hak kamu',
-        'privacy.rights.desc': 'Kamu berhak untuk:',
-        'privacy.rights.item1': '<strong>Melihat</strong> — minta salinan data pribadi yang kami simpan.',
-        'privacy.rights.item2': '<strong>Memperbaiki</strong> — minta kami membetulkan data yang salah.',
-        'privacy.rights.item3': '<strong>Menghapus</strong> — minta data pribadi kamu dihapus.',
-        'privacy.rights.contact': 'Mau meminta salah satunya? Hubungi kami lewat <a href="https://haiere.github.io#contact">formulir kontak</a> di halaman utama.',
+        'privacy.rights.desc': 'Kamu punya hak buat:',
+        'privacy.rights.item1': '<strong>Ngeliat</strong> — minta salinan data pribadi yang kami simpan.',
+        'privacy.rights.item2': '<strong>Membetulkan</strong> — minta kami benerin data yang keliru.',
+        'privacy.rights.item3': '<strong>Menghapus</strong> — minta data pribadi kamu dihapus total.',
+        'privacy.rights.contact': 'Mau minta salah satunya? Kabari kami lewat <a href="https://hajir.is-a.dev#contact">formulir kontak</a> di halaman utama.',
         'privacy.changes.title': '5. Kalau ada perubahan',
-        'privacy.changes.desc': 'Kalau aturan ini diubah, tanggal "Terakhir diperbarui" selalu kami tampilkan di bagian atas. Kami tidak akan mengubah aturan diam-diam.',
+        'privacy.changes.desc': 'Kalau aturan ini berubah, tanggal "Terakhir diperbarui" bakal selalu kami tampilin di bagian atas. Nggak ada perubahan diam-diam.',
         'privacy.contact.title': '6. Hubungi kami',
-        'privacy.contact.desc': 'Ada pertanyaan soal privasi? Kirim pesan lewat <a href="https://haiere.github.io#contact">formulir kontak</a> di halaman utama.',
-        'privacy.summary': '<strong>Intinya:</strong> Data kamu aman. Kami cuma ambil yang perlu. Kami tidak menjual apa pun. Semua alat bekerja di perangkat kamu sendiri.',
+        'privacy.contact.desc': 'Ada pertanyaan soal privasi? Kirim pesan lewat <a href="https://hajir.is-a.dev#contact">formulir kontak</a> di halaman utama.',
+        'privacy.summary': '<strong>Intinya:</strong> Data kamu aman, kami cuma ambil yang perlu, nggak jual apa pun, dan semua alat jalan di perangkat kamu sendiri.',
 
         /* --- terms --- */
         'terms.title': 'Aturan Pakai',
-        'terms.version': 'Versi 3.9.b — 9 Oktober 2026',
-        'terms.intro': 'Kalau kamu memakai situs ini, berarti kamu setuju dengan aturan di bawah. Tenang, semuanya wajar dan sederhana.',
+        'terms.version': 'Versi 4.0.0 — 10 Oktober 2026',
+        'terms.intro': 'Kalau kamu pakai situs ini, berarti kamu setuju sama aturan di bawah. Tenang aja, semuanya wajar dan gampang.',
         'terms.ip.title': '1. Semua karya di sini milik Haiere',
-        'terms.ip.desc1': 'Yang termasuk di dalamnya:',
-        'terms.ip.item1': '13 lagu asli — 5 dari album <em>Fragmen Suara</em>, 7 dari <em>Resonansi Dalam Diam</em>, dan 1 singel <em>Saya Akan Lawan</em>.',
+        'terms.ip.desc1': 'Yang termasuk:',
+        'terms.ip.item1': '13 lagu asli — 5 dari album <em>Fragmen Suara</em>, 7 dari <em>Resonansi Dalam Diam</em>, dan 1 single <em>Saya Akan Lawan</em>.',
         'terms.ip.item2': 'Semua tulisan, desain, dan tampilan situs.',
         'terms.ip.item3': 'Semua alat digital (HajirSync, Raia Delta, Scrub, Vault, Minify, RAIA).',
-        'terms.ip.desc2': 'Semuanya dilindungi hak cipta dan sepenuhnya milik Haiere.',
+        'terms.ip.desc2': 'Semuanya dilindungi hak cipta dan sepenuhnya milik Haiere. Jadi jangan diaku-aku ya.',
         'terms.ip.usage': '<strong>Boleh dipakai untuk:</strong>',
-        'terms.ip.usage1': 'Keperluan pribadi (bukan untuk mencari uang) — gratis.',
-        'terms.ip.usage2': 'Keperluan komersial — harus minta izin tertulis dari Muhaajir dulu.',
-        'terms.ip.usage3': 'Cover atau remix — boleh, asal tetap tulis kreditnya: © Muhaajir.',
+        'terms.ip.usage1': 'Keperluan pribadi (bukan buat cari uang) — gratis.',
+        'terms.ip.usage2': 'Keperluan komersial — wajib minta izin tertulis ke Muhaajir dulu.',
+        'terms.ip.usage3': 'Cover atau remix — boleh aja, asal tetap cantumin kreditnya: © Muhaajir.',
         'terms.prohibited.title': '2. Yang tidak boleh dilakukan',
-        'terms.prohibited.item1': 'Menjual ulang, menyebar, atau mengaku karya ini punya kamu tanpa izin.',
-        'terms.prohibited.item2': 'Mengambil data otomatis (<em>scraping</em>) atau mencoba membobol sistem.',
-        'terms.prohibited.item3': 'Memakai alat di sini untuk hal ilegal atau merugikan orang lain.',
+        'terms.prohibited.item1': 'Jual lagi, sebar, atau ngaku-ngaku karya ini punya kamu tanpa izin.',
+        'terms.prohibited.item2': 'Ambil data otomatis (<em>scraping</em>) atau nyoba bobol sistem.',
+        'terms.prohibited.item3': 'Pakai alat di sini buat hal ilegal atau buat rugiin orang lain.',
         'terms.disclaimer.title': '3. Batas tanggung jawab',
-        'terms.disclaimer.desc1': 'Situs ini diberikan <strong>"apa adanya"</strong>. Kami tidak bertanggung jawab kalau:',
-        'terms.disclaimer.item1': 'Unduhan gagal atau filenya rusak.',
-        'terms.disclaimer.item2': 'Ada kendala teknis saat memakai alat. Ini termasuk kemungkinan data hilang di perangkat kamu.',
-        'terms.disclaimer.item3': 'Isi atau aturan dari link luar yang tersambung ke situs ini.',
+        'terms.disclaimer.desc1': 'Situs ini diberikan <strong>"apa adanya"</strong>. Kami nggak bertanggung jawab kalau:',
+        'terms.disclaimer.item1': 'Unduhan gagal atau filenya corrupt.',
+        'terms.disclaimer.item2': 'Ada kendala teknis pas pakai alat — termasuk kemungkinan data hilang di perangkat kamu.',
+        'terms.disclaimer.item3': 'Isi atau aturan dari link luar yang nyambung ke situs ini.',
         'terms.law.title': '4. Hukum yang berlaku',
-        'terms.law.desc': 'Semua hal soal situs ini mengikuti <strong>hukum Republik Indonesia</strong>. Wilayah hukumnya di <strong>Bogor, Jawa Barat</strong>.',
+        'terms.law.desc': 'Semua urusan situs ini ngikutin <strong>hukum Republik Indonesia</strong>, dengan wilayah hukum <strong>Bogor, Jawa Barat</strong>.',
         'terms.changes.title': '5. Kalau aturan berubah',
-        'terms.changes.desc': 'Aturan bisa diperbarui kapan saja. Versi terbaru selalu ada di halaman ini, lengkap dengan tanggal perubahannya.',
+        'terms.changes.desc': 'Aturan bisa diperbarui kapan aja. Versi terbarunya selalu ada di halaman ini, lengkap sama tanggal perubahannya.',
         'terms.contact.title': '6. Hubungi kami',
-        'terms.contact.desc': 'Ada pertanyaan soal Aturan Pakai? Kirim pesan lewat <a href="https://haiere.github.io#contact">formulir kontak</a> di halaman utama.',
-        'terms.summary': '<strong>Intinya:</strong> Semua karya milik Haiere. Bebas dipakai untuk keperluan pribadi. Kalau untuk komersial, minta izin dulu. Situs ini diberikan "apa adanya".',
+        'terms.contact.desc': 'Ada pertanyaan soal Aturan Pakai? Kirim pesan lewat <a href="https://hajir.is-a.dev#contact">formulir kontak</a> di halaman utama.',
+        'terms.summary': '<strong>Intinya:</strong> Semua karya milik Haiere, bebas dipakai buat keperluan pribadi, kalau komersial minta izin dulu, dan situs ini diberikan "apa adanya".',
 
         /* --- sitemap --- */
         'sitemap.title': 'Peta Situs',
-        'sitemap.version': 'Semua halaman — Versi 3.9.b',
+        'sitemap.version': 'Semua halaman — Versi 4.0.0',
         'sitemap.main.title': 'Halaman Utama',
         'sitemap.home': 'Beranda',
         'sitemap.home.desc': 'Profil, bio, dan pemutar musik',
@@ -113,21 +117,21 @@ window.I18N = {
         'sitemap.nav.tools': 'Tools',
         'sitemap.nav.raia': 'RAIA',
         'sitemap.social.title': 'Media Sosial &amp; Kontak',
-        'sitemap.social.note': 'Kontak resmi lewat formulir di halaman utama.',
-        'changelog.title': 'Riwayat Versi — v3.9.b',
-        'changelog.item1': '✓ Halaman Legal dibuat ulang. Sekarang lebih bersih, modern, dan enak dibaca.',
-        'changelog.item2': '✓ Bahasanya dibuat sederhana supaya mudah dimengerti semua umur.',
-        'changelog.item3': '✓ File dipisah rapi: <code>index.html</code>, <code>style.css</code>, <code>i18n.js</code>, <code>script.js</code>.',
-        'changelog.item4': '✓ Pengaturan bahasa dipindah ke <code>i18n.js</code>, jadi gampang menambah bahasa baru.',
-        'changelog.item5': '✓ Aksesibilitas dan kecepatan dioptimalkan (Lighthouse &gt; 95).',
-        'changelog.item6': '✓ Berganti nama dari Muhaajir menjadi <strong>Haiere</strong>, dengan logo H.',
+        'sitemap.social.note': 'Kontak resminya lewat formulir di halaman utama.',
+        'changelog.title': 'Riwayat Versi — v4.0.0',
+        'changelog.item1': '✓ Animasi scroll dirombak total — halus, natural, tanpa layout shift.',
+        'changelog.item2': '✓ Tiga section baru: Tools, AI / Bot, dan Games.',
+        'changelog.item3': '✓ Tablist responsif: horizontal-scroll halus di layar kecil.',
+        'changelog.item4': '✓ Semua link eksternal pakai <code>target="_blank"</code> + <code>rel="noopener noreferrer"</code> biar lebih aman.',
+        'changelog.item5': '✓ Aksesibilitas dinaikin: fokus keyboard, aria-label, sampai reduced-motion.',
+        'changelog.item6': '✓ Performa tetap ringan: tanpa dependency baru, animasi cuma pakai <code>opacity</code> &amp; <code>transform</code>.',
 
         /* --- cookies --- */
         'cookies.title': 'Aturan Cookie',
-        'cookies.version': 'Versi 3.9.b — 9 Oktober 2026',
-        'cookies.intro': 'Kami pakai cookie supaya kamu makin nyaman memakai situs ini. Ini penjelasannya dengan bahasa sederhana.',
+        'cookies.version': 'Versi 4.0.0 — 10 Oktober 2026',
+        'cookies.intro': 'Kami pakai cookie biar kamu makin nyaman jelajahin situs ini. Penjelasannya kami tulis sesederhana mungkin.',
         'cookies.what.title': '1. Apa itu cookie?',
-        'cookies.what.desc': 'Cookie itu file kecil yang disimpan di perangkat kamu saat membuka situs. Fungsinya seperti catatan kecil. Situs jadi ingat pilihan kamu (misalnya tema atau bahasa) saat kamu kembali lagi.',
+        'cookies.what.desc': 'Cookie itu file kecil yang disimpen di perangkat kamu pas buka situs. Fungsinya kayak catatan kecil — biar situs inget pilihan kamu (misalnya tema atau bahasa) pas kamu balik lagi.',
         'cookies.weuse.title': '2. Cookie yang kami pakai',
         'cookies.table.name': 'Nama',
         'cookies.table.type': 'Jenis',
@@ -136,27 +140,72 @@ window.I18N = {
         'cookies.type.functional': 'Fungsional',
         'cookies.type.preference': 'Preferensi',
         'cookies.type.analytics': 'Analitik',
-        'cookies.row.raia': 'Menyimpan pengaturan RAIA (provider, model, parameter)',
-        'cookies.row.lang': 'Menyimpan pilihan bahasa (ID/EN)',
-        'cookies.row.theme': 'Menyimpan pilihan tema (terang/gelap)',
-        'cookies.row.consent': 'Menyimpan jawaban banner cookie',
-        'cookies.row.ga': 'Membedakan pengunjung tanpa nama',
-        'cookies.row.ga2': 'Menyimpan status sesi &amp; data agregat',
+        'cookies.row.raia': 'Ngesimpen setelan RAIA (provider, model, parameter)',
+        'cookies.row.lang': 'Ngesimpen pilihan bahasa (ID/EN)',
+        'cookies.row.theme': 'Ngesimpen pilihan tema (terang/gelap)',
+        'cookies.row.consent': 'Ngesimpen jawaban kamu di banner cookie',
+        'cookies.row.ga': 'Ngebedain pengunjung tanpa perlu nama',
+        'cookies.row.ga2': 'Ngesimpen status sesi &amp; data agregat',
         'cookies.row.permanent': 'Sampai dihapus',
         'cookies.row.ga_duration': '2 tahun',
         'cookies.third.title': '3. Layanan pihak ketiga',
-        'cookies.third.ga': '<strong>Google Analytics</strong> — melihat statistik kunjungan dengan data tanpa nama.',
-        'cookies.third.formspree': '<strong>Formspree</strong> — mengurus formulir kontak (tanpa cookie pelacak).',
-        'cookies.third.external': '<strong>YouTube, Instagram, SoundCloud, GitHub</strong> — link ke luar. Masing-masing punya aturan cookie sendiri.',
+        'cookies.third.ga': '<strong>Google Analytics</strong> — buat lihat statistik kunjungan pakai data tanpa nama.',
+        'cookies.third.formspree': '<strong>Formspree</strong> — yang ngurus formulir kontak (tanpa cookie pelacak).',
+        'cookies.third.external': '<strong>YouTube, Instagram, SoundCloud, GitHub</strong> — link ke luar, masing-masing punya aturan cookie sendiri.',
         'cookies.control.title': '4. Cara mengatur cookie',
-        'cookies.control.browser': '<strong>Lewat browser</strong> — kamu bisa menolak atau menghapus cookie di pengaturan privasi browser.',
-        'cookies.control.banner': '<strong>Lewat banner cookie</strong> — pilih terima atau tolak saat pertama kali berkunjung.',
-        'cookies.control.ga': '<strong>Menolak Google Analytics</strong> — pasang <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">add-on resmi</a> kalau tidak mau dilacak.',
+        'cookies.control.browser': '<strong>Lewat browser</strong> — kamu bisa nolak atau hapus cookie di setelan privasi browser.',
+        'cookies.control.banner': '<strong>Lewat banner cookie</strong> — pilih terima atau tolak pas pertama kali berkunjung.',
+        'cookies.control.ga': '<strong>Nolak Google Analytics</strong> — pasang <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">add-on resminya</a> kalau kamu nggak mau dilacak.',
         'cookies.changes.title': '5. Kalau aturan berubah',
-        'cookies.changes.desc': 'Aturan cookie bisa diperbarui kapan saja. Versi terbaru selalu ada di halaman ini.',
+        'cookies.changes.desc': 'Aturan cookie bisa berubah kapan aja. Versi terbarunya selalu ada di halaman ini.',
         'cookies.contact.title': '6. Hubungi kami',
-        'cookies.contact.desc': 'Ada pertanyaan soal cookie? Kirim pesan lewat <a href="https://haiere.github.io#contact">formulir kontak</a> di halaman utama.',
-        'cookies.summary': '<strong>Intinya:</strong> Cookie cuma dipakai untuk kenyamanan kamu. Untuk mengingat tema, bahasa, dan statistik tanpa nama. Kamu selalu bisa mengaturnya sendiri.',
+        'cookies.contact.desc': 'Ada pertanyaan soal cookie? Kirim pesan lewat <a href="https://hajir.is-a.dev#contact">formulir kontak</a> di halaman utama.',
+        'cookies.summary': '<strong>Intinya:</strong> Cookie cuma dipakai buat kenyamanan kamu — buat inget tema, bahasa, dan statistik tanpa nama. Dan kamu selalu bisa atur sendiri.',
+
+        /* --- tools --- */
+        'tools.title': 'Hajir Tools',
+        'tools.version': 'Versi 4.0.0 — 10 Oktober 2026',
+        'tools.intro': 'Kumpulan alat digital dari ekosistem Haiere. Semuanya ringan dan langsung jalan di browser, tanpa ribet.',
+        'tools.cta': 'Buka Tool',
+        'tools.hajirsync.name': 'HajirSync',
+        'tools.hajirsync.desc': 'Alat buat nyelarasin lirik sama lagunya.',
+        'tools.vault.name': 'Raia Vault',
+        'tools.vault.desc': 'Brankas kata sandi pribadimu.',
+        'tools.scrub.name': 'Raia Scrub',
+        'tools.scrub.desc': 'Pembersih metadata (data tersembunyi) di file.',
+        'tools.delta.name': 'Raia Delta',
+        'tools.delta.desc': 'Pembanding teks biar bedanya kelihatan jelas.',
+        'tools.minify.name': 'Raia Minify',
+        'tools.minify.desc': 'Pengecilik ukuran file (HTML, CSS, JS).',
+        'tools.raiaspace.name': 'RaiaSpace',
+        'tools.raiaspace.desc': 'Ruang kerja digital buatan Raia.',
+        'tools.calc.name': 'Calc',
+        'tools.calc.desc': 'Kalkulator simpel buat hitungan harian.',
+
+        /* --- ai / bot --- */
+        'ai.title': 'AI / Bot',
+        'ai.version': 'Versi 4.0.0 — 10 Oktober 2026',
+        'ai.intro': 'Asisten digital dari ekosistem Haiere. Pilih satu buat mulai ngobrol.',
+        'ai.badge': 'AI',
+        'ai.cta': 'Mulai Chat',
+        'ai.raia.name': 'Raia',
+        'ai.raia.desc': 'Chatbot AI yang dukung banyak penyedia model.',
+        'ai.kirana.name': 'Kirana',
+        'ai.kirana.desc': 'Asisten AI buatan Haiere.',
+
+        /* --- games --- */
+        'games.title': 'Games',
+        'games.version': 'Versi 4.0.0 — 10 Oktober 2026',
+        'games.intro': 'Game ringan yang langsung bisa dimainin di browser.',
+        'games.cta': 'Mainkan',
+        'games.chess.name': 'Chess',
+        'games.chess.desc': 'Catur klasik, langsung main di browser.',
+        'games.loveyou.name': 'Loveyou',
+        'games.loveyou.desc': 'Game kecil bertema manis buat orang tersayang.',
+        'games.orbit.name': 'Orbit Weaver',
+        'games.orbit.desc': 'Game bertema orbit dan pergerakan.',
+        'games.starfall.name': 'Starfall',
+        'games.starfall.desc': 'Game nangkepin bintang yang jatuh.',
 
         /* --- footer --- */
         'footer.home': 'Beranda',
@@ -168,8 +217,8 @@ window.I18N = {
         'footer.sitemap': 'Peta Situs',
         'footer.cookies': 'Cookie',
         'footer.contact': 'Kontak',
-        'footer.rights': 'Raia Footer v3.9.b. Dibuat dengan hati oleh Haiere.',
-        'footer.disclaimer': 'Catatan: kamu sendiri yang bertanggung jawab saat memakai alat di sini. Haiere tidak bertanggung jawab atas kerusakan atau data yang hilang.'
+        'footer.rights': 'Raia Footer — dibuat dengan hati oleh Haiere.',
+        'footer.disclaimer': 'Catatan: tanggung jawab pemakaian alat di sini ada di kamu. Haiere nggak bertanggung jawab atas kerusakan atau kehilangan data.'
     },
 
     en: {
@@ -185,24 +234,27 @@ window.I18N = {
         'aria.print': 'Print this page',
 
         /* --- hero --- */
-        'hero.title': 'Legal Info & Page List',
-        'hero.subtitle': 'The important things about this site, written in easy words.',
-        'hero.version': 'Raia Footer v3.9.b — October 9, 2026',
+        'hero.title': 'Legal Info, Tools & Page List',
+        'hero.subtitle': 'The important things about this site, written in plain words.',
+        'hero.version': 'Raia Footer v4.0.0 — October 10, 2026',
         'hero.stable': 'Stable',
 
         /* --- about --- */
         'about.title': 'About Raia Footer',
-        'about.text': 'Raia Footer is the bottom part of a site that you can use on your website. Version v3.9.b has been fixed up and given new features. It is easier to use now — for personal projects or for business.',
+        'about.text': 'Raia Footer is a site footer you can drop into your own website. Version v4.0.0 brings smoother scroll animations, three new sections (Tools, AI / Bot, Games), and improved accessibility and performance.',
 
         /* --- tabs --- */
         'tab.privacy': 'Privacy',
         'tab.terms': 'Terms of Use',
         'tab.sitemap': 'Sitemap',
         'tab.cookies': 'Cookies',
+        'tab.tools': 'Tools',
+        'tab.ai': 'AI / Bot',
+        'tab.games': 'Games',
 
         /* --- privacy --- */
         'privacy.title': 'Privacy Rules',
-        'privacy.version': 'Version 3.9.b — October 9, 2026',
+        'privacy.version': 'Version 4.0.0 — October 10, 2026',
         'privacy.intro': 'In short: we only take what we really need. And only if you give it yourself. Your data is <strong>never sold</strong> to anyone.',
         'privacy.data.title': '1. What data do we take?',
         'privacy.data.item1': '<strong>What you type yourself</strong> — like your name and message in the contact form.',
@@ -224,16 +276,16 @@ window.I18N = {
         'privacy.rights.item1': '<strong>See</strong> — ask for a copy of the personal data we keep.',
         'privacy.rights.item2': '<strong>Fix</strong> — ask us to correct anything that is wrong.',
         'privacy.rights.item3': '<strong>Delete</strong> — ask us to delete your personal data.',
-        'privacy.rights.contact': 'Want to ask for one of these? Reach us through the <a href="https://haiere.github.io#contact">contact form</a> on the main page.',
+        'privacy.rights.contact': 'Want to ask for one of these? Reach us through the <a href="https://hajir.is-a.dev#contact">contact form</a> on the main page.',
         'privacy.changes.title': '5. If things change',
         'privacy.changes.desc': 'If we change these rules, the "Last updated" date will always be at the top. We will never change rules in secret.',
         'privacy.contact.title': '6. Contact us',
-        'privacy.contact.desc': 'Questions about privacy? Send us a message through the <a href="https://haiere.github.io#contact">contact form</a> on the main page.',
+        'privacy.contact.desc': 'Questions about privacy? Send us a message through the <a href="https://hajir.is-a.dev#contact">contact form</a> on the main page.',
         'privacy.summary': '<strong>In short:</strong> Your data is safe. We only take what we need. We never sell anything. All tools work on your own device.',
 
         /* --- terms --- */
         'terms.title': 'Terms of Use',
-        'terms.version': 'Version 3.9.b — October 9, 2026',
+        'terms.version': 'Version 4.0.0 — October 10, 2026',
         'terms.intro': 'If you use this site, it means you agree to the rules below. Don\'t worry — they are all fair and simple.',
         'terms.ip.title': '1. Everything here belongs to Haiere',
         'terms.ip.desc1': 'This includes:',
@@ -259,12 +311,12 @@ window.I18N = {
         'terms.changes.title': '5. If the rules change',
         'terms.changes.desc': 'The rules can be updated at any time. The newest version is always on this page, with the date it changed.',
         'terms.contact.title': '6. Contact us',
-        'terms.contact.desc': 'Questions about Terms of Use? Send us a message through the <a href="https://haiere.github.io#contact">contact form</a> on the main page.',
+        'terms.contact.desc': 'Questions about Terms of Use? Send us a message through the <a href="https://hajir.is-a.dev#contact">contact form</a> on the main page.',
         'terms.summary': '<strong>In short:</strong> Everything belongs to Haiere. Free for personal use. For commercial use, ask first. This site is given "as is".',
 
         /* --- sitemap --- */
         'sitemap.title': 'Sitemap',
-        'sitemap.version': 'All pages — Version 3.9.b',
+        'sitemap.version': 'All pages — Version 4.0.0',
         'sitemap.main.title': 'Main Pages',
         'sitemap.home': 'Home',
         'sitemap.home.desc': 'Profile, bio, and music player',
@@ -282,17 +334,17 @@ window.I18N = {
         'sitemap.nav.raia': 'RAIA',
         'sitemap.social.title': 'Social Media &amp; Contact',
         'sitemap.social.note': 'Official contact via the form on the main page.',
-        'changelog.title': 'Version History — v3.9.b',
-        'changelog.item1': '✓ Legal page rebuilt. It is cleaner, more modern, and easier to read.',
-        'changelog.item2': '✓ The language is simple, so all ages can understand it.',
-        'changelog.item3': '✓ Files neatly separated: <code>index.html</code>, <code>style.css</code>, <code>i18n.js</code>, <code>script.js</code>.',
-        'changelog.item4': '✓ Language settings moved to <code>i18n.js</code>, so new languages are easy to add.',
-        'changelog.item5': '✓ Accessibility and speed optimized (Lighthouse &gt; 95).',
-        'changelog.item6': '✓ Renamed from Muhaajir to <strong>Haiere</strong>, with the H logo.',
+        'changelog.title': 'Version History — v4.0.0',
+        'changelog.item1': '✓ Scroll animations rebuilt — smooth, natural, no layout shift.',
+        'changelog.item2': '✓ Three new sections: Tools, AI / Bot, and Games.',
+        'changelog.item3': '✓ Responsive tablist: smooth horizontal scroll on small screens.',
+        'changelog.item4': '✓ All external links use <code>target="_blank"</code> + <code>rel="noopener noreferrer"</code>.',
+        'changelog.item5': '✓ Accessibility improved: keyboard focus, aria-label, reduced-motion.',
+        'changelog.item6': '✓ Performance kept: no new dependency, animations use only <code>opacity</code> &amp; <code>transform</code>.',
 
         /* --- cookies --- */
         'cookies.title': 'Cookie Rules',
-        'cookies.version': 'Version 3.9.b — October 9, 2026',
+        'cookies.version': 'Version 4.0.0 — October 10, 2026',
         'cookies.intro': 'We use cookies to make this site nicer for you. Here is the simple explanation.',
         'cookies.what.title': '1. What is a cookie?',
         'cookies.what.desc': 'A cookie is a small file saved on your device when you open a site. It works like a little note. It helps the site remember your choices (like theme or language) when you come back.',
@@ -323,8 +375,53 @@ window.I18N = {
         'cookies.changes.title': '5. If the rules change',
         'cookies.changes.desc': 'The cookie rules can be updated at any time. The newest version is always on this page.',
         'cookies.contact.title': '6. Contact us',
-        'cookies.contact.desc': 'Questions about cookies? Send us a message through the <a href="https://haiere.github.io#contact">contact form</a> on the main page.',
+        'cookies.contact.desc': 'Questions about cookies? Send us a message through the <a href="https://hajir.is-a.dev#contact">contact form</a> on the main page.',
         'cookies.summary': '<strong>In short:</strong> Cookies are only used for your comfort. To remember theme, language, and nameless stats. You can always manage them yourself.',
+
+        /* --- tools --- */
+        'tools.title': 'Hajir Tools',
+        'tools.version': 'Version 4.0.0 — October 10, 2026',
+        'tools.intro': 'A set of digital tools from the Haiere ecosystem. All of them are light and run right in your browser.',
+        'tools.cta': 'Open Tool',
+        'tools.hajirsync.name': 'HajirSync',
+        'tools.hajirsync.desc': 'A tool to sync lyrics with the song.',
+        'tools.vault.name': 'Raia Vault',
+        'tools.vault.desc': 'A personal password vault.',
+        'tools.scrub.name': 'Raia Scrub',
+        'tools.scrub.desc': 'Metadata cleaner for your files.',
+        'tools.delta.name': 'Raia Delta',
+        'tools.delta.desc': 'Text diff checker to spot differences.',
+        'tools.minify.name': 'Raia Minify',
+        'tools.minify.desc': 'Shrink file size (HTML, CSS, JS).',
+        'tools.raiaspace.name': 'RaiaSpace',
+        'tools.raiaspace.desc': 'A digital workspace from Raia.',
+        'tools.calc.name': 'Calc',
+        'tools.calc.desc': 'A simple calculator for daily needs.',
+
+        /* --- ai / bot --- */
+        'ai.title': 'AI / Bot',
+        'ai.version': 'Version 4.0.0 — October 10, 2026',
+        'ai.intro': 'Digital assistants from the Haiere ecosystem. Pick one to start chatting.',
+        'ai.badge': 'AI',
+        'ai.cta': 'Start Chat',
+        'ai.raia.name': 'Raia',
+        'ai.raia.desc': 'AI chatbot with support for many model providers.',
+        'ai.kirana.name': 'Kirana',
+        'ai.kirana.desc': 'An AI assistant by Haiere.',
+
+        /* --- games --- */
+        'games.title': 'Games',
+        'games.version': 'Version 4.0.0 — October 10, 2026',
+        'games.intro': 'Light games you can play right in the browser.',
+        'games.cta': 'Play',
+        'games.chess.name': 'Chess',
+        'games.chess.desc': 'The classic game of chess.',
+        'games.loveyou.name': 'Loveyou',
+        'games.loveyou.desc': 'A small game with a sweet theme.',
+        'games.orbit.name': 'Orbit Weaver',
+        'games.orbit.desc': 'A game about orbits and motion.',
+        'games.starfall.name': 'Starfall',
+        'games.starfall.desc': 'A game about falling stars.',
 
         /* --- footer --- */
         'footer.home': 'Home',
@@ -336,7 +433,7 @@ window.I18N = {
         'footer.sitemap': 'Sitemap',
         'footer.cookies': 'Cookies',
         'footer.contact': 'Contact',
-        'footer.rights': 'Raia Footer v3.9.b. Made with Heart by Haiere.',
+        'footer.rights': 'Raia Footer — made with heart by Haiere.',
         'footer.disclaimer': 'Note: you are responsible for how you use the tools here. Haiere is not responsible for damage or lost data.'
     }
 };
@@ -367,12 +464,10 @@ window.I18NManager = (function () {
     }
 
     function apply() {
-        // Teks
         document.querySelectorAll('[data-i18n]').forEach(function (el) {
             const key = el.getAttribute('data-i18n');
             const value = t(key);
             if (value === undefined || value === null) return;
-            // Deteksi HTML di dalam string
             if (/<[a-z][\s\S]*>/i.test(value)) {
                 el.innerHTML = value;
             } else {
@@ -380,23 +475,20 @@ window.I18NManager = (function () {
             }
         });
 
-        // aria-label
         document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
             const key = el.getAttribute('data-i18n-aria');
             const value = t(key);
             if (value) el.setAttribute('aria-label', value);
         });
 
-        // placeholder
         document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
             const key = el.getAttribute('data-i18n-placeholder');
             const value = t(key);
             if (value) el.setAttribute('placeholder', value);
         });
 
-        // Update <title>
         const titleKey = document.documentElement.getAttribute('data-title-key');
-        if (titleKey) document.title = t(titleKey) + ' | Raia Footer v3.9.b';
+        if (titleKey) document.title = t(titleKey) + ' | Raia Footer v4.0.0';
     }
 
     function set(lang) {

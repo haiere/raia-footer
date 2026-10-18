@@ -1,7 +1,7 @@
 /* ============================================================
-   script.js — Raia Footer v3.9.b
-   UI logic: tema, tab, copy, back-to-top, dsb.
-   Bergantung pada i18n.js (window.I18NManager).
+   script.js — Raia Footer v4.0.0
+   UI logic: tema, tab, copy, back-to-top, scroll reveal.
+   Bergantung pada: i18n.js (window.I18NManager), icons.js (window.renderIcons).
    ============================================================ */
 
 (function () {
@@ -9,6 +9,7 @@
 
     const LOGO_LIGHT = 'https://i.postimg.cc/GmWt2wch/H-blue.webp';
     const LOGO_DARK  = 'https://i.postimg.cc/8PJ0bhb1/H-haiere.webp';
+    const VERSION    = 'v4.0.0';
 
     // ---- DOM ----
     const header       = document.getElementById('mainHeader');
@@ -25,6 +26,17 @@
     const footerLogo   = document.getElementById('footer-logo');
     const tabButtons   = document.querySelectorAll('.tab-btn');
     const tabPanels    = document.querySelectorAll('.tabpanel');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ============================================================
+       0) RENDER SEMUA IKON
+    ============================================================ */
+    function refreshIcons(scope) {
+        if (typeof window.renderIcons === 'function') {
+            window.renderIcons(scope);
+        }
+    }
+    refreshIcons();
 
     /* ============================================================
        1) THEME
@@ -39,12 +51,20 @@
         if (footerLogo && footerLogo.src !== src) footerLogo.src = src;
     }
 
+    function updateThemeIcon(theme) {
+        if (!themeIcon) return;
+        themeIcon.setAttribute('data-icon', theme === 'dark' ? 'moon' : 'sun');
+        themeIcon.removeAttribute('data-sw');
+        themeIcon.innerHTML = '';
+        if (typeof window.renderIcon === 'function') {
+            window.renderIcon(themeIcon);
+        }
+    }
+
     function setTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         try { localStorage.setItem('raiaTheme', theme); } catch (_) {}
-        if (themeIcon) {
-            themeIcon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
-        }
+        updateThemeIcon(theme);
         updateLogo();
     }
 
@@ -55,27 +75,32 @@
         setTheme(saved || (prefersDark ? 'dark' : 'light'));
     })();
 
-    themeToggle.addEventListener('click', function () {
-        setTheme(getTheme() === 'dark' ? 'light' : 'dark');
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+            setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+        });
+    }
 
     /* ============================================================
-       2) LANGUAGE — pakai I18NManager dari i18n.js
+       2) LANGUAGE
     ============================================================ */
     if (window.I18NManager) {
         window.I18NManager.init();
 
-        // Update tombol
         function refreshLangButton() {
-            langToggle.textContent = window.I18NManager.get() === 'id' ? 'EN' : 'ID';
+            if (langToggle) {
+                langToggle.textContent = window.I18NManager.get() === 'id' ? 'EN' : 'ID';
+            }
         }
         refreshLangButton();
 
-        langToggle.addEventListener('click', function () {
-            const next = window.I18NManager.get() === 'id' ? 'en' : 'id';
-            window.I18NManager.set(next);
-            refreshLangButton();
-        });
+        if (langToggle) {
+            langToggle.addEventListener('click', function () {
+                const next = window.I18NManager.get() === 'id' ? 'en' : 'id';
+                window.I18NManager.set(next);
+                refreshLangButton();
+            });
+        }
 
         window.I18NManager.onChange(refreshLangButton);
     }
@@ -83,7 +108,9 @@
     /* ============================================================
        3) PRINT
     ============================================================ */
-    printBtn.addEventListener('click', function () { window.print(); });
+    if (printBtn) {
+        printBtn.addEventListener('click', function () { window.print(); });
+    }
 
     /* ============================================================
        4) SCROLL: progress + header + back-to-top
@@ -111,9 +138,12 @@
     }, { passive: true });
     onScroll();
 
-    backBtn.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    if (backBtn) {
+        backBtn.addEventListener('click', function () {
+            const behavior = prefersReduced ? 'auto' : 'smooth';
+            window.scrollTo({ top: 0, behavior: behavior });
+        });
+    }
 
     /* ============================================================
        5) YEAR
@@ -124,35 +154,85 @@
        6) HAMBURGER / MOBILE MENU
     ============================================================ */
     function toggleMobileMenu(open) {
+        if (!mobileMenu || !hamburger) return;
         const isOpen = (open !== undefined) ? open : !mobileMenu.classList.contains('open');
         mobileMenu.classList.toggle('open', isOpen);
         hamburger.classList.toggle('active', isOpen);
         hamburger.setAttribute('aria-expanded', isOpen);
         document.body.style.overflow = isOpen ? 'hidden' : '';
     }
-    hamburger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        toggleMobileMenu();
-    });
-    mobileMenu.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () { toggleMobileMenu(false); });
-    });
-    document.addEventListener('click', function (e) {
-        if (mobileMenu.classList.contains('open') &&
-            !mobileMenu.contains(e.target) &&
-            !hamburger.contains(e.target)) {
-            toggleMobileMenu(false);
-        }
-    });
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-            toggleMobileMenu(false);
-            hamburger.focus();
-        }
-    });
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function (e) {
+            e.stopPropagation();
+            toggleMobileMenu();
+        });
+        mobileMenu.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', function () { toggleMobileMenu(false); });
+        });
+        document.addEventListener('click', function (e) {
+            if (mobileMenu.classList.contains('open') &&
+                !mobileMenu.contains(e.target) &&
+                !hamburger.contains(e.target)) {
+                toggleMobileMenu(false);
+            }
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                toggleMobileMenu(false);
+                hamburger.focus();
+            }
+        });
+    }
 
     /* ============================================================
-       7) TABS
+       7) SCROLL REVEAL
+    ============================================================ */
+    const revealObserver = (function () {
+        if (prefersReduced || !('IntersectionObserver' in window)) {
+            document.querySelectorAll('[data-scroll-reveal]').forEach(function (el) {
+                el.classList.add('is-revealed');
+            });
+            return null;
+        }
+        const obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-revealed');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.08,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        return obs;
+    })();
+
+    function assignStagger() {
+        const parents = document.querySelectorAll(
+            '.tools-grid, .ai-grid, .games-grid, .sitemap-grid, .project-grid, .social-list'
+        );
+        parents.forEach(function (group) {
+            const children = group.querySelectorAll('[data-scroll-reveal]');
+            children.forEach(function (el, i) {
+                el.style.setProperty('--reveal-delay', Math.min(i * 60, 360) + 'ms');
+            });
+        });
+    }
+
+    function observeReveals(root) {
+        if (!revealObserver) return;
+        const scope = root || document;
+        scope.querySelectorAll('[data-scroll-reveal]:not(.is-revealed)').forEach(function (el) {
+            revealObserver.observe(el);
+        });
+    }
+
+    assignStagger();
+    observeReveals();
+
+    /* ============================================================
+       8) TABS
     ============================================================ */
     function activateTab(panelId, pushHash) {
         tabButtons.forEach(function (btn) {
@@ -169,10 +249,14 @@
                 history.pushState(null, null, newHash);
             }
         }
-        // Update mobile menu active state
         document.querySelectorAll('.mobile-menu a').forEach(function (a) {
             a.classList.toggle('active', a.getAttribute('href') === '#' + panelId);
         });
+
+        const activePanel = document.getElementById(panelId);
+        document.dispatchEvent(new CustomEvent('raia:tabchange', {
+            detail: { panel: activePanel }
+        }));
     }
 
     tabButtons.forEach(function (btn) {
@@ -207,7 +291,7 @@
         });
     });
 
-    // Init dari hash URL
+    // Init dari hash
     (function initTab() {
         const hash = (window.location.hash || '#privacy').replace('#', '');
         const panelId = hash + '-panel';
@@ -223,8 +307,16 @@
         }
     });
 
+    // Re-scan saat tab berubah
+    document.addEventListener('raia:tabchange', function (e) {
+        const panel = e.detail && e.detail.panel ? e.detail.panel : document;
+        refreshIcons(panel);
+        assignStagger();
+        observeReveals(panel);
+    });
+
     /* ============================================================
-       8) COPY TO CLIPBOARD
+       9) COPY TO CLIPBOARD
     ============================================================ */
     document.querySelectorAll('.copy-btn').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
@@ -261,16 +353,26 @@
 
     function showCopied(btn) {
         btn.classList.add('copied');
-        const icon = btn.querySelector('i');
-        if (icon) icon.className = 'fas fa-check';
+        const icon = btn.querySelector('svg[data-icon]');
+        if (icon) {
+            icon.setAttribute('data-icon', 'check');
+            icon.innerHTML = '';
+            if (typeof window.renderIcon === 'function') window.renderIcon(icon);
+        }
         setTimeout(function () {
             btn.classList.remove('copied');
-            if (icon) icon.className = 'fas fa-copy';
+            if (icon) {
+                icon.setAttribute('data-icon', 'copy');
+                icon.innerHTML = '';
+                if (typeof window.renderIcon === 'function') window.renderIcon(icon);
+            }
         }, 1800);
     }
 
     /* ============================================================
        DONE
     ============================================================ */
-    console.log('%c✅ Raia Footer v3.9.b', 'color:#2563eb;font-weight:bold;', 'Legal & Sitemap — modern, friendly, i18n-ready.');
+    console.log('%cRaia Footer ' + VERSION,
+        'color:#2563eb;font-weight:bold;',
+        'All icons via icons.js · Tools · AI/Bot · Games');
 })();
