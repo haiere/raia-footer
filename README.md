@@ -6,7 +6,7 @@
 ### Raia Footer v4.0.0 — Official Legal Hub for Haiere
 
 <p>
-  <a href="https://raia-footer.netlify.app/">
+  <a href="https://hajir.is-a.dev/raia-footer/">
     <img src="https://img.shields.io/badge/Live_Demo-raia--footer.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo">
   </a>
   <a href="https://github.com/haiere">
@@ -644,7 +644,7 @@ Developed by Haiere and HajirStudio as part of the official Haiere hub.
 
 · GitHub: @haiere
 · Main site: hajir.is-a.dev
-· Live demo: raia-footer.netlify.app
+· Live demo: hajir.is-a.dev/raia-footer
 
 ---
 
