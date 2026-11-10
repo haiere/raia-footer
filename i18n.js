@@ -93,9 +93,8 @@ window.I18N = {
         'terms.contact.title': '6. Hubungi kami',
         'terms.contact.desc': 'Ada pertanyaan tentang Aturan Pakai? Kirim pesan lewat <a href="https://hajir.is-a.dev#contact">formulir kontak</a> di halaman utama, atau email ke <a href="mailto:isthajir@proton.me">isthajir@proton.me</a>.',
         'terms.summary': '<strong>Intinya:</strong> Semua karya milik Haiere, bebas dipakai untuk keperluan pribadi, untuk komersial wajib minta izin dulu, dan situs ini diberikan "apa adanya".',
-        'footer.license': 'Kode dirilis di bawah CC0 1.0 Universal',
-        'terms.code.license': '<strong>Lisensi kode:</strong> kode sumber Raia Footer (HTML, CSS, JavaScript) dirilis di bawah <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 Universal</a> — domain publik. Kamu bebas menyalin, mengubah, dan menyebarluaskan kodenya tanpa perlu mencantumkan atribusi. Ini berlaku untuk kode saja; konten di atas tetap © Haiere.',
-
+        'terms.code.license': '<strong>Lisensi kode:</strong> kode sumber Raia Footer (HTML, CSS, JavaScript) dirilis di bawah <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 Universal</a> domain publik. Kamu bebas menyalin, mengubah, dan menyebarluaskan kodenya tanpa perlu mencantumkan atribusi. Ini berlaku untuk kode saja; konten di atas tetap © Haiere.', 
+        
         /* --- sitemap --- */
         'sitemap.title': 'Peta Situs',
         'sitemap.version': 'Semua halaman, Versi 4.0.1',
@@ -220,6 +219,7 @@ window.I18N = {
         'footer.email': 'isthajir@proton.me',
         'footer.rights': 'Raia Footer, dibuat dengan hati oleh Haiere.',
         'footer.disclaimer': 'Catatan: kamu bertanggung jawab atas cara memakai alat di sini. Haiere tidak bertanggung jawab atas kerusakan atau kehilangan data.'
+        'footer.license': 'Kode dirilis di bawah CC0 1.0 Universal',
     },
 
     en: {
@@ -310,8 +310,7 @@ window.I18N = {
         'terms.contact.title': '6. Contact us',
         'terms.contact.desc': 'Questions about the Terms of Use? Send us a message through the <a href="https://hajir.is-a.dev#contact">contact form</a> on the main page, or email <a href="mailto:isthajir@proton.me">isthajir@proton.me</a>.',
         'terms.summary': '<strong>In short:</strong> Everything belongs to Haiere. Free for personal use. For commercial use, ask first. This site is provided "as is".',
-        'footer.license': 'Code licensed under CC0 1.0 Universal',
-        'terms.code.license': '<strong>Lisensi kode:</strong> kode sumber Raia Footer (HTML, CSS, JavaScript) dirilis di bawah <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 Universal</a> — domain publik. Kamu bebas menyalin, mengubah, dan menyebarluaskan kodenya tanpa perlu mencantumkan atribusi. Ini berlaku untuk kode saja; konten di atas tetap © Haiere.',
+        'terms.code.license': '<strong>Code license:</strong> the source code of Raia Footer (HTML, CSS, JavaScript) is released under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0 Universal</a> public domain. You may copy, modify, and redistribute the code freely, without attribution. This applies to the code only; the content above remains © Haiere.',
         
         /* --- sitemap --- */
         'sitemap.title': 'Sitemap',
@@ -437,6 +436,7 @@ window.I18N = {
         'footer.email': 'isthajir@proton.me',
         'footer.rights': 'Raia Footer, made with heart by Haiere.',
         'footer.disclaimer': 'Note: you are responsible for how you use the tools here. Haiere is not responsible for any damage or data loss.'
+        'footer.license': 'Code licensed under CC0 1.0 Universal', 4
     }
 };
 
