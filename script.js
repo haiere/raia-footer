@@ -1,5 +1,5 @@
 /* ============================================================
-   script.js — Raia Footer v4.0.0
+   script.js — Raia Footer v4.0.1
    UI logic: tema, tab, copy, back-to-top, scroll reveal.
    Bergantung pada: i18n.js (window.I18NManager), icons.js (window.renderIcons).
    ============================================================ */
@@ -9,7 +9,7 @@
 
     const LOGO_LIGHT = 'https://i.postimg.cc/GmWt2wch/H-blue.webp';
     const LOGO_DARK  = 'https://i.postimg.cc/8PJ0bhb1/H-haiere.webp';
-    const VERSION    = 'v4.0.0';
+    const VERSION    = 'v4.0.1';
 
     // ---- DOM ----
     const header       = document.getElementById('mainHeader');
