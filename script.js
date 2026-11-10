@@ -1,7 +1,14 @@
 /* ============================================================
    script.js — Raia Footer v4.0.1
    UI logic: tema, tab, copy, back-to-top, scroll reveal.
-   Bergantung pada: i18n.js (window.I18NManager), icons.js (window.renderIcons).
+
+   Code license: CC0 1.0 Universal (public domain)
+   https://creativecommons.org/publicdomain/zero/1.0/
+   Content (text, music, artwork, branding): © Haiere.
+
+   Depends on:
+     - i18n.js  → window.I18NManager
+     - icons.js → window.renderIcons / window.renderIcon
    ============================================================ */
 
 (function () {
@@ -10,6 +17,20 @@
     const LOGO_LIGHT = 'https://i.postimg.cc/GmWt2wch/H-blue.webp';
     const LOGO_DARK  = 'https://i.postimg.cc/8PJ0bhb1/H-haiere.webp';
     const VERSION    = 'v4.0.1';
+    const LICENSE    = 'CC0-1.0';
+    const LICENSE_URL = 'https://creativecommons.org/publicdomain/zero/1.0/';
+
+    // Expose metadata (useful for tooling, devtools, other scripts)
+    window.RAIA_FOOTER = Object.freeze({
+        version: VERSION,
+        license: LICENSE,
+        licenseUrl: LICENSE_URL,
+        codeLicense: 'CC0 1.0 Universal (public domain)',
+        contentLicense: 'All Rights Reserved — © Haiere',
+        author: 'Haiere',
+        contact: 'isthajir@proton.me',
+        source: 'https://github.com/haiere/raia-footer'
+    });
 
     // ---- DOM ----
     const header       = document.getElementById('mainHeader');
@@ -40,9 +61,12 @@
 
     /* ============================================================
        1) THEME
+       Aurora Navy (dark) is the home theme; Petal Pink is the
+       light override. Respect saved choice, then system pref,
+       and fall back to dark.
     ============================================================ */
     function getTheme() {
-        return document.documentElement.getAttribute('data-theme') || 'light';
+        return document.documentElement.getAttribute('data-theme') || 'dark';
     }
 
     function updateLogo() {
@@ -72,7 +96,9 @@
         let saved;
         try { saved = localStorage.getItem('raiaTheme'); } catch (_) {}
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        setTheme(saved || (prefersDark ? 'dark' : 'light'));
+        // Default to Aurora Navy when the user has no explicit preference
+        const initial = saved || (prefersDark ? 'dark' : 'dark');
+        setTheme(initial);
     })();
 
     if (themeToggle) {
@@ -370,9 +396,17 @@
     }
 
     /* ============================================================
-       DONE
+       DONE — attribution & license notice in console
     ============================================================ */
-    console.log('%cRaia Footer ' + VERSION,
-        'color:#2563eb;font-weight:bold;',
-        'All icons via icons.js · Tools · AI/Bot · Games');
+    console.log(
+        '%cRaia Footer ' + VERSION,
+        'color:#7FD8CB;font-weight:bold;font-size:12px;'
+    );
+    console.log(
+        '%cCode: ' + LICENSE + ' Universal (public domain)\n' +
+        'Content: © Haiere — all rights reserved\n' +
+        'Source: ' + window.RAIA_FOOTER.source + '\n' +
+        'License: ' + LICENSE_URL,
+        'color:#ADB6C2;font-size:11px;line-height:1.6;'
+    );
 })();
