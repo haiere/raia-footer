@@ -1,5 +1,5 @@
 /* ============================================================
-   icons.js — Raia Footer v4.0.0
+   icons.js — Raia Footer v4.0.2
    Registry ikon SVG (Lucide-style). Semua ikon UI ada di sini.
    Tidak ada dependensi eksternal (Font Awesome dihapus).
    ============================================================ */

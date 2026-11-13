@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="https://i.postimg.cc/GmWt2wch/H-blue.webp" alt="Haiere Logo" width="120" />
+<img src="https://i.postimg.cc/GmWt2wch/H-blue.webp" alt="Haiere logo" width="120" />
 
 # Legal, Tools & Sitemap
-### Raia Footer v4.0.1 — Official Legal Hub for Haiere
+### Raia Footer v4.0.2: Official Legal Hub for Haiere
 
 <p>
   <a href="https://hajir.is-a.dev/raia-footer/">
-    <img src="https://img.shields.io/badge/Live_Demo-hajir.is--a.dev/raia--footer-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo">
+    <img src="https://img.shields.io/badge/Live_Demo-hajir.is--a.dev/raia--footer-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live demo">
   </a>
   <a href="https://github.com/haiere">
     <img src="https://img.shields.io/badge/GitHub-haiere-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
@@ -15,32 +15,27 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/version-4.0.1-6366f1?style=for-the-badge" alt="Version 4.0.1">
-  <img src="https://img.shields.io/badge/updated-November_10,_2026-8b5cf6?style=for-the-badge" alt="Updated November 10, 2026">
-  <img src="https://img.shields.io/badge/license-See_License-22c55e?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/version-4.0.2-6366f1?style=for-the-badge" alt="Version 4.0.2">
+  <img src="https://img.shields.io/badge/updated-November_13,_2026-8b5cf6?style=for-the-badge" alt="Updated November 13, 2026">
+  <img src="https://img.shields.io/badge/license-CC0_1.0-EF9421?style=for-the-badge&logo=creativecommons&logoColor=white" alt="License CC0 1.0">
 </p>
 
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Accessibility-AA-10b981?style=for-the-badge&logo=accessible-icon&logoColor=white" alt="Accessibility AA">
-  <img src="https://img.shields.io/badge/Lighthouse-%3E95-0ea5e9?style=for-the-badge&logo=lighthouse&logoColor=white" alt="Lighthouse > 95">
+  <img src="https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black" alt="GSAP">
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/theme-Aurora_Navy_%2F_Petal_Pink-7FD8CB?style=for-the-badge" alt="Aurora Navy / Petal Pink">
+  <img src="https://img.shields.io/badge/theme-Aurora_Navy-7FD8CB?style=for-the-badge" alt="Aurora Navy theme">
   <img src="https://img.shields.io/badge/fonts-Sora_%C2%B7_Inter_%C2%B7_JetBrains_Mono-ADB6C2?style=for-the-badge" alt="Sora, Inter, JetBrains Mono">
   <img src="https://img.shields.io/badge/Made_by-Haiere-ff69b4?style=for-the-badge" alt="Made by Haiere">
 </p>
 
-<p>
-<img src="https://img.shields.io/badge/code_license-CC0_1.0-EF9421?style=for-the-badge&logo=creativecommons&logoColor=white" alt="Code license CC0 1.0">
-</p>
-
 <strong>Official legal, tools, AI, and games hub for Haiere.</strong><br>
 Privacy · Terms · Sitemap · Cookies · Tools · AI / Bot · Games<br>
-Static, dependency-free interface with Indonesian and English support.
+Static interface with Indonesian and English support.
 
 </div>
 
@@ -48,47 +43,82 @@ Static, dependency-free interface with Indonesian and English support.
 
 ## About
 
-**Legal, Tools & Sitemap** is the central hub for the **Haiere** ecosystem. It bundles the legal documents and a directory of Haiere pages, tools, AI assistants, games, and official channels into one static site.
+**Legal, Tools & Sitemap** is the central hub for the Haiere ecosystem. It puts the legal documents and a directory of Haiere pages, tools, AI assistants, and games into one static site. Each section has its own address, so you can link straight to the part you need, such as `/#privacy`.
 
-Design highlights:
-
-- Aurora Navy (dark, default) and Petal Pink (light) themes
-- Sora, Inter, and JetBrains Mono typography — three families, seven weights
-- Indonesian and English, switchable at runtime
-- Responsive layout for desktop, tablet, and mobile
-- AA-level accessibility and print support
-- GPU-friendly scroll reveal animations
-- Zero external dependencies — no framework, no build step, no icon font
+The site is written in plain HTML, CSS, and JavaScript. It has no framework and no build step.
 
 ---
 
 ## Features
 
-- Seven tabs: Privacy, Terms, Sitemap, Cookies, Tools, AI / Bot, Games
-- Bilingual UI (ID / EN) with persistent preference
-- Dark / light theme with persistent preference
-- Inline SVG icon registry (`icons.js`) — replaces Font Awesome
-- Scrollable tablist on mobile
-- Cookie reference table (name, type, purpose, duration)
-- Reading progress bar, back-to-top, copy-to-clipboard
-- Optimized print and PDF layout
-- Reduced-motion support
+- Seven sections: Privacy, Terms of Use, Sitemap, Cookies, Tools, AI / Bot, and Games
+- Section links that work with the address bar, back and forward buttons, and shared links
+- Indonesian and English interface, with the choice saved in the browser
+- Dark (default) and light themes, with the choice saved in the browser
+- Keyboard navigation between sections with the arrow keys, Home, and End
+- Mobile menu and a section bar that scrolls sideways on small screens
+- Cookie reference table with name, type, purpose, and duration
+- Copy-to-clipboard buttons for summaries and credits
+- Reading progress bar and back-to-top button
+- Print styles that print the section you are viewing
+- Reduced-motion support, which turns off animations
+- Icons drawn as inline SVG, with no icon font
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Markup | HTML5 (semantic, ARIA) |
-| Styles | CSS3 (custom properties, backdrop blur, print) |
-| Scripts | Vanilla JavaScript (ES6+) |
-| Icons | Inline SVG via `icons.js` |
-| Fonts | Google Fonts — Sora, Inter, JetBrains Mono |
-| Reveal | `IntersectionObserver` |
-| Storage | `localStorage` for theme, language, consent |
+- HTML5 with semantic landmarks and ARIA attributes
+- CSS3 with custom properties, responsive layout, and print styles
+- Vanilla JavaScript (ES6+)
+- GSAP 3.12.5 with ScrollTrigger, loaded from cdnjs
+- Google Fonts: Sora, Inter, and JetBrains Mono
+- Inline SVG icon sprite
+- `localStorage` for theme and language
 
-No frameworks, no build tools, no backend, no external icon font.
+---
+
+## Getting Started
+
+### Prerequisites
+
+- A modern web browser
+- Optional: Python 3, or any static file server, for local preview
+- Internet access to load Google Fonts and GSAP from their CDNs
+
+### Installation
+
+```bash
+git clone https://github.com/haiere/raia-footer.git
+cd raia-footer
+```
+
+### Environment Variables
+
+None. The project does not use environment variables or API keys.
+
+### Running Locally
+
+```bash
+python3 -m http.server 8000
+```
+
+Open http://localhost:8000 in your browser.
+
+### Build
+
+This project has no build step. Deploy the files as they are.
+
+---
+
+## Usage
+
+1. Pick a section from the tab bar, the header menu, or the footer links.
+2. Use the arrow keys, Home, and End to move between tabs from the keyboard.
+3. Use the moon or sun button in the header to switch between dark and light themes.
+4. Use the ID / EN button in the header to switch the language.
+5. Use the copy button on a summary or credit box to copy its text.
+6. Use the printer button or your browser's print command. Only the section you are viewing is printed.
 
 ---
 
@@ -96,157 +126,154 @@ No frameworks, no build tools, no backend, no external icon font.
 
 ```text
 .
-├── index.html   # Structure, legal content, tools / AI / games grids
-├── style.css    # Themes, layout, scroll reveal, print, responsive
-├── icons.js     # Inline SVG icon registry (no external font)
-├── i18n.js      # Indonesian / English translations + I18NManager
-├── script.js    # Tabs, theme, language, reveal, utilities
+├── index.html   # Page structure, legal content, tools, AI, and games
+├── style.css    # Themes, layout, responsive rules, animation states, print styles
+├── script.js    # Section routing, theme, mobile menu, copy, progress bar, GSAP reveals
+├── i18n.js      # Indonesian and English translations
 └── README.md
 ```
 
 ---
 
-Quick Start
+## Customization
 
-```bash
-git clone https://github.com/haiere/raia-footer.git
-cd raia-footer
-python3 -m http.server 8000
-```
+**Add a language.** Add a new entry to the `DICT` object in `i18n.js`, with the same keys as `en` and `id`. Then add the language code to `SUPPORTED`. The header button switches between two languages, so a third language also needs a change to the toggle logic in `i18n.js`.
 
-Open http://localhost:8000. Deploy to any static host (GitHub Pages, Cloudflare Pages, Netlify, Vercel). Ship the five files listed above.
+**Add a section.** Add a `<section>` with an `id` that matches the route, such as `id="podcast"`. Add the same name to `ROUTES` in `script.js`. Add a tab link with `data-route="podcast"` to the tab bar, and add its text to both language objects in `i18n.js`.
+
+**Change colors and fonts.** Every color, radius, font, and shadow is a custom property in `style.css`. Dark values live under `:root`, and light values live under `[data-theme="light"]`.
 
 ---
 
-Usage
+## Scroll Reveal
 
-· Tabs — click or use ← → Home End to navigate.
-· Theme — header button toggles dark / light; saved in localStorage.
-· Language — header button toggles ID / EN; saved in localStorage.
-· Print — header button or browser print; every panel expands.
+Cards, list items, callouts, and tables in the active section fade and rise into view once, using GSAP and ScrollTrigger. Only `opacity` and `transform` are animated.
 
-Storage keys: raiaTheme, raiaLang, haiere-cookie.
+When `prefers-reduced-motion: reduce` is set, the GSAP reveal is skipped and transitions are turned off. If GSAP does not load, the page still works. Content is shown without the reveal effect.
 
 ---
 
-Directories
+## Storage
 
-Tools
+The site stores two values in `localStorage`:
 
-Name Description Link
-HajirSync Sync lyrics with the song. https://hajirsync.haiere.workers.dev/
-Raia Vault Personal password vault. https://raia-vault.haiere.workers.dev/
-Raia Scrub Metadata cleaner for your files. https://raia-scrub.haiere.workers.dev/
-Raia Delta Text diff checker. https://raia-delta.haiere.workers.dev/
-Raia Minify Minify HTML, CSS, JS. https://raiaminify.haiere.workers.dev/
-RaiaSpace Digital workspace from Raia. https://raiaspace.haiere.workers.dev
-Calc Simple calculator. https://hajir.is-a.dev/calc
-QRe Browser-based QR code generator with local processing. https://hajir.is-a.dev/qre
+| Key | Purpose | Values |
+|---|---|---|
+| `haiere_lang` | Interface language | `en`, `id` |
+| `haiere_theme` | Color theme | `dark`, `light` |
 
-AI / Bot
-
-Name Description Link
-Raia AI chatbot, multi-provider. https://hajir.is-a.dev/raia-ai/
-Kirana AI assistant by Haiere. https://hajir.is-a.dev/kirana
-
-Games
-
-Name Description Link
-Chess Classic chess. https://hajir.is-a.dev/chess
-Loveyou Small game with a sweet theme. https://hajir.is-a.dev/loveyou
-Orbit Weaver A game about orbits and motion. https://hajir.is-a.dev/game/orbit-weaver.html
-Starfall A game about falling stars. https://hajir.is-a.dev/game/starfall.html
-
-Ecosystem
-
-Project Description Link
-HajirSync LRC generator. https://hajirsync.haiere.workers.dev/
-Raia Delta Text difference tool. https://raia-delta.haiere.workers.dev/
-Raia Scrub Metadata cleaner. https://raia-scrub.haiere.workers.dev/
-Raia Vault Password manager. https://raia-vault.haiere.workers.dev/
-Signature Music Web music player. https://signature-music.netlify.app
-RaiaMinify File minifier. https://raiaminify.haiere.workers.dev/
-QRe QR code generator. https://hajir.is-a.dev/qre
-RAIA AI AI chatbot, 9+ providers. https://hajir.is-a.dev/raia-ai/
+Nothing is sent to a server. The values stay in the visitor's browser.
 
 ---
 
-Scroll Reveal
+## Tools
 
-Elements opt in with data-scroll-reveal:
+| Name | Description | Link |
+|---|---|---|
+| HajirSync | Sync lyrics with your song. | https://hajirsync.haiere.workers.dev/ |
+| Raia Vault | A personal password vault. | https://raia-vault.haiere.workers.dev/ |
+| Raia Scrub | Clean the metadata from your files. | https://raia-scrub.haiere.workers.dev/ |
+| Raia Delta | Compare two texts and spot the differences. | https://raia-delta.haiere.workers.dev/ |
+| Raia Minify | Shrink the size of HTML, CSS, and JS files. | https://raiaminify.haiere.workers.dev/ |
+| RaiaSpace | A digital workspace from Raia. | https://raiaspace.haiere.workers.dev |
+| Calc | A simple calculator for everyday needs. | https://hajir.is-a.dev/calc |
+| QRe | Make QR codes in your browser. Everything is processed locally. | https://hajir.is-a.dev/qre |
 
-```html
-<div class="tool-card" data-scroll-reveal>...</div>
-```
+## AI / Bot
 
-Only opacity and transform are animated so the compositor handles them off the main thread. IntersectionObserver reveals each element once, then unobserves it. Grid items receive a small stagger capped at 360 ms. When prefers-reduced-motion: reduce is set, the system is skipped entirely and elements appear immediately.
+| Name | Description | Link |
+|---|---|---|
+| Raia | An AI chatbot that works with many model providers. | https://hajir.is-a.dev/raia-ai/ |
+| Kirana | An AI assistant from Haiere. | https://hajir.is-a.dev/kirana |
+
+## Games
+
+| Name | Description | Link |
+|---|---|---|
+| Chess | The classic game of chess. | https://hajir.is-a.dev/chess |
+| Loveyou | A small game with a sweet theme. | https://hajir.is-a.dev/loveyou |
+| Orbit Weaver | A game about orbits and motion. | https://hajir.is-a.dev/game/orbit-weaver.html |
+| Starfall | A game about falling stars. | https://hajir.is-a.dev/game/starfall.html |
+
+## Ecosystem
+
+| Project | Description | Link |
+|---|---|---|
+| HajirSync | LRC lyrics generator. | https://hajirsync.haiere.workers.dev/ |
+| Raia Delta | Text difference checker. | https://raia-delta.haiere.workers.dev/ |
+| Raia Scrub | Metadata cleaner. | https://raia-scrub.haiere.workers.dev/ |
+| Raia Vault | Password manager. | https://raia-vault.haiere.workers.dev/ |
+| Signature Music | Web music player. | https://signature-music.netlify.app |
+| RaiaMinify | File minifier. | https://raiaminify.haiere.workers.dev/ |
+| QRe | QR code generator. | https://hajir.is-a.dev/qre |
+| RAIA AI | AI chatbot with 9+ providers. | https://hajir.is-a.dev/raia-ai/ |
 
 ---
 
-Customization
+## Accessibility
 
-Add a language — copy the id or en object in i18n.js, translate the values, wire the toggle in script.js if needed.
-
-Add a tab — add a <button role="tab" data-target="…"> to .tablist, a matching <section role="tabpanel">, and the tab.* translations. If it contains a grid, add its selector to the stagger list in script.js.
-
-Restyle — every color, radius, font, and shadow lives as a custom property in style.css under :root (Aurora Navy) and [data-theme="light"] (Petal Pink).
-
----
-
-Accessibility
-
-· Skip link and semantic landmarks
-· ARIA roles on tabs and panels
-· Full keyboard navigation with visible focus
-· Contrast tuned for both themes (AA)
-· Reduced-motion support
-· External links use rel="noopener noreferrer"
-· Print stylesheet for clean PDF export
+- A skip link leads directly to the main content.
+- Landmarks: header, main, footer, and labeled navigation.
+- Visible focus outlines on every interactive element.
+- Touch targets are at least 44 by 44 px.
+- The active section is marked with `aria-current`.
+- Icon-only buttons have `aria-label` text in the selected language.
+- Colors are chosen with WCAG AA contrast as the target, in both themes.
+- Reduced-motion support is included.
+- External links use `rel="noopener noreferrer"`.
 
 ---
 
-Contact
+## Contact
 
-· Author: Haiere
-· Email: isthajir@proton.me
-· GitHub: @haiere
-· Site: hajir.is-a.dev
-· Demo: hajir.is-a.dev/raia-footer
+- Author: Haiere
+- Email: isthajir@proton.me
+- GitHub: @haiere
+- Site: hajir.is-a.dev
+- Demo: hajir.is-a.dev/raia-footer
 
 ---
 
 ## License
 
-**Code** — released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (public domain). Copy, modify, and redistribute freely, no attribution required.
+**Code** is released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/), which places it in the public domain. You may copy, change, and share it without credit.
 
-**Content** — all legal text, music, artwork, and branding are © Haiere. CC0 does not apply to the content; see the Terms of Use for personal and commercial usage rules.
+**Content** includes all legal text, music, artwork, and branding, which are © Haiere. CC0 does not apply to the content. See the Terms of Use for the rules on personal and commercial use.
 
 ---
 
-Changelog
+## Changelog
 
-v4.0.1 — November 10, 2026
+### v4.0.2: November 13, 2026
 
-· Aurora Navy palette (dark default) and Petal Pink (light) via CSS custom properties
-· Typography refreshed: Sora, Inter, JetBrains Mono — three families, seven weights
-· New tool: QRe, a browser-based QR code generator with local processing
-· Inline SVG icon registry (icons.js) replaces Font Awesome
-· Official contact email: isthajir@proton.me
-· Updated version strings and metadata across all files
+- Sections open from hash links such as `/#privacy` and `/#tools`.
+- Icons are drawn as one inline SVG sprite.
+- Scroll reveal uses GSAP and ScrollTrigger.
+- Removed a duplicated footer block.
+- Copy and layout refined for phones and desktops.
+- Interface text is available in Indonesian and English, with the choice saved in the browser.
 
-v4.0.0 — October 10, 2026
+### v4.0.1: November 10, 2026
 
-· Added Tools, AI / Bot, and Games tabs
-· Rebuilt scroll reveal with IntersectionObserver
-· Staggered grids, capped at 360 ms
-· Scrollable tablist on mobile
-· Reduced-motion handling
-· External links use target="_blank" with rel="noopener noreferrer"
+- Dark default theme and light theme via CSS custom properties
+- Typography: Sora, Inter, and JetBrains Mono
+- New tool: QRe, a browser-based QR code generator with local processing
+- Inline SVG icon registry (`icons.js`) replaces Font Awesome
+- Official contact email: isthajir@proton.me
+
+### v4.0.0: October 10, 2026
+
+- Added Tools, AI / Bot, and Games sections
+- Scroll reveal for content sections
+- Staggered grids, capped at 360 ms
+- Scrollable section bar on mobile
+- Reduced-motion handling
+- External links use `target="_blank"` with `rel="noopener noreferrer"`
 
 ---
 
 <div align="center">
 
-Last updated: November 10, 2026 · Made by Haiere
+Last updated: November 13, 2026 · Made by Haiere
 
 </div>
